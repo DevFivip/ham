@@ -1,0 +1,6410 @@
+[
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 1,
+        "categoryName": "Acuariofilia",
+        "categoryUrl": "acuariofilia",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 2,
+        "categoryName": "Aeromodelismo",
+        "categoryUrl": "aeromodelismo",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 3,
+        "categoryName": "Agricultura",
+        "categoryUrl": "agricultura",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 4,
+        "categoryName": "Airsoft",
+        "categoryUrl": "airsoft",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 5,
+        "categoryName": "Ala delta",
+        "categoryUrl": "ala-delta",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 6,
+        "categoryName": "Amigurumi",
+        "categoryUrl": "amigurumi",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 7,
+        "categoryName": "Automodelismo",
+        "categoryUrl": "automodelismo",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 8,
+        "categoryName": "Bolos",
+        "categoryUrl": "bolos",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 587,
+        "categoryName": "Bonsái",
+        "categoryUrl": "bonsai",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 9,
+        "categoryName": "Camping",
+        "categoryUrl": "camping",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 10,
+        "categoryName": "Caza",
+        "categoryUrl": "caza",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 11,
+        "categoryName": "Cocina",
+        "categoryUrl": "cocina",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 12,
+        "categoryName": "Coleccionismo",
+        "categoryUrl": "coleccionismo",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 13,
+        "categoryName": "Cometas",
+        "categoryUrl": "cometas",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 14,
+        "categoryName": "Comics",
+        "categoryUrl": "comics",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 15,
+        "categoryName": "Compartir aficiones",
+        "categoryUrl": "compartir-aficiones",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 16,
+        "categoryName": "Costura",
+        "categoryUrl": "costura",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 17,
+        "categoryName": "Dardos",
+        "categoryUrl": "dardos",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 18,
+        "categoryName": "Drones",
+        "categoryUrl": "drones",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 19,
+        "categoryName": "Escape Rooms",
+        "categoryUrl": "escape-rooms",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 20,
+        "categoryName": "Excursiones",
+        "categoryUrl": "excursiones",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 21,
+        "categoryName": "Fotografía",
+        "categoryUrl": "fotografia",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 22,
+        "categoryName": "Futbolín",
+        "categoryUrl": "futbolin",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 793,
+        "categoryName": "Gastronomía",
+        "categoryUrl": "gastronomia",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 23,
+        "categoryName": "Jardineria",
+        "categoryUrl": "jardineria",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 24,
+        "categoryName": "Karting",
+        "categoryUrl": "karting",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 25,
+        "categoryName": "Magia",
+        "categoryUrl": "magia",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 26,
+        "categoryName": "Manga",
+        "categoryUrl": "manga",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 27,
+        "categoryName": "Manualidades",
+        "categoryUrl": "manualidades",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 28,
+        "categoryName": "Mascotas",
+        "categoryUrl": "mascotas",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 29,
+        "categoryName": "Modelismo",
+        "categoryUrl": "modelismo",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 30,
+        "categoryName": "Montañismo",
+        "categoryUrl": "montanismo",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 31,
+        "categoryName": "Mus",
+        "categoryUrl": "mus",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 32,
+        "categoryName": "Paracaidismo",
+        "categoryUrl": "paracaidismo",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 33,
+        "categoryName": "Parapente",
+        "categoryUrl": "parapente",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 34,
+        "categoryName": "Parkour",
+        "categoryUrl": "parkour",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 35,
+        "categoryName": "Pesca",
+        "categoryUrl": "pesca",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 36,
+        "categoryName": "Petanca",
+        "categoryUrl": "petanca",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 37,
+        "categoryName": "Pintura",
+        "categoryUrl": "pintura",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 38,
+        "categoryName": "Póker",
+        "categoryUrl": "poker",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 39,
+        "categoryName": "Puenting",
+        "categoryUrl": "puenting",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 40,
+        "categoryName": "Radio aficionados",
+        "categoryUrl": "radio-aficionados",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 41,
+        "categoryName": "Recetas",
+        "categoryUrl": "recetas",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 42,
+        "categoryName": "Salidas en moto",
+        "categoryUrl": "salidas-en-moto",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 43,
+        "categoryName": "Senderismo",
+        "categoryUrl": "senderismo",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 44,
+        "categoryName": "Tatuajes",
+        "categoryUrl": "tatuajes",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 45,
+        "categoryName": "Trekking",
+        "categoryUrl": "trekking",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 46,
+        "categoryName": "Ultraligeros",
+        "categoryUrl": "ultraligeros",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 47,
+        "categoryName": "Urbex",
+        "categoryUrl": "urbex",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 48,
+        "categoryName": "Vapeo",
+        "categoryUrl": "vapeo",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 49,
+        "categoryName": "Vuelo sin motor",
+        "categoryUrl": "vuelo-sin-motor",
+        "categoryGroupID": 1,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 50,
+        "categoryName": "Amistad",
+        "categoryUrl": "amistad",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 51,
+        "categoryName": "Discapacidad",
+        "categoryUrl": "discapacidad",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 52,
+        "categoryName": "Gente Joven",
+        "categoryUrl": "gente-joven",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 756,
+        "categoryName": "Mayores de 30 años",
+        "categoryUrl": "mayores-de-30-anos",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 53,
+        "categoryName": "Mayores de 40 años",
+        "categoryUrl": "mayores-de-40-anos",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 54,
+        "categoryName": "Mayores de 50 años",
+        "categoryUrl": "mayores-de-50-anos",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 55,
+        "categoryName": "Mayores de 60 años",
+        "categoryUrl": "mayores-de-60-anos",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 56,
+        "categoryName": "Parejas",
+        "categoryUrl": "parejas",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 57,
+        "categoryName": "Quedadas y gente para quedar",
+        "categoryUrl": "quedadas-y-gente-para-quedar",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 58,
+        "categoryName": "Solo chicas",
+        "categoryUrl": "solo-chicas",
+        "categoryGroupID": 2,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 59,
+        "categoryName": "Amor",
+        "categoryUrl": "amor",
+        "categoryGroupID": 3,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 60,
+        "categoryName": "Divorciados y separados",
+        "categoryUrl": "divorciados-y-separados",
+        "categoryGroupID": 3,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 61,
+        "categoryName": "Encontrar pareja",
+        "categoryUrl": "encontrar-pareja",
+        "categoryGroupID": 3,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 62,
+        "categoryName": "Ligar",
+        "categoryUrl": "ligar",
+        "categoryGroupID": 3,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 63,
+        "categoryName": "Salir de fiesta",
+        "categoryUrl": "salir-de-fiesta",
+        "categoryGroupID": 3,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 64,
+        "categoryName": "Solteros",
+        "categoryUrl": "solteros",
+        "categoryGroupID": 3,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 65,
+        "categoryName": "Solteros con hijos",
+        "categoryUrl": "solteros-con-hijos",
+        "categoryGroupID": 3,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 774,
+        "categoryName": "Actores y actrices",
+        "categoryUrl": "actores-y-actrices",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 129,
+        "categoryName": "Amazon Prime Video",
+        "categoryUrl": "amazon-prime-video",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 130,
+        "categoryName": "Anime",
+        "categoryUrl": "anime",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 131,
+        "categoryName": "Apple TV",
+        "categoryUrl": "apple-tv",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 588,
+        "categoryName": "Bollywood",
+        "categoryUrl": "bollywood",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 132,
+        "categoryName": "Ciencia ficción",
+        "categoryUrl": "ciencia-ficcion",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 133,
+        "categoryName": "Cine",
+        "categoryUrl": "cine",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 589,
+        "categoryName": "DC Comics",
+        "categoryUrl": "dc-comics",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 775,
+        "categoryName": "Disney",
+        "categoryUrl": "disney",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 134,
+        "categoryName": "Disney plus",
+        "categoryUrl": "disney-plus",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 135,
+        "categoryName": "Documentales",
+        "categoryUrl": "documentales",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 136,
+        "categoryName": "Doramas",
+        "categoryUrl": "doramas",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 137,
+        "categoryName": "Filmin",
+        "categoryUrl": "filmin",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 138,
+        "categoryName": "Fubo",
+        "categoryUrl": "fubo",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 139,
+        "categoryName": "HBO",
+        "categoryUrl": "hbo",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 140,
+        "categoryName": "Hulu",
+        "categoryUrl": "hulu",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 590,
+        "categoryName": "Marvel",
+        "categoryUrl": "marvel",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 141,
+        "categoryName": "Movistar plus",
+        "categoryUrl": "movistar-plus",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 142,
+        "categoryName": "Musicales",
+        "categoryUrl": "musicales",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 143,
+        "categoryName": "Netflix",
+        "categoryUrl": "netflix",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 144,
+        "categoryName": "Películas",
+        "categoryUrl": "peliculas",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 145,
+        "categoryName": "Películas de Acción",
+        "categoryUrl": "peliculas-de-accion",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 146,
+        "categoryName": "Películas de Comedia",
+        "categoryUrl": "peliculas-de-comedia",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 147,
+        "categoryName": "Películas de Terror",
+        "categoryUrl": "peliculas-de-terror",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 776,
+        "categoryName": "Programas de TV",
+        "categoryUrl": "programas-de-tv",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 148,
+        "categoryName": "Rakuten TV",
+        "categoryUrl": "rakuten-tv",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 149,
+        "categoryName": "Series de Televisión",
+        "categoryUrl": "series-de-television",
+        "categoryGroupID": 6,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 66,
+        "categoryName": "Aliexpress",
+        "categoryUrl": "aliexpress",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 67,
+        "categoryName": "Alquiler de casas y pisos",
+        "categoryUrl": "alquiler-de-casas-y-pisos",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 68,
+        "categoryName": "Alquiler de habitaciones",
+        "categoryUrl": "alquiler-de-habitaciones",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 69,
+        "categoryName": "Alquiler de locales",
+        "categoryUrl": "alquiler-de-locales",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 70,
+        "categoryName": "Amazon",
+        "categoryUrl": "amazon",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 71,
+        "categoryName": "Au Pairs",
+        "categoryUrl": "au-pairs",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 72,
+        "categoryName": "Compartir coche",
+        "categoryUrl": "compartir-coche",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 73,
+        "categoryName": "Compra venta",
+        "categoryUrl": "compra-venta",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 74,
+        "categoryName": "Compra venta de casas y pisos",
+        "categoryUrl": "compra-venta-de-casas-y-pisos",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 75,
+        "categoryName": "Compra venta de coches",
+        "categoryUrl": "compra-venta-de-coches",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 76,
+        "categoryName": "Compra venta de locales",
+        "categoryUrl": "compra-venta-de-locales",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 77,
+        "categoryName": "Compra venta de motos",
+        "categoryUrl": "compra-venta-de-motos",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 802,
+        "categoryName": "Compra venta de muebles",
+        "categoryUrl": "compra-venta-de-muebles",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 78,
+        "categoryName": "Compra venta de oro",
+        "categoryUrl": "compra-venta-de-oro",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 79,
+        "categoryName": "Compra venta de ropa",
+        "categoryUrl": "compra-venta-de-ropa",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 799,
+        "categoryName": "Divisas",
+        "categoryUrl": "divisas",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 798,
+        "categoryName": "Dólares",
+        "categoryUrl": "dolares",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 80,
+        "categoryName": "Intercambio de apuntes",
+        "categoryUrl": "intercambio-de-apuntes",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 81,
+        "categoryName": "Mercadolibre",
+        "categoryUrl": "mercadolibre",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 797,
+        "categoryName": "Móviles y Smartphones",
+        "categoryUrl": "moviles-y-smartphones",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 83,
+        "categoryName": "Ofertas de trabajo y empleo",
+        "categoryUrl": "ofertas-de-trabajo-y-empleo",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 82,
+        "categoryName": "Ofertas y chollos",
+        "categoryUrl": "ofertas-y-chollos",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 84,
+        "categoryName": "Radares",
+        "categoryUrl": "radares",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 801,
+        "categoryName": "Servicios",
+        "categoryUrl": "servicios",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 800,
+        "categoryName": "Sorteos",
+        "categoryUrl": "sorteos",
+        "categoryGroupID": 4,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 150,
+        "categoryName": "Aeróbic",
+        "categoryUrl": "aerobic",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 151,
+        "categoryName": "Aikido",
+        "categoryUrl": "aikido",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 152,
+        "categoryName": "Ajedrez",
+        "categoryUrl": "ajedrez",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 153,
+        "categoryName": "Apuestas deportivas",
+        "categoryUrl": "apuestas-deportivas",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 154,
+        "categoryName": "Aquagym",
+        "categoryUrl": "aquagym",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 155,
+        "categoryName": "Atletismo",
+        "categoryUrl": "atletismo",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 156,
+        "categoryName": "Baloncesto",
+        "categoryUrl": "baloncesto",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 157,
+        "categoryName": "Balonmano",
+        "categoryUrl": "balonmano",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 158,
+        "categoryName": "Béisbol",
+        "categoryUrl": "beisbol",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 159,
+        "categoryName": "BMX",
+        "categoryUrl": "bmx",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 160,
+        "categoryName": "Boca Juniors",
+        "categoryUrl": "boca-juniors",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 161,
+        "categoryName": "Boxeo",
+        "categoryUrl": "boxeo",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 162,
+        "categoryName": "BTT",
+        "categoryUrl": "btt",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 163,
+        "categoryName": "Buceo",
+        "categoryUrl": "buceo",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 164,
+        "categoryName": "Bundesliga",
+        "categoryUrl": "bundesliga",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 591,
+        "categoryName": "Carreras de caballos",
+        "categoryUrl": "carreras-de-caballos",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 165,
+        "categoryName": "Chelsea",
+        "categoryUrl": "chelsea",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 166,
+        "categoryName": "Ciclismo",
+        "categoryUrl": "ciclismo",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 167,
+        "categoryName": "Cicloturismo",
+        "categoryUrl": "cicloturismo",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 592,
+        "categoryName": "Copa América",
+        "categoryUrl": "copa-america",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 168,
+        "categoryName": "Copa del Rey",
+        "categoryUrl": "copa-del-rey",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 169,
+        "categoryName": "Copa Libertadores",
+        "categoryUrl": "copa-libertadores",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 170,
+        "categoryName": "Copa Mundial de Clubes de la FIFA",
+        "categoryUrl": "copa-mundial-de-clubes-de-la-fifa",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 171,
+        "categoryName": "Copa Mundial de Fútbol de la FIFA",
+        "categoryUrl": "copa-mundial-de-futbol-de-la-fifa",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 593,
+        "categoryName": "Críquet",
+        "categoryUrl": "criquet",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 172,
+        "categoryName": "Crossfit",
+        "categoryUrl": "crossfit",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 782,
+        "categoryName": "Defensa personal",
+        "categoryUrl": "defensa-personal",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 786,
+        "categoryName": "Duatlón",
+        "categoryUrl": "duatlon",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 173,
+        "categoryName": "Equitación",
+        "categoryUrl": "equitacion",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 174,
+        "categoryName": "Escalada",
+        "categoryUrl": "escalada",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 175,
+        "categoryName": "Esgrima",
+        "categoryUrl": "esgrima",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 176,
+        "categoryName": "Esquí",
+        "categoryUrl": "esqui",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 177,
+        "categoryName": "Eurocopa",
+        "categoryUrl": "eurocopa",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 178,
+        "categoryName": "FC Barcelona",
+        "categoryUrl": "fc-barcelona",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 179,
+        "categoryName": "Fitness",
+        "categoryUrl": "fitness",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 180,
+        "categoryName": "Flamengo FC",
+        "categoryUrl": "flamengo-fc",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 181,
+        "categoryName": "Fórmula 1",
+        "categoryUrl": "formula-1",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 182,
+        "categoryName": "Fútbol",
+        "categoryUrl": "futbol",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 183,
+        "categoryName": "Fútbol Americano",
+        "categoryUrl": "futbol-americano",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 184,
+        "categoryName": "Gimnasia",
+        "categoryUrl": "gimnasia",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 185,
+        "categoryName": "Golf",
+        "categoryUrl": "golf",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 186,
+        "categoryName": "Grêmio FC",
+        "categoryUrl": "gremio-fc",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 187,
+        "categoryName": "Hacer deporte",
+        "categoryUrl": "hacer-deporte",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 784,
+        "categoryName": "HIIT",
+        "categoryUrl": "hiit",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 188,
+        "categoryName": "Hockey",
+        "categoryUrl": "hockey",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 189,
+        "categoryName": "IBF",
+        "categoryUrl": "ibf",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 190,
+        "categoryName": "Juegos Olímpicos",
+        "categoryUrl": "juegos-olimpicos",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 191,
+        "categoryName": "Juventus",
+        "categoryUrl": "juventus",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 192,
+        "categoryName": "Karate",
+        "categoryUrl": "karate",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 193,
+        "categoryName": "Kickboxing",
+        "categoryUrl": "kickboxing",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 194,
+        "categoryName": "Kitesurf",
+        "categoryUrl": "kitesurf",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 195,
+        "categoryName": "Kung fu",
+        "categoryUrl": "kung-fu",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 196,
+        "categoryName": "La Liga",
+        "categoryUrl": "la-liga",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 197,
+        "categoryName": "Longboard",
+        "categoryUrl": "longboard",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 198,
+        "categoryName": "Lucha",
+        "categoryUrl": "lucha",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 199,
+        "categoryName": "Manchester United",
+        "categoryUrl": "manchester-united",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 200,
+        "categoryName": "MLB",
+        "categoryUrl": "mlb",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 201,
+        "categoryName": "Moto GP",
+        "categoryUrl": "moto-gp",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 202,
+        "categoryName": "Muay Thai",
+        "categoryUrl": "muay-thai",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 594,
+        "categoryName": "NASCAR",
+        "categoryUrl": "nascar",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 783,
+        "categoryName": "Navegación",
+        "categoryUrl": "navegacion",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 203,
+        "categoryName": "NBA",
+        "categoryUrl": "nba",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 204,
+        "categoryName": "NFL",
+        "categoryUrl": "nfl",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 205,
+        "categoryName": "NHL",
+        "categoryUrl": "nhl",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 785,
+        "categoryName": "Paddle Surf",
+        "categoryUrl": "paddle-surf",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 206,
+        "categoryName": "Padel",
+        "categoryUrl": "padel",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 207,
+        "categoryName": "Paintball",
+        "categoryUrl": "paintball",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 208,
+        "categoryName": "Palmeiras",
+        "categoryUrl": "palmeiras",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 209,
+        "categoryName": "Patinar",
+        "categoryUrl": "patinar",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 210,
+        "categoryName": "PGA",
+        "categoryUrl": "pga",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 211,
+        "categoryName": "Ping Pong",
+        "categoryUrl": "ping-pong",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 212,
+        "categoryName": "Premier League",
+        "categoryUrl": "premier-league",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 213,
+        "categoryName": "Primera División Argentina",
+        "categoryUrl": "primera-division-argentina",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 214,
+        "categoryName": "Real Madrid",
+        "categoryUrl": "real-madrid",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 215,
+        "categoryName": "River Plate",
+        "categoryUrl": "river-plate",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 216,
+        "categoryName": "Rugby",
+        "categoryUrl": "rugby",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 217,
+        "categoryName": "Running",
+        "categoryUrl": "running",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 218,
+        "categoryName": "Santos FC",
+        "categoryUrl": "santos-fc",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 219,
+        "categoryName": "Serie A Brasil",
+        "categoryUrl": "serie-a-brasil",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 220,
+        "categoryName": "Serie A Italia",
+        "categoryUrl": "serie-a-italia",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 221,
+        "categoryName": "Skate",
+        "categoryUrl": "skate",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 223,
+        "categoryName": "Snowboard",
+        "categoryUrl": "snowboard",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 224,
+        "categoryName": "Spinning",
+        "categoryUrl": "spinning",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 225,
+        "categoryName": "Surf",
+        "categoryUrl": "surf",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 226,
+        "categoryName": "Tenis",
+        "categoryUrl": "tenis",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 227,
+        "categoryName": "Tiro con arco",
+        "categoryUrl": "tiro-con-arco",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 781,
+        "categoryName": "Trail running",
+        "categoryUrl": "trail-running",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 787,
+        "categoryName": "Triatlón",
+        "categoryUrl": "triatlon",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 228,
+        "categoryName": "UEFA Champions League",
+        "categoryUrl": "uefa-champions-league",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 229,
+        "categoryName": "Vela",
+        "categoryUrl": "vela",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 230,
+        "categoryName": "Voley",
+        "categoryUrl": "voley",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 231,
+        "categoryName": "Voley playa",
+        "categoryUrl": "voley-playa",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 232,
+        "categoryName": "WBA",
+        "categoryUrl": "wba",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 233,
+        "categoryName": "WBC",
+        "categoryUrl": "wbc",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 234,
+        "categoryName": "WBO",
+        "categoryUrl": "wbo",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 235,
+        "categoryName": "WWE",
+        "categoryUrl": "wwe",
+        "categoryGroupID": 7,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 236,
+        "categoryName": "Abogados",
+        "categoryUrl": "abogados",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 237,
+        "categoryName": "Bitcoin",
+        "categoryUrl": "bitcoin",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 795,
+        "categoryName": "Blockchain",
+        "categoryUrl": "blockchain",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 238,
+        "categoryName": "Cardano",
+        "categoryUrl": "cardano",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 239,
+        "categoryName": "Criptomonedas",
+        "categoryUrl": "criptomonedas",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 240,
+        "categoryName": "Dogecoin",
+        "categoryUrl": "dogecoin",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 241,
+        "categoryName": "Economía",
+        "categoryUrl": "economia",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 242,
+        "categoryName": "Emprendedores",
+        "categoryUrl": "emprendedores",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 243,
+        "categoryName": "Etherum",
+        "categoryUrl": "etherum",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 583,
+        "categoryName": "Finanzas",
+        "categoryUrl": "finanzas",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 244,
+        "categoryName": "Forex",
+        "categoryUrl": "forex",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 245,
+        "categoryName": "Ganar dinero",
+        "categoryUrl": "ganar-dinero",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 796,
+        "categoryName": "Independencia financiera",
+        "categoryUrl": "independencia-financiera",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 246,
+        "categoryName": "Inversiones",
+        "categoryUrl": "inversiones",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 247,
+        "categoryName": "Invertir en Bolsa",
+        "categoryUrl": "invertir-en-bolsa",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 248,
+        "categoryName": "Litecoin",
+        "categoryUrl": "litecoin",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 249,
+        "categoryName": "Negocios",
+        "categoryUrl": "negocios",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 250,
+        "categoryName": "Networking",
+        "categoryUrl": "networking",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 794,
+        "categoryName": "NFTs",
+        "categoryUrl": "nfts",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 251,
+        "categoryName": "Noticias",
+        "categoryUrl": "noticias",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 252,
+        "categoryName": "Ripple",
+        "categoryUrl": "ripple",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 253,
+        "categoryName": "Startups",
+        "categoryUrl": "startups",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 254,
+        "categoryName": "Trading",
+        "categoryUrl": "trading",
+        "categoryGroupID": 8,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 255,
+        "categoryName": "Alquimia",
+        "categoryUrl": "alquimia",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 256,
+        "categoryName": "Brujería",
+        "categoryUrl": "brujeria",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 257,
+        "categoryName": "Carta astral",
+        "categoryUrl": "carta-astral",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 258,
+        "categoryName": "Constelaciones familiares",
+        "categoryUrl": "constelaciones-familiares",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 259,
+        "categoryName": "Energía positiva",
+        "categoryUrl": "energia-positiva",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 260,
+        "categoryName": "Esoterismo",
+        "categoryUrl": "esoterismo",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 261,
+        "categoryName": "Espiritismo",
+        "categoryUrl": "espiritismo",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 262,
+        "categoryName": "Espiritualidad",
+        "categoryUrl": "espiritualidad",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 263,
+        "categoryName": "Horóscopo",
+        "categoryUrl": "horoscopo",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 264,
+        "categoryName": "Mentalismo",
+        "categoryUrl": "mentalismo",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 265,
+        "categoryName": "Numerología",
+        "categoryUrl": "numerologia",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 266,
+        "categoryName": "Ocultismo",
+        "categoryUrl": "ocultismo",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 267,
+        "categoryName": "Paranormal",
+        "categoryUrl": "paranormal",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 268,
+        "categoryName": "Parapsicología",
+        "categoryUrl": "parapsicologia",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 269,
+        "categoryName": "Quiromancia",
+        "categoryUrl": "quiromancia",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 270,
+        "categoryName": "Reiki",
+        "categoryUrl": "reiki",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 271,
+        "categoryName": "Tarot",
+        "categoryUrl": "tarot",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 272,
+        "categoryName": "Videncia",
+        "categoryUrl": "videncia",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 273,
+        "categoryName": "Wicca",
+        "categoryUrl": "wicca",
+        "categoryGroupID": 9,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 274,
+        "categoryName": "Alemanes",
+        "categoryUrl": "alemanes",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 275,
+        "categoryName": "Andaluces",
+        "categoryUrl": "andaluces",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 276,
+        "categoryName": "Argelinos",
+        "categoryUrl": "argelinos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 277,
+        "categoryName": "Argentinos",
+        "categoryUrl": "argentinos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 278,
+        "categoryName": "Bolivianos",
+        "categoryUrl": "bolivianos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 279,
+        "categoryName": "Brasileños",
+        "categoryUrl": "brasilenos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 280,
+        "categoryName": "Británicos",
+        "categoryUrl": "britanicos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 281,
+        "categoryName": "Búlgaros",
+        "categoryUrl": "bulgaros",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 282,
+        "categoryName": "Canadienses",
+        "categoryUrl": "canadienses",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 283,
+        "categoryName": "Catalanes",
+        "categoryUrl": "catalanes",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 284,
+        "categoryName": "Chinos",
+        "categoryUrl": "chinos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 285,
+        "categoryName": "Colombianos",
+        "categoryUrl": "colombianos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 286,
+        "categoryName": "Coreanos",
+        "categoryUrl": "coreanos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 287,
+        "categoryName": "Costarricenses",
+        "categoryUrl": "costarricenses",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 288,
+        "categoryName": "Cubanos",
+        "categoryUrl": "cubanos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 289,
+        "categoryName": "Dominicanos",
+        "categoryUrl": "dominicanos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 290,
+        "categoryName": "Ecuatorianos",
+        "categoryUrl": "ecuatorianos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 291,
+        "categoryName": "Españoles",
+        "categoryUrl": "espanoles",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 292,
+        "categoryName": "Estadounidenses",
+        "categoryUrl": "estadounidenses",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 293,
+        "categoryName": "Expatriados",
+        "categoryUrl": "expatriados",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 294,
+        "categoryName": "Franceses",
+        "categoryUrl": "franceses",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 295,
+        "categoryName": "Guatemaltecos",
+        "categoryUrl": "guatemaltecos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 296,
+        "categoryName": "Hondureños",
+        "categoryUrl": "hondurenos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 297,
+        "categoryName": "Indios",
+        "categoryUrl": "indios",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 298,
+        "categoryName": "Israelíes",
+        "categoryUrl": "israelies",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 299,
+        "categoryName": "Italianos",
+        "categoryUrl": "italianos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 300,
+        "categoryName": "Japoneses",
+        "categoryUrl": "japoneses",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 301,
+        "categoryName": "Marroquíes",
+        "categoryUrl": "marroquies",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 302,
+        "categoryName": "Mexicanos",
+        "categoryUrl": "mexicanos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 303,
+        "categoryName": "Nicaragüenses",
+        "categoryUrl": "nicaraguenses",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 304,
+        "categoryName": "Pakistaníes",
+        "categoryUrl": "pakistanies",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 305,
+        "categoryName": "Paraguayos",
+        "categoryUrl": "paraguayos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 306,
+        "categoryName": "Peruanos",
+        "categoryUrl": "peruanos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 307,
+        "categoryName": "Polacos",
+        "categoryUrl": "polacos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 308,
+        "categoryName": "Portugueses",
+        "categoryUrl": "portugueses",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 309,
+        "categoryName": "Rumanos",
+        "categoryUrl": "rumanos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 310,
+        "categoryName": "Rusos",
+        "categoryUrl": "rusos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 311,
+        "categoryName": "Salvadoreños",
+        "categoryUrl": "salvadorenos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 312,
+        "categoryName": "Senegaleses",
+        "categoryUrl": "senegaleses",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 313,
+        "categoryName": "Ucranianos",
+        "categoryUrl": "ucranianos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 314,
+        "categoryName": "Venezolanos",
+        "categoryUrl": "venezolanos",
+        "categoryGroupID": 10,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 315,
+        "categoryName": "Aprender Alemán",
+        "categoryUrl": "aprender-aleman",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 316,
+        "categoryName": "Aprender Árabe",
+        "categoryUrl": "aprender-arabe",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 317,
+        "categoryName": "Aprender Chino",
+        "categoryUrl": "aprender-chino",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 318,
+        "categoryName": "Aprender Español",
+        "categoryUrl": "aprender-espanol",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 319,
+        "categoryName": "Aprender Francés",
+        "categoryUrl": "aprender-frances",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 320,
+        "categoryName": "Aprender Inglés",
+        "categoryUrl": "aprender-ingles",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 321,
+        "categoryName": "Aprender Italiano",
+        "categoryUrl": "aprender-italiano",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 322,
+        "categoryName": "Aprender Japonés",
+        "categoryUrl": "aprender-japones",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 323,
+        "categoryName": "Aprender Portugués",
+        "categoryUrl": "aprender-portugues",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 778,
+        "categoryName": "Aprender Ruso",
+        "categoryUrl": "aprender-ruso",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 595,
+        "categoryName": "Arquitectos",
+        "categoryUrl": "arquitectos",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 324,
+        "categoryName": "Arte",
+        "categoryUrl": "arte",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 325,
+        "categoryName": "Artistas",
+        "categoryUrl": "artistas",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 326,
+        "categoryName": "Clases particulares",
+        "categoryUrl": "clases-particulares",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 327,
+        "categoryName": "Cultura",
+        "categoryUrl": "cultura",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 328,
+        "categoryName": "Cursos",
+        "categoryUrl": "cursos",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 329,
+        "categoryName": "Dibujantes",
+        "categoryUrl": "dibujantes",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 330,
+        "categoryName": "Diseño",
+        "categoryUrl": "diseno",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 331,
+        "categoryName": "Docentes",
+        "categoryUrl": "docentes",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 332,
+        "categoryName": "Escritores",
+        "categoryUrl": "escritores",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 333,
+        "categoryName": "Estudiar",
+        "categoryUrl": "estudiar",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 334,
+        "categoryName": "Filosofía",
+        "categoryUrl": "filosofia",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 335,
+        "categoryName": "Formación",
+        "categoryUrl": "formacion",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 336,
+        "categoryName": "Historia",
+        "categoryUrl": "historia",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 337,
+        "categoryName": "Idiomas",
+        "categoryUrl": "idiomas",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 338,
+        "categoryName": "Intercambio de idiomas",
+        "categoryUrl": "intercambio-de-idiomas",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 339,
+        "categoryName": "Libros y lectura",
+        "categoryUrl": "libros-y-lectura",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 777,
+        "categoryName": "Literatura",
+        "categoryUrl": "literatura",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 340,
+        "categoryName": "Oposiciones",
+        "categoryUrl": "oposiciones",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 341,
+        "categoryName": "Poesía",
+        "categoryUrl": "poesia",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 342,
+        "categoryName": "Teatro",
+        "categoryUrl": "teatro",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 343,
+        "categoryName": "Universidades",
+        "categoryUrl": "universidades",
+        "categoryGroupID": 11,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 344,
+        "categoryName": "Frases",
+        "categoryUrl": "frases",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 345,
+        "categoryName": "Frikis",
+        "categoryUrl": "frikis",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 346,
+        "categoryName": "Graciosos",
+        "categoryUrl": "graciosos",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 347,
+        "categoryName": "Humor",
+        "categoryUrl": "humor",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 348,
+        "categoryName": "Humor negro",
+        "categoryUrl": "humor-negro",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 349,
+        "categoryName": "Memes",
+        "categoryUrl": "memes",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 350,
+        "categoryName": "Monólogos",
+        "categoryUrl": "monologos",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 351,
+        "categoryName": "Risas",
+        "categoryUrl": "risas",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 352,
+        "categoryName": "Shitpost",
+        "categoryUrl": "shitpost",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 353,
+        "categoryName": "Stickers",
+        "categoryUrl": "stickers",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 354,
+        "categoryName": "Vídeos de risa",
+        "categoryUrl": "videos-de-risa",
+        "categoryGroupID": 12,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 779,
+        "categoryName": "Admob",
+        "categoryUrl": "admob",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 780,
+        "categoryName": "Adsense",
+        "categoryUrl": "adsense",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 85,
+        "categoryName": "Android",
+        "categoryUrl": "android",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 86,
+        "categoryName": "Apple",
+        "categoryUrl": "apple",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 87,
+        "categoryName": "Apps",
+        "categoryUrl": "apps",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 88,
+        "categoryName": "Astronomía",
+        "categoryUrl": "astronomia",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 89,
+        "categoryName": "Ciencia",
+        "categoryUrl": "ciencia",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 90,
+        "categoryName": "Clubhouse",
+        "categoryUrl": "clubhouse",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 91,
+        "categoryName": "Ecologismo",
+        "categoryUrl": "ecologismo",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 92,
+        "categoryName": "Emotes",
+        "categoryUrl": "emotes",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 755,
+        "categoryName": "Enlaces",
+        "categoryUrl": "enlaces",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 93,
+        "categoryName": "Física",
+        "categoryUrl": "fisica",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 94,
+        "categoryName": "Ganar followers",
+        "categoryUrl": "ganar-followers",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 95,
+        "categoryName": "Ganar suscriptores",
+        "categoryUrl": "ganar-suscriptores",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 96,
+        "categoryName": "Garmin",
+        "categoryUrl": "garmin",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 97,
+        "categoryName": "Huawei",
+        "categoryUrl": "huawei",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 98,
+        "categoryName": "Informática",
+        "categoryUrl": "informatica",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 99,
+        "categoryName": "Ingeniería",
+        "categoryUrl": "ingenieria",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 100,
+        "categoryName": "Instagram",
+        "categoryUrl": "instagram",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 101,
+        "categoryName": "Internet",
+        "categoryUrl": "internet",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 102,
+        "categoryName": "Linux",
+        "categoryUrl": "linux",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 103,
+        "categoryName": "Mac",
+        "categoryUrl": "mac",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 104,
+        "categoryName": "Marketing",
+        "categoryUrl": "marketing",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 105,
+        "categoryName": "Marketing online",
+        "categoryUrl": "marketing-online",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 106,
+        "categoryName": "Matemáticas",
+        "categoryUrl": "matematicas",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 107,
+        "categoryName": "Mecánica cuántica",
+        "categoryUrl": "mecanica-cuantica",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 108,
+        "categoryName": "Messenger",
+        "categoryUrl": "messenger",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 109,
+        "categoryName": "Móviles",
+        "categoryUrl": "moviles",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 110,
+        "categoryName": "Oppo",
+        "categoryUrl": "oppo",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 111,
+        "categoryName": "Pinterest",
+        "categoryUrl": "pinterest",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 112,
+        "categoryName": "Programación",
+        "categoryUrl": "programacion",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 113,
+        "categoryName": "Química",
+        "categoryUrl": "quimica",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 115,
+        "categoryName": "Reddit",
+        "categoryUrl": "reddit",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 114,
+        "categoryName": "Redes sociales",
+        "categoryUrl": "redes-sociales",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 116,
+        "categoryName": "Samsung",
+        "categoryUrl": "samsung",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 117,
+        "categoryName": "SEO",
+        "categoryUrl": "seo",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 118,
+        "categoryName": "Snapchat",
+        "categoryUrl": "snapchat",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 119,
+        "categoryName": "Suunto",
+        "categoryUrl": "suunto",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 120,
+        "categoryName": "Tecnología",
+        "categoryUrl": "tecnologia",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 121,
+        "categoryName": "Tik tok",
+        "categoryUrl": "tik-tok",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 122,
+        "categoryName": "Twitch",
+        "categoryUrl": "twitch",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 123,
+        "categoryName": "Twitter",
+        "categoryUrl": "twitter",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 124,
+        "categoryName": "Vivo",
+        "categoryUrl": "vivo",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 125,
+        "categoryName": "Webmasters",
+        "categoryUrl": "webmasters",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 126,
+        "categoryName": "Xiaomi",
+        "categoryUrl": "xiaomi",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 127,
+        "categoryName": "Youtube",
+        "categoryUrl": "youtube",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 128,
+        "categoryName": "Zoom",
+        "categoryUrl": "zoom",
+        "categoryGroupID": 5,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 355,
+        "categoryName": "Among Us",
+        "categoryUrl": "among-us",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 356,
+        "categoryName": "Animal Crossing",
+        "categoryUrl": "animal-crossing",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 357,
+        "categoryName": "Apex Legends",
+        "categoryUrl": "apex-legends",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 358,
+        "categoryName": "Assassin\u0027s Creed",
+        "categoryUrl": "assassins-creed",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 359,
+        "categoryName": "Battlefield",
+        "categoryUrl": "battlefield",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 789,
+        "categoryName": "Brawl Stars",
+        "categoryUrl": "brawl-stars",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 360,
+        "categoryName": "Call of Duty",
+        "categoryUrl": "call-of-duty",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 361,
+        "categoryName": "Consolas",
+        "categoryUrl": "consolas",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 362,
+        "categoryName": "Counter-Strike",
+        "categoryUrl": "counter-strike",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 363,
+        "categoryName": "Cyberpunk",
+        "categoryUrl": "cyberpunk",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 364,
+        "categoryName": "Destiny",
+        "categoryUrl": "destiny",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 365,
+        "categoryName": "Dota 2",
+        "categoryUrl": "dota-2",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 366,
+        "categoryName": "Dragon Ball",
+        "categoryUrl": "dragon-ball",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 788,
+        "categoryName": "eSports",
+        "categoryUrl": "esports",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 367,
+        "categoryName": "Fifa",
+        "categoryUrl": "fifa",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 368,
+        "categoryName": "Final Fantasy",
+        "categoryUrl": "final-fantasy",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 369,
+        "categoryName": "Fortnite",
+        "categoryUrl": "fortnite",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 370,
+        "categoryName": "Free fire",
+        "categoryUrl": "free-fire",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 371,
+        "categoryName": "Gamers",
+        "categoryUrl": "gamers",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 372,
+        "categoryName": "Genshin Impact",
+        "categoryUrl": "genshin-impact",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 373,
+        "categoryName": "GTA (Grand Theft Auto)",
+        "categoryUrl": "gta-grand-theft-auto",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 374,
+        "categoryName": "Juegos",
+        "categoryUrl": "juegos",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 375,
+        "categoryName": "Juegos de mesa",
+        "categoryUrl": "juegos-de-mesa",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 376,
+        "categoryName": "Juegos online",
+        "categoryUrl": "juegos-online",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 377,
+        "categoryName": "Karmaland",
+        "categoryUrl": "karmaland",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 378,
+        "categoryName": "League of Legends",
+        "categoryUrl": "league-of-legends",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 379,
+        "categoryName": "Mario Kart",
+        "categoryUrl": "mario-kart",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 380,
+        "categoryName": "Minecraft",
+        "categoryUrl": "minecraft",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 381,
+        "categoryName": "Mr Beast Gaming",
+        "categoryUrl": "mr-beast-gaming",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 382,
+        "categoryName": "Nintendo",
+        "categoryUrl": "nintendo",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 383,
+        "categoryName": "PC",
+        "categoryUrl": "pc",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 384,
+        "categoryName": "PlayerUnknown\u0027s Battlegrounds",
+        "categoryUrl": "playerunknowns-battlegrounds",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 385,
+        "categoryName": "Playstation",
+        "categoryUrl": "playstation",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 386,
+        "categoryName": "Pokémon",
+        "categoryUrl": "pokemon",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 387,
+        "categoryName": "Pro Evolution Soccer",
+        "categoryUrl": "pro-evolution-soccer",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 388,
+        "categoryName": "Rainbow 6",
+        "categoryUrl": "rainbow-6",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 389,
+        "categoryName": "Resident Evil",
+        "categoryUrl": "resident-evil",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 390,
+        "categoryName": "Roblox",
+        "categoryUrl": "roblox",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 391,
+        "categoryName": "Rocket League",
+        "categoryUrl": "rocket-league",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 392,
+        "categoryName": "Rol",
+        "categoryUrl": "rol",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 393,
+        "categoryName": "Roleplay",
+        "categoryUrl": "roleplay",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 394,
+        "categoryName": "Super Mario Bros",
+        "categoryUrl": "super-mario-bros",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 395,
+        "categoryName": "Tetris",
+        "categoryUrl": "tetris",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 396,
+        "categoryName": "Valorant",
+        "categoryUrl": "valorant",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 397,
+        "categoryName": "Videojuegos",
+        "categoryUrl": "videojuegos",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 398,
+        "categoryName": "Wii",
+        "categoryUrl": "wii",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 399,
+        "categoryName": "World of Warcraft",
+        "categoryUrl": "world-of-warcraft",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 400,
+        "categoryName": "Xbox",
+        "categoryUrl": "xbox",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 401,
+        "categoryName": "Zelda",
+        "categoryUrl": "zelda",
+        "categoryGroupID": 13,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 402,
+        "categoryName": "Bisexuales",
+        "categoryUrl": "bisexuales",
+        "categoryGroupID": 14,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 403,
+        "categoryName": "Gays",
+        "categoryUrl": "gays",
+        "categoryGroupID": 14,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 404,
+        "categoryName": "Intersexuales",
+        "categoryUrl": "intersexuales",
+        "categoryGroupID": 14,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 405,
+        "categoryName": "Lesbianas",
+        "categoryUrl": "lesbianas",
+        "categoryGroupID": 14,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 406,
+        "categoryName": "LGBT",
+        "categoryUrl": "lgbt",
+        "categoryGroupID": 14,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 407,
+        "categoryName": "Pansexuales",
+        "categoryUrl": "pansexuales",
+        "categoryGroupID": 14,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 408,
+        "categoryName": "Queer",
+        "categoryUrl": "queer",
+        "categoryGroupID": 14,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 409,
+        "categoryName": "Transgénero",
+        "categoryUrl": "transgenero",
+        "categoryGroupID": 14,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 596,
+        "categoryName": "Akita Inu",
+        "categoryUrl": "akita-inu",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 597,
+        "categoryName": "Alaskan Malamute",
+        "categoryUrl": "alaskan-malamute",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 598,
+        "categoryName": "American Bully",
+        "categoryUrl": "american-bully",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 599,
+        "categoryName": "American Staffordshire Terrier",
+        "categoryUrl": "american-staffordshire-terrier",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 410,
+        "categoryName": "Animales",
+        "categoryUrl": "animales",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 411,
+        "categoryName": "Aves y pájaros",
+        "categoryUrl": "aves-y-pajaros",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 600,
+        "categoryName": "Basset Hound",
+        "categoryUrl": "basset-hound",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 601,
+        "categoryName": "Beagle",
+        "categoryUrl": "beagle",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 602,
+        "categoryName": "Bichón frisé",
+        "categoryUrl": "bichon-frise",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 603,
+        "categoryName": "Bichón Habanero",
+        "categoryUrl": "bichon-habanero",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 604,
+        "categoryName": "Bichón Maltés",
+        "categoryUrl": "bichon-maltes",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 605,
+        "categoryName": "Bodeguero Ratonero Andaluz",
+        "categoryUrl": "bodeguero-ratonero-andaluz",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 606,
+        "categoryName": "Border Collie",
+        "categoryUrl": "border-collie",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 607,
+        "categoryName": "Boston Terrier",
+        "categoryUrl": "boston-terrier",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 608,
+        "categoryName": "Boxer",
+        "categoryUrl": "boxer",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 609,
+        "categoryName": "Boyero de Berna",
+        "categoryUrl": "boyero-de-berna",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 610,
+        "categoryName": "Braco de Weimar",
+        "categoryUrl": "braco-de-weimar",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 612,
+        "categoryName": "Bull terrier",
+        "categoryUrl": "bull-terrier",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 613,
+        "categoryName": "Bulldog Francés",
+        "categoryUrl": "bulldog-frances",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 614,
+        "categoryName": "Bulldog Inglés",
+        "categoryUrl": "bulldog-ingles",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 615,
+        "categoryName": "Bullmastiff",
+        "categoryUrl": "bullmastiff",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 412,
+        "categoryName": "Caballos",
+        "categoryUrl": "caballos",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 616,
+        "categoryName": "Caniche",
+        "categoryUrl": "caniche",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 617,
+        "categoryName": "Carlino",
+        "categoryUrl": "carlino",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 618,
+        "categoryName": "Cavalier",
+        "categoryUrl": "cavalier",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 619,
+        "categoryName": "Chihuahuas",
+        "categoryUrl": "chihuahuas",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 620,
+        "categoryName": "Chow chow",
+        "categoryUrl": "chow-chow",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 621,
+        "categoryName": "Cocker",
+        "categoryUrl": "cocker",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 413,
+        "categoryName": "Conejos",
+        "categoryUrl": "conejos",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 622,
+        "categoryName": "Dálmata",
+        "categoryUrl": "dalmata",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 623,
+        "categoryName": "Dóberman",
+        "categoryUrl": "doberman",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 624,
+        "categoryName": "Dogo Argentino",
+        "categoryUrl": "dogo-argentino",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 625,
+        "categoryName": "Dogo de Burdeos",
+        "categoryUrl": "dogo-de-burdeos",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 626,
+        "categoryName": "Fox terrier",
+        "categoryUrl": "fox-terrier",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 627,
+        "categoryName": "Galgo",
+        "categoryUrl": "galgo",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 414,
+        "categoryName": "Ganadería",
+        "categoryUrl": "ganaderia",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 628,
+        "categoryName": "Gato Abisinio",
+        "categoryUrl": "gato-abisinio",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 629,
+        "categoryName": "Gato American wirehair",
+        "categoryUrl": "gato-american-wirehair",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 630,
+        "categoryName": "Gato Angora turco",
+        "categoryUrl": "gato-angora-turco",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 631,
+        "categoryName": "Gato Azul ruso",
+        "categoryUrl": "gato-azul-ruso",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 632,
+        "categoryName": "Gato Bengalí",
+        "categoryUrl": "gato-bengali",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 633,
+        "categoryName": "Gato Bobtail japonés",
+        "categoryUrl": "gato-bobtail-japones",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 634,
+        "categoryName": "Gato Bombay",
+        "categoryUrl": "gato-bombay",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 635,
+        "categoryName": "Gato Burmés",
+        "categoryUrl": "gato-burmes",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 636,
+        "categoryName": "Gato Chartreux",
+        "categoryUrl": "gato-chartreux",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 637,
+        "categoryName": "Gato Esfinge",
+        "categoryUrl": "gato-esfinge",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 638,
+        "categoryName": "Gato Maine Coon",
+        "categoryUrl": "gato-maine-coon",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 639,
+        "categoryName": "Gato Manx",
+        "categoryUrl": "gato-manx",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 640,
+        "categoryName": "Gato Persa",
+        "categoryUrl": "gato-persa",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 641,
+        "categoryName": "Gato Ragdoll",
+        "categoryUrl": "gato-ragdoll",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 642,
+        "categoryName": "Gato Siamés",
+        "categoryUrl": "gato-siames",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 643,
+        "categoryName": "Gato Siberiano",
+        "categoryUrl": "gato-siberiano",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 644,
+        "categoryName": "Gato Somalí",
+        "categoryUrl": "gato-somali",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 415,
+        "categoryName": "Gatos",
+        "categoryUrl": "gatos",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 645,
+        "categoryName": "Golden retriever",
+        "categoryUrl": "golden-retriever",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 646,
+        "categoryName": "Gran danés",
+        "categoryUrl": "gran-danes",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 416,
+        "categoryName": "Hurones",
+        "categoryUrl": "hurones",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 647,
+        "categoryName": "Husky",
+        "categoryUrl": "husky",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 648,
+        "categoryName": "Jack Russell Terrier",
+        "categoryUrl": "jack-russell-terrier",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 649,
+        "categoryName": "Labrador",
+        "categoryUrl": "labrador",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 417,
+        "categoryName": "Mascotas Perdidas",
+        "categoryUrl": "mascotas-perdidas",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 650,
+        "categoryName": "Mastín",
+        "categoryUrl": "mastin",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 651,
+        "categoryName": "Pastor alemán",
+        "categoryUrl": "pastor-aleman",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 652,
+        "categoryName": "Pastor belga",
+        "categoryUrl": "pastor-belga",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 653,
+        "categoryName": "Pastor del Cáucaso",
+        "categoryUrl": "pastor-del-caucaso",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 418,
+        "categoryName": "Peces",
+        "categoryUrl": "peces",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 654,
+        "categoryName": "Pekinés",
+        "categoryUrl": "pekines",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 655,
+        "categoryName": "Perro de Agua",
+        "categoryUrl": "perro-de-agua",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 419,
+        "categoryName": "Perros",
+        "categoryUrl": "perros",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 656,
+        "categoryName": "Perros de caza",
+        "categoryUrl": "perros-de-caza",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 657,
+        "categoryName": "Pinscher miniatura",
+        "categoryUrl": "pinscher-miniatura",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 658,
+        "categoryName": "Pit Bull Terrier Americano",
+        "categoryUrl": "pit-bull-terrier-americano",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 659,
+        "categoryName": "Podenco",
+        "categoryUrl": "podenco",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 660,
+        "categoryName": "Pointer inglés",
+        "categoryUrl": "pointer-ingles",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 661,
+        "categoryName": "Pomerania",
+        "categoryUrl": "pomerania",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 662,
+        "categoryName": "Ratón de Praga",
+        "categoryUrl": "raton-de-praga",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 420,
+        "categoryName": "Reptiles",
+        "categoryUrl": "reptiles",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 663,
+        "categoryName": "Rottweiler",
+        "categoryUrl": "rottweiler",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 664,
+        "categoryName": "Samoyedo",
+        "categoryUrl": "samoyedo",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 665,
+        "categoryName": "San Bernardos",
+        "categoryUrl": "san-bernardos",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 666,
+        "categoryName": "Schnauzer",
+        "categoryUrl": "schnauzer",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 667,
+        "categoryName": "Setters",
+        "categoryUrl": "setters",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 668,
+        "categoryName": "Shar Pei",
+        "categoryUrl": "shar-pei",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 669,
+        "categoryName": "Shiba Inu",
+        "categoryUrl": "shiba-inu",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 670,
+        "categoryName": "Shih Tzu",
+        "categoryUrl": "shih-tzu",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 671,
+        "categoryName": "Spaniel bretón",
+        "categoryUrl": "spaniel-breton",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 672,
+        "categoryName": "Staffordshire Bull Terrier",
+        "categoryUrl": "staffordshire-bull-terrier",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 673,
+        "categoryName": "Teckel",
+        "categoryUrl": "teckel",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 674,
+        "categoryName": "Terranova",
+        "categoryUrl": "terranova",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 675,
+        "categoryName": "Westy",
+        "categoryUrl": "westy",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 676,
+        "categoryName": "Yorkshire",
+        "categoryUrl": "yorkshire",
+        "categoryGroupID": 15,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 421,
+        "categoryName": "Belleza",
+        "categoryUrl": "belleza",
+        "categoryGroupID": 16,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 422,
+        "categoryName": "Cosmética",
+        "categoryUrl": "cosmetica",
+        "categoryGroupID": 16,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 423,
+        "categoryName": "Maquillaje",
+        "categoryUrl": "maquillaje",
+        "categoryGroupID": 16,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 424,
+        "categoryName": "Moda",
+        "categoryUrl": "moda",
+        "categoryGroupID": 16,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 425,
+        "categoryName": "Peluquería",
+        "categoryUrl": "peluqueria",
+        "categoryGroupID": 16,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 677,
+        "categoryName": "Abarth",
+        "categoryUrl": "abarth",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 678,
+        "categoryName": "Alfa Romeo",
+        "categoryUrl": "alfa-romeo",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 679,
+        "categoryName": "Aprilia Motorcycles",
+        "categoryUrl": "aprilia-motorcycles",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 680,
+        "categoryName": "Aston Martin",
+        "categoryUrl": "aston-martin",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 681,
+        "categoryName": "Audi",
+        "categoryUrl": "audi",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 682,
+        "categoryName": "Bentley Motors",
+        "categoryUrl": "bentley-motors",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 683,
+        "categoryName": "BMW",
+        "categoryUrl": "bmw",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 684,
+        "categoryName": "BMW Motorrad",
+        "categoryUrl": "bmw-motorrad",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 426,
+        "categoryName": "Buggies",
+        "categoryUrl": "buggies",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 685,
+        "categoryName": "Cadillac",
+        "categoryUrl": "cadillac",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 427,
+        "categoryName": "Camiones",
+        "categoryUrl": "camiones",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 428,
+        "categoryName": "Caravanas",
+        "categoryUrl": "caravanas",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 686,
+        "categoryName": "Caterham",
+        "categoryUrl": "caterham",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 687,
+        "categoryName": "Chery",
+        "categoryUrl": "chery",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 688,
+        "categoryName": "Chevrolet",
+        "categoryUrl": "chevrolet",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 689,
+        "categoryName": "Chrysler",
+        "categoryUrl": "chrysler",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 690,
+        "categoryName": "Citroën",
+        "categoryUrl": "citroen",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 429,
+        "categoryName": "Coches",
+        "categoryUrl": "coches",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 430,
+        "categoryName": "Coches clásicos",
+        "categoryUrl": "coches-clasicos",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 585,
+        "categoryName": "Coches eléctricos",
+        "categoryUrl": "coches-electricos",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 431,
+        "categoryName": "Coches sin carnet",
+        "categoryUrl": "coches-sin-carnet",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 691,
+        "categoryName": "Dacia",
+        "categoryUrl": "dacia",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 692,
+        "categoryName": "Dodge",
+        "categoryUrl": "dodge",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 693,
+        "categoryName": "Ducati",
+        "categoryUrl": "ducati",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 432,
+        "categoryName": "Embarcaciones",
+        "categoryUrl": "embarcaciones",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 694,
+        "categoryName": "Ferrari",
+        "categoryUrl": "ferrari",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 695,
+        "categoryName": "Fiat",
+        "categoryUrl": "fiat",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 696,
+        "categoryName": "Ford",
+        "categoryUrl": "ford",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 433,
+        "categoryName": "Furgonetas",
+        "categoryUrl": "furgonetas",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 697,
+        "categoryName": "Harley Davidson",
+        "categoryUrl": "harley-davidson",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 698,
+        "categoryName": "Haval",
+        "categoryUrl": "haval",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 699,
+        "categoryName": "Honda",
+        "categoryUrl": "honda",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 700,
+        "categoryName": "Hyundai",
+        "categoryUrl": "hyundai",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 701,
+        "categoryName": "Infiniti",
+        "categoryUrl": "infiniti",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 702,
+        "categoryName": "Isuzu",
+        "categoryUrl": "isuzu",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 703,
+        "categoryName": "Iveco",
+        "categoryUrl": "iveco",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 704,
+        "categoryName": "Jaguar",
+        "categoryUrl": "jaguar",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 705,
+        "categoryName": "Jeep",
+        "categoryUrl": "jeep",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 434,
+        "categoryName": "Karts",
+        "categoryUrl": "karts",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 706,
+        "categoryName": "Kawasaki Motorcycles",
+        "categoryUrl": "kawasaki-motorcycles",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 707,
+        "categoryName": "Kia",
+        "categoryUrl": "kia",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 708,
+        "categoryName": "KTM",
+        "categoryUrl": "ktm",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 709,
+        "categoryName": "Kymco",
+        "categoryUrl": "kymco",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 710,
+        "categoryName": "Lada",
+        "categoryUrl": "lada",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 711,
+        "categoryName": "Lamborghini",
+        "categoryUrl": "lamborghini",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 712,
+        "categoryName": "Lancia",
+        "categoryUrl": "lancia",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 713,
+        "categoryName": "Land Rover",
+        "categoryUrl": "land-rover",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 714,
+        "categoryName": "Lexus",
+        "categoryUrl": "lexus",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 715,
+        "categoryName": "Lotus",
+        "categoryUrl": "lotus",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 716,
+        "categoryName": "Maserati",
+        "categoryUrl": "maserati",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 717,
+        "categoryName": "Mazda",
+        "categoryUrl": "mazda",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 790,
+        "categoryName": "Mecánica",
+        "categoryUrl": "mecanica",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 718,
+        "categoryName": "Mercedes-Benz",
+        "categoryUrl": "mercedes-benz",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 719,
+        "categoryName": "MG",
+        "categoryUrl": "mg",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 720,
+        "categoryName": "Mini",
+        "categoryUrl": "mini",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 721,
+        "categoryName": "Mitsubishi",
+        "categoryUrl": "mitsubishi",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 722,
+        "categoryName": "Morgan",
+        "categoryUrl": "morgan",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 435,
+        "categoryName": "Motor",
+        "categoryUrl": "motor",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 436,
+        "categoryName": "Motos",
+        "categoryUrl": "motos",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 586,
+        "categoryName": "Motos eléctricas",
+        "categoryUrl": "motos-electricas",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 723,
+        "categoryName": "MV Agusta",
+        "categoryUrl": "mv-agusta",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 724,
+        "categoryName": "NIO",
+        "categoryUrl": "nio",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 725,
+        "categoryName": "Nissan",
+        "categoryUrl": "nissan",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 726,
+        "categoryName": "Opel",
+        "categoryUrl": "opel",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 727,
+        "categoryName": "Peugeot",
+        "categoryUrl": "peugeot",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 728,
+        "categoryName": "Piaggio",
+        "categoryUrl": "piaggio",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 729,
+        "categoryName": "Porsche",
+        "categoryUrl": "porsche",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 730,
+        "categoryName": "Qoros",
+        "categoryUrl": "qoros",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 437,
+        "categoryName": "Quads",
+        "categoryUrl": "quads",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 438,
+        "categoryName": "Remolques",
+        "categoryUrl": "remolques",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 731,
+        "categoryName": "Renault",
+        "categoryUrl": "renault",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 732,
+        "categoryName": "Rolls-Royce",
+        "categoryUrl": "rolls-royce",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 733,
+        "categoryName": "Seat",
+        "categoryUrl": "seat",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 734,
+        "categoryName": "Silence",
+        "categoryUrl": "silence",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 735,
+        "categoryName": "Skoda",
+        "categoryUrl": "skoda",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 736,
+        "categoryName": "Smart",
+        "categoryUrl": "smart",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 737,
+        "categoryName": "SsangYong",
+        "categoryUrl": "ssangyong",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 738,
+        "categoryName": "Subaru",
+        "categoryUrl": "subaru",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 739,
+        "categoryName": "Suzuki",
+        "categoryUrl": "suzuki",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 740,
+        "categoryName": "Tata",
+        "categoryUrl": "tata",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 741,
+        "categoryName": "Tesla",
+        "categoryUrl": "tesla",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 439,
+        "categoryName": "Todoterrenos",
+        "categoryUrl": "todoterrenos",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 742,
+        "categoryName": "Toyota",
+        "categoryUrl": "toyota",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 743,
+        "categoryName": "Triumph",
+        "categoryUrl": "triumph",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 440,
+        "categoryName": "Tuning",
+        "categoryUrl": "tuning",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 744,
+        "categoryName": "Volkswagen",
+        "categoryUrl": "volkswagen",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 745,
+        "categoryName": "Volvo",
+        "categoryUrl": "volvo",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 746,
+        "categoryName": "Yamaha",
+        "categoryUrl": "yamaha",
+        "categoryGroupID": 17,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 768,
+        "categoryName": "Acordeón",
+        "categoryUrl": "acordeon",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 765,
+        "categoryName": "Armónica",
+        "categoryUrl": "armonica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 441,
+        "categoryName": "Bachata",
+        "categoryUrl": "bachata",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 442,
+        "categoryName": "Bailar",
+        "categoryUrl": "bailar",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 766,
+        "categoryName": "Bajo",
+        "categoryUrl": "bajo",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 767,
+        "categoryName": "Batería",
+        "categoryUrl": "bateria",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 772,
+        "categoryName": "Biodanza",
+        "categoryUrl": "biodanza",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 443,
+        "categoryName": "Blues",
+        "categoryUrl": "blues",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 444,
+        "categoryName": "Break Dance",
+        "categoryUrl": "break-dance",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 747,
+        "categoryName": "BTS",
+        "categoryUrl": "bts",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 773,
+        "categoryName": "Cantantes",
+        "categoryUrl": "cantantes",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 445,
+        "categoryName": "Capoeira",
+        "categoryUrl": "capoeira",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 759,
+        "categoryName": "Chicha",
+        "categoryUrl": "chicha",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 446,
+        "categoryName": "Claqué",
+        "categoryUrl": "claque",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 447,
+        "categoryName": "Compartir música",
+        "categoryUrl": "compartir-musica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 448,
+        "categoryName": "Conciertos",
+        "categoryUrl": "conciertos",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 449,
+        "categoryName": "Country",
+        "categoryUrl": "country",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 450,
+        "categoryName": "Cumbia",
+        "categoryUrl": "cumbia",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 451,
+        "categoryName": "Danza",
+        "categoryUrl": "danza",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 452,
+        "categoryName": "Danza del vientre",
+        "categoryUrl": "danza-del-vientre",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 453,
+        "categoryName": "Danza oriental",
+        "categoryUrl": "danza-oriental",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 454,
+        "categoryName": "Electrónica",
+        "categoryUrl": "electronica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 455,
+        "categoryName": "Fans",
+        "categoryUrl": "fans",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 456,
+        "categoryName": "Festivales de Música",
+        "categoryUrl": "festivales-de-musica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 457,
+        "categoryName": "Flamenco",
+        "categoryUrl": "flamenco",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 764,
+        "categoryName": "Flauta",
+        "categoryUrl": "flauta",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 458,
+        "categoryName": "Frevo",
+        "categoryUrl": "frevo",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 459,
+        "categoryName": "Funk",
+        "categoryUrl": "funk",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 748,
+        "categoryName": "Gospel",
+        "categoryUrl": "gospel",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 460,
+        "categoryName": "Grupos de música",
+        "categoryUrl": "grupos-de-musica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 461,
+        "categoryName": "Guitarra",
+        "categoryUrl": "guitarra",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 760,
+        "categoryName": "Guitarra eléctrica",
+        "categoryUrl": "guitarra-electrica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 462,
+        "categoryName": "Heavy",
+        "categoryUrl": "heavy",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 463,
+        "categoryName": "Hip Hop",
+        "categoryUrl": "hip-hop",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 464,
+        "categoryName": "House",
+        "categoryUrl": "house",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 465,
+        "categoryName": "Indie",
+        "categoryUrl": "indie",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 466,
+        "categoryName": "Jazz",
+        "categoryUrl": "jazz",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 467,
+        "categoryName": "K-pop",
+        "categoryUrl": "k-pop",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 468,
+        "categoryName": "Karaoke",
+        "categoryUrl": "karaoke",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 469,
+        "categoryName": "Kizomba",
+        "categoryUrl": "kizomba",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 470,
+        "categoryName": "Metal",
+        "categoryUrl": "metal",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 471,
+        "categoryName": "Música",
+        "categoryUrl": "musica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 472,
+        "categoryName": "Música clásica",
+        "categoryUrl": "musica-clasica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 757,
+        "categoryName": "Música cristiana",
+        "categoryUrl": "musica-cristiana",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 758,
+        "categoryName": "Música romántica",
+        "categoryUrl": "musica-romantica",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 769,
+        "categoryName": "Órgano",
+        "categoryUrl": "organo",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 762,
+        "categoryName": "Partituras",
+        "categoryUrl": "partituras",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 473,
+        "categoryName": "Piano",
+        "categoryUrl": "piano",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 474,
+        "categoryName": "Pop",
+        "categoryUrl": "pop",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 475,
+        "categoryName": "Punk",
+        "categoryUrl": "punk",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 476,
+        "categoryName": "Rap",
+        "categoryUrl": "rap",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 477,
+        "categoryName": "Reggae",
+        "categoryUrl": "reggae",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 478,
+        "categoryName": "Reggaeton",
+        "categoryUrl": "reggaeton",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 479,
+        "categoryName": "Rhythm and Blues",
+        "categoryUrl": "rhythm-and-blues",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 480,
+        "categoryName": "Rock",
+        "categoryUrl": "rock",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 749,
+        "categoryName": "Rockabilly",
+        "categoryUrl": "rockabilly",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 481,
+        "categoryName": "Salsa",
+        "categoryUrl": "salsa",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 770,
+        "categoryName": "Saxo",
+        "categoryUrl": "saxo",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 482,
+        "categoryName": "Soul",
+        "categoryUrl": "soul",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 483,
+        "categoryName": "Swing",
+        "categoryUrl": "swing",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 484,
+        "categoryName": "Tango",
+        "categoryUrl": "tango",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 485,
+        "categoryName": "Techno",
+        "categoryUrl": "techno",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 486,
+        "categoryName": "Trap",
+        "categoryUrl": "trap",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 771,
+        "categoryName": "Trompeta",
+        "categoryUrl": "trompeta",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 763,
+        "categoryName": "Ukelele",
+        "categoryUrl": "ukelele",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 487,
+        "categoryName": "Vallenato",
+        "categoryUrl": "vallenato",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 488,
+        "categoryName": "Vals vienés",
+        "categoryUrl": "vals-vienes",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 761,
+        "categoryName": "Violín",
+        "categoryUrl": "violin",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 489,
+        "categoryName": "Zumba",
+        "categoryUrl": "zumba",
+        "categoryGroupID": 18,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 490,
+        "categoryName": "Aesthetic",
+        "categoryUrl": "aesthetic",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 491,
+        "categoryName": "Asociaciones",
+        "categoryUrl": "asociaciones",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 792,
+        "categoryName": "Autoescuelas",
+        "categoryUrl": "autoescuelas",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 791,
+        "categoryName": "Camioneros",
+        "categoryUrl": "camioneros",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 492,
+        "categoryName": "Cosplay",
+        "categoryUrl": "cosplay",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 493,
+        "categoryName": "Debates",
+        "categoryUrl": "debates",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 584,
+        "categoryName": "Emos",
+        "categoryUrl": "emos",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 494,
+        "categoryName": "Feministas",
+        "categoryUrl": "feministas",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 495,
+        "categoryName": "Furry",
+        "categoryUrl": "furry",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 496,
+        "categoryName": "Góticos",
+        "categoryUrl": "goticos",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 497,
+        "categoryName": "Hippies",
+        "categoryUrl": "hippies",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 498,
+        "categoryName": "Hipsters",
+        "categoryUrl": "hipsters",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 499,
+        "categoryName": "Kawaii",
+        "categoryUrl": "kawaii",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 500,
+        "categoryName": "Militares",
+        "categoryUrl": "militares",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 501,
+        "categoryName": "ONGs",
+        "categoryUrl": "ongs",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 502,
+        "categoryName": "Organizaciones",
+        "categoryUrl": "organizaciones",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 503,
+        "categoryName": "Otakus",
+        "categoryUrl": "otakus",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 504,
+        "categoryName": "Política",
+        "categoryUrl": "politica",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 505,
+        "categoryName": "Sociologia",
+        "categoryUrl": "sociologia",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 506,
+        "categoryName": "Solidaridad",
+        "categoryUrl": "solidaridad",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 507,
+        "categoryName": "Straight edge",
+        "categoryUrl": "straight-edge",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 508,
+        "categoryName": "Taxistas",
+        "categoryUrl": "taxistas",
+        "categoryGroupID": 19,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 509,
+        "categoryName": "Actividades con niños",
+        "categoryUrl": "actividades-con-ninos",
+        "categoryGroupID": 20,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 510,
+        "categoryName": "Embarazadas",
+        "categoryUrl": "embarazadas",
+        "categoryGroupID": 20,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 511,
+        "categoryName": "Familias Monoparentales",
+        "categoryUrl": "familias-monoparentales",
+        "categoryGroupID": 20,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 512,
+        "categoryName": "Madres",
+        "categoryUrl": "madres",
+        "categoryGroupID": 20,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 513,
+        "categoryName": "Padres",
+        "categoryUrl": "padres",
+        "categoryGroupID": 20,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 514,
+        "categoryName": "Budistas",
+        "categoryUrl": "budistas",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 515,
+        "categoryName": "Católicos",
+        "categoryUrl": "catolicos",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 516,
+        "categoryName": "Cofrades",
+        "categoryUrl": "cofrades",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 517,
+        "categoryName": "Cristianos",
+        "categoryUrl": "cristianos",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 518,
+        "categoryName": "Evangélicos",
+        "categoryUrl": "evangelicos",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 519,
+        "categoryName": "Hindúes",
+        "categoryUrl": "hindues",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 520,
+        "categoryName": "Judíos",
+        "categoryUrl": "judios",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 521,
+        "categoryName": "Musulmanes",
+        "categoryUrl": "musulmanes",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 522,
+        "categoryName": "Oración",
+        "categoryUrl": "oracion",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 523,
+        "categoryName": "Religiosos",
+        "categoryUrl": "religiosos",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 524,
+        "categoryName": "Sintoístas",
+        "categoryUrl": "sintoistas",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 525,
+        "categoryName": "Taoístas",
+        "categoryUrl": "taoistas",
+        "categoryGroupID": 21,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 526,
+        "categoryName": "Alimentación Saludable",
+        "categoryUrl": "alimentacion-saludable",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 527,
+        "categoryName": "Autoayuda",
+        "categoryUrl": "autoayuda",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 528,
+        "categoryName": "Autoestima",
+        "categoryUrl": "autoestima",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 529,
+        "categoryName": "Celíacos",
+        "categoryUrl": "celiacos",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 530,
+        "categoryName": "Coaching",
+        "categoryUrl": "coaching",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 531,
+        "categoryName": "Controlar la Ansiedad",
+        "categoryUrl": "controlar-la-ansiedad",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 532,
+        "categoryName": "Coronavirus",
+        "categoryUrl": "coronavirus",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 533,
+        "categoryName": "Crecimiento personal",
+        "categoryUrl": "crecimiento-personal",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 534,
+        "categoryName": "Dejar de fumar",
+        "categoryUrl": "dejar-de-fumar",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 535,
+        "categoryName": "Depresión",
+        "categoryUrl": "depresion",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 536,
+        "categoryName": "Desahogarse",
+        "categoryUrl": "desahogarse",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 537,
+        "categoryName": "Dietas",
+        "categoryUrl": "dietas",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 750,
+        "categoryName": "Farmacia",
+        "categoryUrl": "farmacia",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 538,
+        "categoryName": "Fisioterapia",
+        "categoryUrl": "fisioterapia",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 539,
+        "categoryName": "Flores de Bach",
+        "categoryUrl": "flores-de-bach",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 540,
+        "categoryName": "Intolerancia a la lactosa",
+        "categoryUrl": "intolerancia-a-la-lactosa",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 541,
+        "categoryName": "Masajistas",
+        "categoryUrl": "masajistas",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 542,
+        "categoryName": "Medicina",
+        "categoryUrl": "medicina",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 543,
+        "categoryName": "Meditación",
+        "categoryUrl": "meditacion",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 544,
+        "categoryName": "Mindfulness",
+        "categoryUrl": "mindfulness",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 545,
+        "categoryName": "Nutrición",
+        "categoryUrl": "nutricion",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 546,
+        "categoryName": "Osteopatía",
+        "categoryUrl": "osteopatia",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 547,
+        "categoryName": "Perder peso y adelgazar",
+        "categoryUrl": "perder-peso-y-adelgazar",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 548,
+        "categoryName": "Pilates",
+        "categoryUrl": "pilates",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 549,
+        "categoryName": "PNL",
+        "categoryUrl": "pnl",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 550,
+        "categoryName": "Psicología",
+        "categoryUrl": "psicologia",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 551,
+        "categoryName": "Risoterapia",
+        "categoryUrl": "risoterapia",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 552,
+        "categoryName": "Salud",
+        "categoryUrl": "salud",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 751,
+        "categoryName": "Sexología",
+        "categoryUrl": "sexologia",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 553,
+        "categoryName": "Shiatsu",
+        "categoryUrl": "shiatsu",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 554,
+        "categoryName": "Tai Chi",
+        "categoryUrl": "tai-chi",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 555,
+        "categoryName": "Terapia Gestalt",
+        "categoryUrl": "terapia-gestalt",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 556,
+        "categoryName": "Terapias Alternativas",
+        "categoryUrl": "terapias-alternativas",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 557,
+        "categoryName": "Veganos",
+        "categoryUrl": "veganos",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 558,
+        "categoryName": "Vegetarianos",
+        "categoryUrl": "vegetarianos",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 559,
+        "categoryName": "Yoga",
+        "categoryUrl": "yoga",
+        "categoryGroupID": 22,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 560,
+        "categoryName": "Erasmus",
+        "categoryUrl": "erasmus",
+        "categoryGroupID": 23,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 561,
+        "categoryName": "Gente para viajar",
+        "categoryUrl": "gente-para-viajar",
+        "categoryGroupID": 23,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 562,
+        "categoryName": "Nómadas digitales",
+        "categoryUrl": "nomadas-digitales",
+        "categoryGroupID": 23,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 563,
+        "categoryName": "Tours",
+        "categoryUrl": "tours",
+        "categoryGroupID": 23,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 564,
+        "categoryName": "Viajes y viajeros",
+        "categoryUrl": "viajes-y-viajeros",
+        "categoryGroupID": 23,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 565,
+        "categoryName": "Bdsm y gore",
+        "categoryUrl": "bdsm-y-gore",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 566,
+        "categoryName": "ERP",
+        "categoryUrl": "erp",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 568,
+        "categoryName": "Hackers",
+        "categoryUrl": "hackers",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 569,
+        "categoryName": "Hentai",
+        "categoryUrl": "hentai",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 570,
+        "categoryName": "Hot",
+        "categoryUrl": "hot",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 571,
+        "categoryName": "Infieles",
+        "categoryUrl": "infieles",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 572,
+        "categoryName": "Intercambio de fotos",
+        "categoryUrl": "intercambio-de-fotos",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 573,
+        "categoryName": "Intercambio de videos",
+        "categoryUrl": "intercambio-de-videos",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 567,
+        "categoryName": "NSFW",
+        "categoryUrl": "nsfw",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 574,
+        "categoryName": "Onlyfans",
+        "categoryUrl": "onlyfans",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 575,
+        "categoryName": "Packs",
+        "categoryUrl": "packs",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 576,
+        "categoryName": "Porno",
+        "categoryUrl": "porno",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 803,
+        "categoryName": "Porno casero",
+        "categoryUrl": "porno-casero",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 577,
+        "categoryName": "Porno gay",
+        "categoryUrl": "porno-gay",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 752,
+        "categoryName": "Porno lesbianas",
+        "categoryUrl": "porno-lesbianas",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 578,
+        "categoryName": "Sexo",
+        "categoryUrl": "sexo",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 579,
+        "categoryName": "Solo Adultos",
+        "categoryUrl": "solo-adultos",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 580,
+        "categoryName": "Swinger",
+        "categoryUrl": "swinger",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 753,
+        "categoryName": "Trans",
+        "categoryUrl": "trans",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 581,
+        "categoryName": "XXX",
+        "categoryUrl": "xxx",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 582,
+        "categoryName": "Yaoi",
+        "categoryUrl": "yaoi",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    },
+    {
+        "__type": "MasGrupos.classes.categoryBLL",
+        "categoryID": 754,
+        "categoryName": "Yuri",
+        "categoryUrl": "yuri",
+        "categoryGroupID": 24,
+        "adultContent": 0
+    }
+]
