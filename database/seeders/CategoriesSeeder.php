@@ -204,7 +204,8 @@ class CategoriesSeeder extends Seeder
             "slug" => "ZXP-GROUP",
             "views" => 0,
             "url" => "t.me/groupzxp",
-            "imagen" => "....",
+            "imagen" => "",
+            "banner" => "",
             "show_views" => 1,
             "can_access_any_location" => 1,
             "status" => 1

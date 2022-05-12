@@ -82,7 +82,7 @@ class GroupController extends Controller
         // try {
         $request->validate([
             "name" => 'required|max:50',
-            "url" => 'unique:groups|max:255',
+            "url" => 'required|unique:groups|max:255|url',
             "group_type_id" => 'required',
             "social_id" => 'required',
             "categoria_id" => 'required',
@@ -155,7 +155,6 @@ class GroupController extends Controller
      */
     public function edit($id)
     {
-        //
         $group = Group::find($id);
         $locations = Location::all();
         $categories = Category::all();
@@ -181,7 +180,7 @@ class GroupController extends Controller
         // try {
         $request->validate([
             "name" => 'required|max:50',
-            "url" => ['required', Rule::unique('groups')->ignore($id)],
+            "url" => ['url','required', Rule::unique('groups')->ignore($id)],
             "group_type_id" => 'required',
             "social_id" => 'required',
             "categoria_id" => 'required',

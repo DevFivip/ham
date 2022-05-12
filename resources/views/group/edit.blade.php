@@ -12,9 +12,9 @@
         <div class="">
             <!-- <img class="absolute top-0 w-full h-full bg-center bg-cover" id="preview-banner" src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80" alt="imagen" /> -->
             @if(!!$group->banner)
-            <img class="absolute top-0 w-full bg-center bg-cover" id="preview-banner" src="{{ url('storage/') }}/img/{{$group->banner}}" alt="imagen" />
+            <img style="min-height:500px; min-width:500px;" id="preview-banner" src="{{ url('storage/') }}/img/{{$group->banner}}" alt="imagen" />
             @else
-            <img class="absolute top-0 w-full bg-center bg-cover" id="preview-banner" src="{{ url('storage/') }}/placeholder/background.png" alt="imagen" />
+            <img style="min-height:500px; min-width:500px;" id="preview-banner" src="{{ url('storage/') }}/placeholder/background.png" alt="imagen" />
             @endif
             <!-- <span id="blackOverlay" class="w-full h-full absolute opacity-90 bg-primary"></span> -->
         </div>
@@ -53,9 +53,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="text-center mt-12">
-                            <div class="mb-1">
+                        <div class="mt-12">
+                            <div class="mb-6">
+                                <label for="" class="text-base font-normal text-primary ">Titulo del Sitio*</label>
                                 <input value="{{$group->name}}" type="text" name="name" placeholder="Titulo del Sitio" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('name') }}" required autocomplete="name" autofocus>
                             </div>
                             @error('name')
@@ -64,8 +64,24 @@
                             </p>
                             @enderror
 
-                            <div class="mb-1">
+                            <div class="mb-6">
+                                <label for="" class="text-base font-normal text-primary">Username</label>
+                                <input value="{{$group->username}}" type="text" name="url" placeholder="username*" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('username') }}" required autocomplete="username">
+                            </div>
+
+                            @error('username')
+                            <p class="text-red-500 text-xs italic mt-4">
+                                {{ $message }}
+                            </p>
+                            @enderror
+
+
+                            <div class="mb-6">
+                                <label for="" class="text-base font-normal text-primary">Url*</label>
                                 <input value="{{$group->url}}" type="text" name="url" placeholder="Url ó Enlace" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('url') }}" required autocomplete="url">
+                                <p class="text-left rounded bg-info py-1 px-2 text-sm font-semibold text-white mt-1 mb-1" style="width:300px ;">
+                                    Incluye https:// al comienzo de la url
+                                </p>
                             </div>
 
                             @error('url')
@@ -73,8 +89,8 @@
                                 {{ $message }}
                             </p>
                             @enderror
-
-                            <div class="mb-1">
+                            <div class="mb-6">
+                                <label for="" class="text-base font-normal text-primary">RRSS *</label>
                                 <div class="relative">
                                     <select name="social_id" id="social" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" required autocomplete="social_id">
                                         <option value="">---Seleccione Red Social---</option>
@@ -103,7 +119,8 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-1">
+                            <div class="mb-6">
+                                <label for="" class="text-base font-normal text-primary">Tipo *</label>
                                 <div class="relative">
                                     <select name="group_type_id" id="group_type" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('group_type_id') }}" required autocomplete="group_type_id">
                                         <option value="">---Seleccione Tipo---</option>
@@ -132,7 +149,8 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-1">
+                            <div class="mb-6">
+                                <label for="" class="text-base font-normal text-primary">Ubicación *</label>
                                 <div class="relative">
                                     <select name="location_id" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('location_id') }}" required autocomplete="location_id">
                                         <option value="">---Seleccione Pais---</option>
@@ -160,7 +178,8 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-1">
+                            <div class="mb-6">
+                                <label for="" class="text-base font-normal text-primary">Categoria *</label>
                                 <div class="relative">
                                     <select name="categoria_id" id="categoria" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('categoria_id') }}" required autocomplete="categoria_id">
                                         <option value="">---Seleccione Categoria---</option>
@@ -187,7 +206,8 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-1">
+                            <div class="mb-6">
+                                <label for="" class="text-base font-normal text-primary">Subcategoria *</label>
                                 <div class="relative">
                                     <select name="subcategoria_id" id="subcategoria" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('subcategoria_id') }}" required autocomplete="subcategoria_id">
                                         <option value="{{$subcategoria->id}}" selected>{{$subcategoria->name}}</option>
@@ -203,7 +223,7 @@
                             </div>
 
                             <div class="mt-10 py-10 border-t border-blueGray-200 text-left">
-                                <h3 class="px-5 mb-10 text-[26px] font-semibold text-dark">Detalles del Grupo</h3>
+                                <h3 class="px-5 mb-5 text-[26px] font-semibold text-dark">Bio</h3>
                                 <div class="flex flex-wrap justify-center">
                                     <div class="w-full lg:w-9/12 px-4">
                                         @trix(\App\Post::class, "content",["hideTools"=>["file-tools","history-tools"]])
@@ -211,15 +231,181 @@
                                 </div>
                             </div>
 
-                            <div class="mb-1 py-10 w-full text-center mt-12">
-                                <button class="inline-flex items-center justify-center bg-secondary py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
-                                    Guardar Cambios
-                                </button>
+
+
+
+
+                            <div class="mt-10 py-10 border-t border-blueGray-200 text-left">
+
+                                <h3 class="px-5 mb-5 text-[26px] font-semibold text-dark">Preguntas Frecuentes <br><span class=" mb-5 text-[13px] font-semibold text-dark" style="font-size: 13px;">las siguientes preguntas son opcionales, eres libre de no responderlas y dejar los valores por defecto</span></h3>
+                                <div class="flex mb-5">
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary ml-10">¿Cuantos Suscriptores Tienes Actualmente?</label>
+                                        <input value="{{$group->cant_suscriptores}}" type="number" name="cant_suscriptores" placeholder="Cantidad usuarios, suscriptores ó miembros" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_suscriptores') }}" required autocomplete="cant_suscriptores">
+                                    </div>
+
+                                    @error('cant_suscriptores')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+                                </div>
+                                <div class="flex mb-5">
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary">¿Cuantas fotografias ó imagenes se pueden encontrar?</label>
+                                        <input value="{{$group->cant_fotos}}" type="number" name="cant_fotos" placeholder="Cantidad de fotografias ó imagenes" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_fotos') }}" required autocomplete="cant_fotos">
+                                    </div>
+
+                                    @error('cant_fotos')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+                                </div>
+
+                                <div class="flex mb-5">
+
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary ml-10">¿Cuantos videos posees actualmente?</label>
+                                        <input value="{{$group->cant_videos}}" type="number" name="cant_videos" placeholder="Cantidad de videos" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_videos') }}" required autocomplete="cant_videos">
+                                    </div>
+
+                                    @error('cant_videos')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+                                </div>
+
+                                <div class="flex mb-5">
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary">¿Cuantas posts posees actualmente?</label>
+                                        <input value="{{$group->cant_posts}}" type="number" name="cant_posts" placeholder="Cantidad de Post" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_posts') }}" required autocomplete="cant_posts">
+                                    </div>
+
+                                    @error('cant_posts')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+
+                                </div>
+
+
+                                <div class="flex mb-5">
+
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary ml-10">¿Cuanto es el precio para ingresar ó mensualidad?</label>
+                                        <input value="{{$group->precio_membresia}}" type="number" name="precio_membresia" placeholder="Precio de membresia" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('precio_membresia') }}" required autocomplete="precio_membresia">
+                                    </div>
+
+                                    @error('precio_membresia')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+                                </div>
+
+
+                                <div class="flex mb-5">
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary">¿Dentro de tu grupo o canal hay enlaces para tus distintas redes sociales?</label>
+                                        <select name="show_more_social_medias" id="show_more_social_medias" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" required autocomplete="show_more_social_medias">
+                                            <option value="1">Si</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </div>
+
+                                    @error('show_more_social_medias')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+
+
+                                </div>
+
+                                <div class="flex mb-5">
+
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary ml-10">¿Los usuarios podran comunicarse directamente contigo?</label>
+                                        <select name="usuarios_comunicación" id="usuarios_comunicación" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" required autocomplete="usuarios_comunicación">
+                                            <option value="1">Si</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </div>
+
+                                    @error('precio_membresia')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+                                </div>
+
+
+                                <div class="flex mb-5">
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary">¿Cuanto mensualmente generas con este medio? expresa el monto en (USD) $</label>
+                                        <input value="{{$group->cant_ganancias}}" type="text" name="cant_ganancias" placeholder="Dejar en 0 para no mostar" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_ganancias') }}" required autocomplete="cant_ganancias">
+                                    </div>
+
+                                    @error('cant_ganancias')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+
+                                </div>
+
+
+                                <div class="flex mb-5">
+                                    <div class="w-full">
+                                        <label for="" class="text-base font-normal text-primary">¿Cuanto tiempo de creacion tiene este medio?</label>
+                                        <select name="show_more_social_medias" id="show_more_social_medias" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" required autocomplete="show_more_social_medias">
+                                            <option value="0">No mostrar</option>
+                                            <option value="1">Mas de 1 (una) Semana </option>
+                                            <option value="2">Mas de 2 (dos) Semana </option>
+                                            <option value="3">Mas de 1 (un) Mes </option>
+                                            <option value="4">Mas de 2 (dos) Meses </option>
+                                            <option value="5">Mas de 6 (seis) Meses </option>
+                                            <option value="6">Mas de 1 (un) Año </option>
+                                            <option value="7">Mas de 1 (un) Año y 6 (seis) Meses </option>
+                                            <option value="8">Mas de 2 (dos) Años </option>
+                                            <option value="9">Mas de 3 (tres) Años </option>
+                                            <option value="10">Mas de 4 (cuatro) Años </option>
+                                            <option value="11">Mas de 5 (cinco) Años </option>
+                                        </select>
+                                    </div>
+
+                                    @error('show_more_social_medias')
+                                    <p class="text-red-500 text-xs italic mt-4">
+                                        {{ $message }}
+                                    </p>
+                                    @enderror
+
+
+                                </div>
                             </div>
+
+
                         </div>
-                    </form>
+
+
+
+
+
+
+
+
+                        <div class="mb-1 py-10 w-full text-center mt-12">
+                            <button class="inline-flex items-center justify-center bg-secondary py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                                Guardar Cambios
+                            </button>
+                        </div>
                 </div>
+                </form>
             </div>
+        </div>
         </div>
     </section>
 
@@ -240,34 +426,55 @@
             if (e.target.id === "avatar") {
 
                 var fileName = e.target.files[0].name;
-                console.log(fileName);
-                $("#file-avatar").val(fileName);
 
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    // get loaded data and render thumbnail.
-                    document.getElementById("preview-avatar").src = e.target.result;
-                };
-                // read the image file as a data URL.
-                reader.readAsDataURL(this.files[0]);
+                console.log(e.target.files[0].size);
 
+                kb = e.target.files[0].size / 1024
+
+                if (kb < 1024) {
+
+                    console.log(fileName);
+                    $("#file-avatar").val(fileName);
+
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        // get loaded data and render thumbnail.
+                        document.getElementById("preview-avatar").src = e.target.result;
+                    };
+                    // read the image file as a data URL.
+                    reader.readAsDataURL(this.files[0]);
+
+                } else {
+                    alert("el tamaño del la imagen supera el peso permitivo");
+                    document.getElementById("avatar").value = null;
+                }
             }
 
             if (e.target.id === "banner") {
                 console.log(e.target.id)
                 console.log(e.target.result)
                 var fileName = e.target.files[0].name;
-                console.log(fileName);
-                $("#file-banner").val(fileName);
 
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    // get loaded data and render thumbnail.
-                    document.getElementById("preview-banner").src = e.target.result;
-                };
-                // read the image file as a data URL.
-                reader.readAsDataURL(this.files[0]);
+                kb = e.target.files[0].size / 1024
 
+                if (kb < 1024) {
+
+                    console.log(kb)
+
+                    console.log(fileName);
+                    $("#file-banner").val(fileName);
+
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        // get loaded data and render thumbnail.
+                        document.getElementById("preview-banner").src = e.target.result;
+                    };
+                    // read the image file as a data URL.
+                    reader.readAsDataURL(this.files[0]);
+                } else {
+                    alert("el tamaño del la imagen supera el peso permitivo");
+                    document.getElementById("preview-banner").value = null;
+                }
             }
         });
     </script>

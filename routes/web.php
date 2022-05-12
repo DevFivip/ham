@@ -50,6 +50,18 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/legal/politica-cookies', function () {
+    return view("legal.cookies");
+});
+
+Route::get('/legal/politica-privacidad', function () {
+    return view("legal.privacidad");
+});
+
+Route::get('/legal/terminos-y-condiciones', function () {
+    return view("legal.terminos_condiciones");
+});
+
 Route::post("/getPayment", function (Request $req) {
     try {
         $data = $req->all();
@@ -81,7 +93,7 @@ Route::post("/getPayment", function (Request $req) {
         //throw $th;
         return response()->json(["status" => "error", 'mensaje' => "El pago paso a revision por favor espere ⌛"]);
     }
-});
+})->middleware('auth');
 
 Route::prefix('/home')->group(function () {
     Route::get('payment/{id}', function ($id) {
@@ -145,6 +157,7 @@ Route::get('/search', function (Request $req) {
 Route::get('/{social}/{type}/categoria/{category}/{subcategory}/{group_slug}', function (Request $req, $social, $type, $category, $subcategory, $group_slug) {
 
     $cookie_de_visita = $req->cookie('__VID');
+
 
 
     if (!$cookie_de_visita) {
@@ -353,10 +366,6 @@ Route::get('/{social}/{type}', function (Request $req, $social, $type) {
 //         abort(404);
 //     }
 // });
-
-
-
-
 
 
 Route::post('/subcategorias/{id}', function (Request $req, $id) {

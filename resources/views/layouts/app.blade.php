@@ -45,8 +45,8 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)" class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            Pagos
+                                        <a href="/precios" class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                            Precios
                                         </a>
                                     </li>
                                     <li>
@@ -67,7 +67,7 @@
                             @endif
                             @else
 
-                            <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="/home">Mi Panel</a>
+                            <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="/home">Panel</a>
 
                             <a href="{{ route('logout') }}" class="rounded-lg bg-primary py-3 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>

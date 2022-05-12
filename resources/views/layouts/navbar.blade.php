@@ -3,7 +3,7 @@
           navbarOpen: false,
         }
       " class="absolute left-0 z-50 top-0 w-full">
-    <div class="container" style="margin-top: 3px;">
+    <div class="container">
         <div class="relative -mx-4 flex items-center justify-between rounded-lg bg-white py-3 px-6">
             <div class="w-60 max-w-full px-4">
                 <a href="/" class="block w-full py-5">
@@ -51,7 +51,7 @@
                     @endif
                     @else
 
-                    <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="/home">Mi Panel</a>
+                    <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="/home">Panel</a>
 
                     <a href="{{ route('logout') }}" class="rounded-lg bg-primary py-3 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">

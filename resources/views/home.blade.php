@@ -47,7 +47,7 @@
                         </div>
                         <div class="w-full px-4 lg:w-1/2">
                             <div class="flex flex-wrap lg:justify-end">
-                                <a href="/home/precios" class="my-1 mr-4 inline-block rounded bg-white bg-opacity-[15%] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-100 hover:text-primary md:px-9 lg:px-6 xl:px-9">
+                                <a href="/precios" class="my-1 mr-4 inline-block rounded bg-white bg-opacity-[15%] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-100 hover:text-primary md:px-9 lg:px-6 xl:px-9">
                                     Actualizate a la Versión PRO
                                 </a>
                                 <a href="/home/group/create" class="my-1 inline-block rounded bg-[#13C296] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9">
@@ -153,7 +153,7 @@
                         Tu cuenta se ha creado y confirmado con exito.
                     </h5>
                     <p class="mb-6 text-base leading-relaxed text-body-color">
-                        Tienes puedes crear <b>1</b> (un) grupo de muestra y publicarlo por 30 dias y darte a conocer.
+                        Puedes crear <b>1</b> (un) grupo de muestra y publicarlo por 15 dias y darte a conocer.
                     </p>
                     <div class="flex">
                         <a href="/home/group/create" class="mr-6 inline-block text-sm font-medium text-[#34D399]">

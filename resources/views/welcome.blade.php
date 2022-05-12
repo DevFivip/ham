@@ -124,7 +124,7 @@
                                         </p>
                                     </div>
                                     <div class="">
-                                        <a href="/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-primary py-2 px-2 text-center text-base text-primary transition hover:border-primary hover:bg-primary hover:text-white lg:px-8 xl:px-10">yo Ver</a>
+                                        <a href="/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-primary py-2 px-2 text-center text-base text-primary transition hover:border-primary hover:bg-primary hover:text-white lg:px-8 xl:px-10"> Ver</a>
                                     </div>
                                 </div>
                                 <br>

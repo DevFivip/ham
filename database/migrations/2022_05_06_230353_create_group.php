@@ -60,6 +60,18 @@ class CreateGroup extends Migration
         Schema::create('groups', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+
+            $table->string('username')->nullable();
+            $table->integer('cant_suscriptores')->default(0);
+            $table->integer('cant_fotos')->default(0);
+            $table->integer('cant_videos')->default(0);
+            $table->integer('cant_posts')->default(0);
+            $table->decimal('precio_membresia', 2)->default(0);
+            $table->integer('show_more_social_medias')->default(1);
+            $table->integer('usuarios_comunicación')->default(1);
+            $table->integer('cant_ganancias')->default(0);
+            $table->string('tiempo_creacion')->default(0);
+
             $table->text('description')->nullable();
             $table->foreignId('user_id')->constrained('users');
             $table->foreignId('categoria_id')->nullable()->constrained('categories');
