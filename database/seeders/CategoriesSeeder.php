@@ -172,13 +172,6 @@ class CategoriesSeeder extends Seeder
         ]);
 
         Social::create([
-            "name" => "Discord",
-            "description" => "ejemplo de descripcion de red social",
-            "icon" => "fa-discord fa-brands",
-            "status" => 1,
-        ]);
-
-        Social::create([
             "name" => "Twitch",
             "description" => "ejemplo de descripcion de red social",
             "icon" => "fa-twitch fa-brands",
@@ -189,6 +182,14 @@ class CategoriesSeeder extends Seeder
             "name" => "Youtube",
             "description" => "ejemplo de descripcion de red social",
             "icon" => "fa-youtube fa-brands",
+            "status" => 1,
+        ]);
+
+
+        Social::create([
+            "name" => "OnlyFans",
+            "description" => "ejemplo de descripcion de red social",
+            "icon" => "fa-discord fa-brands",
             "status" => 1,
         ]);
 

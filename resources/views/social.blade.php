@@ -226,61 +226,33 @@
 
     @if(!!count($mejores->items()))
     <section>
+
+
         <div class="container">
-            @foreach($mejores->items() as $i)
-            <div class="flex border border-gray-100 rounded-xl py-3 cursor-pointer hover:shadow-md px-2 ">
-
-                @if(!!$i['imagen'])
-                <img alt="{{$i['name']}}" id="preview-avatar" src="{{ url('storage/') }}/img/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
-                @else
-                <img alt="{{$i['name']}}" id="preview-avatar" src="{{ url('storage/') }}/placeholder/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
-                @endif
-
-                <div class="px-2 w-full">
-                    <a href="/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class=" capitalize font-semibold ">
-                        {{$i["name"]}}
-                    </a>
-                    <p class=" capitalize">
-                        <a href="/{{$i['social']['name']}}"> {{$i["social"]["name"]}}</a>/<a href="/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
-                        <!-- <a href="/{{$i['social']['name']}}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
-                            {{$i['categoria']['name']}}
-                        </a>
-                        <a href="/{{$i['social']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
-                            {{$i['subcategoria']['name']}}
-                        </a> -->
-
-                        @if(isset($i["categoria"]))
-                        <a href="/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
-                            {{$i['categoria']['name']}}
-                        </a>
-
-                        @else
-                        <a href="/categoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
-                            Todos
-                        </a>
-                        @endif
-
-                        @if(isset($i["subcategoria"]))
-                        <a href="/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
-                            {{$i['subcategoria']['name']}}
-                        </a>
-
-                        @else
-                        <a href="/subcategoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
-                            Todos
-                        </a>
-
-                        @endif
-                    </p>
+            <div class="-mx-4 flex flex-wrap">
+                @foreach($mejores as $key => $group)
+                <div class="w-full px-4 md:w-1/3 xl:w-1/4">
+                    <div class="relative mb-12  {{$key % rand(2,3) == 0 ? '' :'gold' }}">
+                        <div class="overflow-hidden rounded-lg">
+                            <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}">
+                                <img src="{{(!!$mejores[$key]->imagen ? '/storage/img/'. $mejores[$key]->images : '/storage/placeholder/placeholder-avatar.jpg')}}" alt="{{$mejores[$key]->name}}" class="w-full rounded-xl" style="filter:blur(6px)" />
+                                <div class="fondo con"></div>
+                                <div class="censured"></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="">
-                    <a href="/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-primary py-2 px-2 text-center text-base text-primary transition hover:border-primary hover:bg-primary hover:text-white lg:px-8 xl:px-10"> Ver</a>
-                </div>
+
+                @endforeach
+
+                {{ $mejores->links('pagination::tailwind') }}
             </div>
-            <br>
-            @endforeach
-            {{ $mejores->links('pagination::tailwind') }}
         </div>
+
+
+
+
+
 
     </section>
     @else

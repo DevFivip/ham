@@ -35,8 +35,8 @@ class GroupFactory extends Factory
             "show_views" => 1,
             "can_access_any_location" => 1,
             "url" => $this->faker->url(),
-            "imagen" => '...',
-            "banner" => '...',
+            "imagen" => '',
+            "banner" => '',
             "fecha_corte" => $datesum
         ];
     }

@@ -14,6 +14,8 @@ use Illuminate\Validation\Rule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Date;
 
+
+
 class GroupController extends Controller
 {
 
@@ -21,6 +23,7 @@ class GroupController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->home = new HomeController();
     }
     /**
      * Display a listing of the resource.
@@ -37,14 +40,15 @@ class GroupController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $req)
     {
         //
         $locations = Location::all();
         $categories = Category::all();
         $socialMedia = Social::all();
         $types = GroupType::all();
-        return view('group.create', compact('locations', 'categories', 'socialMedia', 'types'));
+        $cookies = $this->home->ccookie($req);
+        return view('group.create', compact('cookies', 'locations', 'categories', 'socialMedia', 'types'));
     }
 
     /**
@@ -122,7 +126,7 @@ class GroupController extends Controller
         $message = ["status" => "success", "message" => "Grupo creado Perfectamente 👌"];
 
         return redirect('home');
-        // return view('home', compact('grupos', 'message'));
+        // return view('home', compact('cookies','grupos', 'message'));
 
         // } catch (\Throwable $th) {
         //     dd('ERROR TRY', $th);
@@ -153,7 +157,7 @@ class GroupController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $req, $id)
     {
         $group = Group::find($id);
         $locations = Location::all();
@@ -161,8 +165,8 @@ class GroupController extends Controller
         $subcategoria = Subcategory::find($group->subcategoria_id);
         $socialMedia = Social::all();
         $types = GroupType::all();
-
-        return view("group.edit", compact('locations', 'categories', 'socialMedia', 'types', 'group', 'subcategoria'));
+        $cookies = $this->home->ccookie($req);
+        return view("group.edit", compact('cookies', 'locations', 'categories', 'socialMedia', 'types', 'group', 'subcategoria'));
     }
 
     /**
@@ -180,7 +184,7 @@ class GroupController extends Controller
         // try {
         $request->validate([
             "name" => 'required|max:50',
-            "url" => ['url','required', Rule::unique('groups')->ignore($id)],
+            "url" => ['url', 'required', Rule::unique('groups')->ignore($id)],
             "group_type_id" => 'required',
             "social_id" => 'required',
             "categoria_id" => 'required',
@@ -214,8 +218,8 @@ class GroupController extends Controller
 
         $grupos = Group::where('user_id', auth()->id())->with('social', 'type')->orderBy('id', 'ASC')->get();
         $message = ["status" => "success", "message" => "Grupo creado Perfectamente 👌"];
-
-        return redirect('home');
+        $cookies = $this->home->ccookie($request);
+        return redirect('home', compact('cookies'));
     }
 
     /**

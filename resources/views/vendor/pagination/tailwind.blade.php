@@ -1,6 +1,6 @@
 @if ($paginator->hasPages())
 <nav role="Page navigation" aria-label="{{ __('Pagination Navigation') }}" class="pl-10">
-    <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+    <div class="sm:flex-1 sm:flex sm:items-center sm:justify-between">
         <div>
             <p class="text-sm text-gray-700 leading-5">
                 {!! __('Mostrando') !!}
@@ -18,14 +18,13 @@
 
 <section class="bg-white">
     <div class="container">
-        <div class="-mx-4 flex flex-wrap text-center">
+        <div class="-mx-4 flex flex-wrap">
             <div class="w-full px-4">
                 <div class="mb-12 inline-flex rounded-xl border border-[#e4e4e4] bg-white p-4">
                     <ul class="-mx-[6px] flex items-center">
                         <li class="px-[6px]">
-
                             @if ($paginator->onFirstPage())
-                            <a href="javascript:void(0)" class=" flex h-9 w-9 items-center justify-center rounded-md border border-[#EDEFF1] text-base  text-[#838995] disabled">
+                            <a href="javascript:void(0)" class="flex h-9 w-9 items-center justify-center rounded-md border border-[#EDEFF1] text-base  text-[#838995] disabled">
                                 <span>
                                     <svg width="8" height="15" viewBox="0 0 8 15" class="fill-current stroke-current">
                                         <path d="M7.12979 1.91389L7.1299 1.914L7.1344 1.90875C7.31476 1.69833 7.31528 1.36878 7.1047 1.15819C7.01062 1.06412 6.86296 1.00488 6.73613 1.00488C6.57736 1.00488 6.4537 1.07206 6.34569 1.18007L6.34564 1.18001L6.34229 1.18358L0.830207 7.06752C0.830152 7.06757 0.830098 7.06763 0.830043 7.06769C0.402311 7.52078 0.406126 8.26524 0.827473 8.73615L0.827439 8.73618L0.829982 8.73889L6.34248 14.6014L6.34243 14.6014L6.34569 14.6047C6.546 14.805 6.88221 14.8491 7.1047 14.6266C7.30447 14.4268 7.34883 14.0918 7.12833 13.8693L1.62078 8.01209C1.55579 7.93114 1.56859 7.82519 1.61408 7.7797L1.61413 7.77975L1.61729 7.77639L7.12979 1.91389Z" stroke-width="0.3" />
@@ -42,10 +41,7 @@
                             </a>
                             @endif
 
-
                         </li>
-
-                        {{-- Pagination Elements --}}
                         @foreach ($elements as $element)
                         {{-- "Three Dots" Separator --}}
                         @if (is_string($element))
@@ -59,10 +55,8 @@
                         @foreach ($element as $page => $url)
                         @if ($page == $paginator->currentPage())
 
-
-
                         <li class="px-[6px]">
-                            <button class="flex h-9 w-9 items-center justify-center rounded-md border border-[#EDEFF1]  border-primary bg-primary text-white">
+                            <button class="flex h-9 w-9 items-center justify-center rounded-md border border-[#EDEFF1] border-primary bg-primary text-white">
                                 {{ $page }}
                             </button>
                         </li>

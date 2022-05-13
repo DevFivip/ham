@@ -49,7 +49,7 @@
                         <div class="mt-12">
                             <div class="mb-6">
                                 <label for="" class="text-base font-normal text-primary">Titulo*</label>
-                                <input type="text" name="name" placeholder="Titulo del Sitio" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input type="text" name="name" placeholder="Titulo del Sitio" max="25" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('name') }}" required autocomplete="name" autofocus>
                             </div>
                             @error('name')
                             <p class="text-red-500 text-xs italic mt-4">

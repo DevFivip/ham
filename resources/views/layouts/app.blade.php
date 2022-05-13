@@ -10,9 +10,9 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-
     <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/css/tailwind.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/assets/js/alpine.min.js"></script>
 </head>
 

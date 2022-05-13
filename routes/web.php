@@ -25,10 +25,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-define('PAGINATION', 10);
+define('PAGINATION', 12);
 
-Route::get('/', function () {
+function ccookie($req)
+{
+    $cookie_de_aceptacion = !$req->cookie('__CAC') ? true : false;
+    $cookie_de_contenido_adulto = !$req->cookie('__CAD') ? true : false;
+    return ["__CAC" => $cookie_de_aceptacion, "__CAD" => $cookie_de_contenido_adulto];
+}
 
+
+
+Route::get('/', function (Request $req) {
     $redes = Social::all();
     $mejores = Group::limit(10)->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->get()->toArray();
     $redesSociales = Social::all();
@@ -39,28 +47,42 @@ Route::get('/', function () {
         $social = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('social_id', $redes[$i]->id)->limit(10)->get();
         array_push($listas[$i], $social->toArray());
     }
-    return view('welcome', compact("mejores", "redes", "social", "listas", "redesSociales"));
+    $cookies = ccookie($req);
+    return view('welcome', compact("cookies", "mejores", "redes", "social", "listas", "redesSociales"));
 });
 
-Route::get("precios", function () {
-    return view("precios");
+Route::get("precios", function (Request $req) {
+    $cookies = ccookie($req);
+    return view("precios", compact('cookies'));
 });
+
+
+
 
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/legal/politica-cookies', function () {
-    return view("legal.cookies");
+Route::get('/legal/politica-cookies', function (Request $req) {
+    $cookies = ["__CAC" => false];
+    return view("legal.cookies", compact('cookies'));
 });
 
-Route::get('/legal/politica-privacidad', function () {
-    return view("legal.privacidad");
+Route::get('/legal/politica-privacidad', function (Request $req) {
+    $cookies = ccookie($req);
+    return view("legal.privacidad", compact($cookies));
 });
 
-Route::get('/legal/terminos-y-condiciones', function () {
-    return view("legal.terminos_condiciones");
+Route::get('/legal/terminos-y-condiciones', function (Request $req) {
+    $cookies = ccookie($req);
+    return view("legal.terminos_condiciones", compact('cookies'));
 });
+
+Route::get("/legal/autorizor-soy-mayor-de-edad", function (Request $req) {
+    $cookies = ccookie($req);
+    return view("legal.authorizeEdad", compact('cookies'));
+})->name('autorizarEdad');
+
 
 Route::post("/getPayment", function (Request $req) {
     try {
@@ -96,7 +118,7 @@ Route::post("/getPayment", function (Request $req) {
 })->middleware('auth');
 
 Route::prefix('/home')->group(function () {
-    Route::get('payment/{id}', function ($id) {
+    Route::get('payment/{id}', function (Request $req, $id) {
 
         $precios = [1 => '5.00', 2 => '3.00', 3 => '1.00'];
         $precio = $precios[auth()->user()->categoria_id];
@@ -104,7 +126,8 @@ Route::prefix('/home')->group(function () {
         $group = Group::find($id);
         if (auth()->id() === $group->user_id) {
             $token = Crypt::encryptString($id);
-            return view("payment", compact('group', 'precio', 'token'));
+            $cookies = ccookie($req);
+            return view("payment", compact("cookies", 'group', 'precio', 'token'));
         } else {
             abort(404);
         }
@@ -148,7 +171,8 @@ Route::get('/search', function (Request $req) {
             ["name" =>  "Buscador", "link" => "/search"]
         ];
 
-        return view('social', compact("mejores", 'categorias', 'redesSociales', 'search', 'socialMedia', 'breadcrumbs'));
+        $cookies = ccookie($req);
+        return view('social', compact("cookies", "mejores", 'categorias', 'redesSociales', 'search', 'socialMedia', 'breadcrumbs'));
     } catch (\Throwable $th) {
         abort(404);
     }
@@ -157,8 +181,6 @@ Route::get('/search', function (Request $req) {
 Route::get('/{social}/{type}/categoria/{category}/{subcategory}/{group_slug}', function (Request $req, $social, $type, $category, $subcategory, $group_slug) {
 
     $cookie_de_visita = $req->cookie('__VID');
-
-
 
     if (!$cookie_de_visita) {
         $cookie = "";
@@ -178,8 +200,10 @@ Route::get('/{social}/{type}/categoria/{category}/{subcategory}/{group_slug}', f
         $redesSociales = Social::all();
         $socialMedia = Social::where("name", $social)->first();
         $categorias = Category::all();
-        $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where('social_id', $socialMedia->id)->paginate(PAGINATION);
+        $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('social_id', $socialMedia->id)->inRandomOrder()->limit(12)->get();
         $group = Group::where("slug", $group_slug)->first();
+
+
 
         /**cookie de visita */
 
@@ -198,11 +222,16 @@ Route::get('/{social}/{type}/categoria/{category}/{subcategory}/{group_slug}', f
         $cookie = Crypt::encryptString($cookie);
 
         /**end cookie de visita */
-        return response(view('viewGroup', compact("mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group")))->cookie('__VID', $cookie, time() * 365 * 5);
+        $cookies = ccookie($req);
+        return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group")))->cookie('__VID', $cookie, time() * 365 * 5);
     } catch (\Throwable $th) {
         abort(404);
     }
 });
+
+
+
+
 
 
 // Route::get('categoria/{category_slug}/{subcategoria}', function (Request $req, $category_slug, $subcategoria) {
@@ -213,7 +242,8 @@ Route::get('/{social}/{type}/categoria/{category}/{subcategory}/{group_slug}', f
 //         $subcategoria = Subcategory::where([['categoria_id', $categoryGroup->id]])->get();
 //         $title = ["name" => "Categoria", "description" => $categoryGroup->name, "slug" => $categoryGroup->slug];
 //         $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where([["categoria_id", $categoryGroup->id], ["subcategoria_id", $subcategoria->id]])->paginate(PAGINATION);
-//         return view('social', compact("mejores", 'categorias', 'redesSociales', 'title'));
+
+//         return view('social', compact("cookies","mejores", 'categorias', 'redesSociales', 'title'));
 //     } catch (\Throwable $th) {
 //         abort(404);
 //     }
@@ -233,7 +263,8 @@ Route::get('/categoria/{category_slug}', function (Request $req, $category_slug)
             ["name" =>  $categoryGroup->name, "link" => "/categoria/$categoryGroup->slug"],
         ];
 
-        return view('social', compact("mejores", 'categorias', 'redesSociales', 'title', 'breadcrumbs'));
+        $cookies = ccookie($req);
+        return view('social', compact("cookies", "mejores", 'categorias', 'redesSociales', 'title', 'breadcrumbs'));
     } catch (\Throwable $th) {
         abort(404);
     }
@@ -255,7 +286,8 @@ Route::get('/subcategoria/{subcategory_slug}', function (Request $req, $subcateg
             ["name" => $subcategoryGroup->name, "link" => "/subcategoria/$subcategoryGroup->slug"],
         ];
 
-        return view('social', compact("mejores", 'categorias', 'redesSociales', 'title', 'breadcrumbs'));
+        $cookies = ccookie($req);
+        return view('social', compact("cookies", "mejores", 'categorias', 'redesSociales', 'title', 'breadcrumbs'));
     } catch (\Throwable $th) {
         abort(404);
     }
@@ -275,7 +307,8 @@ Route::get('/{social}', function (Request $req, $social) {
             ["name" =>  $socialMedia->name, "link" => $socialMedia->slug],
         ];
 
-        return view('social', compact("mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'breadcrumbs'));
+        $cookies = ccookie($req);
+        return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'breadcrumbs'));
     } catch (\Throwable $th) {
         abort(404);
     }
@@ -300,7 +333,8 @@ Route::get('/{social}/categoria/{category_slug}/{subcategory_slug}/', function (
         ];
 
 
-        return view('social', compact("mejores", 'social', 'socialMedia', 'categorias', 'categoryGroup', 'subcategoryGroup', 'redesSociales', 'breadcrumbs'));
+        $cookies = ccookie($req);
+        return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'categoryGroup', 'subcategoryGroup', 'redesSociales', 'breadcrumbs'));
     } catch (\Throwable $th) {
         abort(404);
     }
@@ -322,7 +356,8 @@ Route::get('/{social}/categoria/{category_slug}/', function (Request $req, $soci
         ];
 
 
-        return view('social', compact("mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'breadcrumbs'));
+        $cookies = ccookie($req);
+        return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'breadcrumbs'));
     } catch (\Throwable $th) {
         abort(404);
     }
@@ -344,7 +379,8 @@ Route::get('/{social}/{type}', function (Request $req, $social, $type) {
         ];
 
         $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where([['social_id', $socialMedia->id], ["group_type_id", $typeSocialMediaGroup->id]])->paginate(PAGINATION);
-        return view('social', compact("mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'type', 'breadcrumbs'));
+        $cookies = ccookie($req);
+        return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'type', 'breadcrumbs'));
     } catch (\Throwable $th) {
         abort(404);
     }
@@ -361,7 +397,7 @@ Route::get('/{social}/{type}', function (Request $req, $social, $type) {
 //         $categorias = Category::all();
 //         $categoryGroup = Category::where("slug", $category_slug)->first();
 //         $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where([['social_id', $socialMedia->id], ["group_type_id", $typeSocialMediaGroup->id], ["categoria_id", $categoryGroup->id]])->paginate(PAGINATION);
-//         return view('social', compact("mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'type'));
+//         return view('social', compact("cookies","mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'type'));
 //     } catch (\Throwable $th) {
 //         abort(404);
 //     }
@@ -375,6 +411,7 @@ Route::post('/subcategorias/{id}', function (Request $req, $id) {
         abort(404);
     }
 });
+
 
 Route::post('/statistics/{id}', function (Request $req, $id) {
     try {
@@ -391,16 +428,32 @@ Route::post('/statistics/{id}', function (Request $req, $id) {
 
 Route::post('/getUrl/{slug}', function (Request $req, $slug) {
     try {
-
         //get ip 
         $ip = $req->ip();
-
         $group = Group::where('slug', $slug)->first();
         $v = Visitor::where([["group_id", $group->id], ["ip", $ip]])->first();
         $v->clicked = true;
         $v->update();
 
         return response()->json(["url" => $group->url]);
+    } catch (\Throwable $th) {
+        abort(404);
+    }
+});
+
+
+Route::post('/acepted-cookies', function (Request $req) {
+    try {
+        return response()->json(["accepted" => true])->cookie('__CAC', true, time() * 365 * 5);;
+    } catch (\Throwable $th) {
+        abort(404);
+    }
+});
+
+
+Route::post('/acepted-oldage', function (Request $req) {
+    try {
+        return response()->json(["accepted" => true])->cookie('__CAD', true, time() * 365 * 5);;
     } catch (\Throwable $th) {
         abort(404);
     }
