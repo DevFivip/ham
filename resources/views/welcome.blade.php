@@ -16,7 +16,7 @@
 
     <!-- ======Category Tabs Start -->
     <section class="py-20 lg:py-[120px]">
-        <div class="container">
+        <div class="container mx-auto px-4">
             <div class="-mx-4 flex flex-wrap">
                 <div class="w-full px-4">
                     <div x-data="

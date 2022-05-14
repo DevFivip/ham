@@ -1,5 +1,5 @@
 <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
-        <div class="container">
+        <div class="container mx-auto px-4">
             <div class="-mx-4 flex flex-wrap items-center justify-between">
                 <div class="w-full px-4 lg:w-6/12">
                     <div class="-mx-3 flex items-center sm:-mx-4">

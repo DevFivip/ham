@@ -13,7 +13,7 @@
     <!-- ====== breadcrumbs Section Start -->
 
     <section class="pt-20" style="padding-top: 110px !important;">
-        <div class="container">
+        <div class="container mx-auto px-6">
             <div class="mb-8 w-full">
                 <div class="rounded-lg border border-light bg-white py-4 px-4 shadow-card sm:px-6 md:px-8 md:py-5">
                     <ul class="flex items-center">
@@ -62,8 +62,8 @@
 
     <!-- ====== Title Section End -->
     <section style="padding-bottom: 10px ;">
-        <div class="container">
-            <div class="flex flex-wrap items-center justify-between rounded-lg bg-primary py-8 px-6 xs:px-10 md:px-8 lg:px-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap items-center justify-between rounded-lg bg-blue-700 py-8 px-6 xs:px-10 md:px-8 lg:px-10">
                 <div class="w-full md:w-7/12 lg:w-2/3">
                     <div class="mb-6 items-center sm:flex md:mb-0">
                         <div class="mr-6 mb-3 sm:mb-0">
@@ -117,8 +117,8 @@
     <!-- ======Modal Start -->
 
     <section x-data="{modalOpen: false}">
-        <div class="container">
-            <button @click="modalOpen = true" class="rounded-full bg-primary py-3 px-6 text-base font-medium text-white" style="margin-bottom:10px ;">
+        <div class="container mx-auto px-4">
+            <button @click="modalOpen = true" class="rounded-full bg-blue-700 py-3 px-6 text-base font-medium text-white" style="margin-bottom:10px ;">
                 Filtros
             </button>
         </div>
@@ -201,7 +201,7 @@
     @if(isset($socialMedia))
     @if(!$socialMedia && !$search)
     <section class="py-20">
-        <div class="container">
+        <div class="container mx-auto px-4">
             <div class="mb-11 flex w-full rounded-lg border-l-[6px] border-[#F87171] bg-[#F87171] bg-opacity-[15%] px-7 py-8 shadow-md md:p-9">
                 <div class="mr-5 flex h-9 w-full max-w-[36px] items-center justify-center rounded-lg bg-[#F87171]">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -228,9 +228,32 @@
     <section>
 
 
-        <div class="container">
-            <div class="-mx-4 flex flex-wrap">
-                @foreach($mejores as $key => $group)
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+                @foreach($mejores as $key => $groupx)
+                @if($key > 3)
+                <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[$key]->imagen ? '/storage/img/'. $mejores[$key]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                    <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
+                    </div>
+                    <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                        <a href="#" class="text-xs bg-blue-700 text-white p-3 rounded-lg uppercase hover:bg-white hover:text-indigo-600 transition ease-in-out duration-500">OF</a>
+                        <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
+                            <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
+                            <span class="">Free Trial</span>
+                        </div>
+                    </div>
+                    <main class="p-5 z-10">
+                        <p class="text-white">@maridiza</p>
+                        <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Mariannys Gutierrez
+                        </a>
+                    </main>
+                </div>
+
+                @endif
+                @endforeach
+
+            </div>
+            <!-- @foreach($mejores as $key => $group)
                 <div class="w-full px-4 md:w-1/3 xl:w-1/4">
                     <div class="relative mb-12  {{$key % rand(2,3) == 0 ? '' :'gold' }}">
                         <div class="overflow-hidden rounded-lg">
@@ -243,21 +266,19 @@
                     </div>
                 </div>
 
-                @endforeach
+                @endforeach -->
 
-                {{ $mejores->links('pagination::tailwind') }}
-            </div>
+                <br>
+            {{ $mejores->links('vendor.pagination.tailwind') }}
+
+
         </div>
-
-
-
-
 
 
     </section>
     @else
     <section class="py-20">
-        <div class="container">
+        <div class="container mx-auto px-4">
             <div class="mb-11 flex w-full rounded-lg border-l-[6px] border-[#F87171] bg-[#F87171] bg-opacity-[15%] px-7 py-8 shadow-md md:p-9">
                 <div class="mr-5 flex h-9 w-full max-w-[36px] items-center justify-center rounded-lg bg-[#F87171]">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
