@@ -180,6 +180,7 @@ Route::get('/search', function (Request $req) {
 
 Route::get('/{social}/{type}/categoria/{category}/{subcategory}/{group_slug}', function (Request $req, $social, $type, $category, $subcategory, $group_slug) {
 
+
     $cookie_de_visita = $req->cookie('__VID');
 
     if (!$cookie_de_visita) {

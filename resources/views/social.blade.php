@@ -12,16 +12,14 @@
 
     <!-- ====== breadcrumbs Section Start -->
 
-    <section class="pt-20" style="padding-top: 110px !important;">
+    <section class="pt-20" style="padding-top: 110px !important">
         <div class="container mx-auto px-6">
             <div class="mb-8 w-full">
                 <div class="rounded-lg border border-light bg-white py-4 px-4 shadow-card sm:px-6 md:px-8 md:py-5">
                     <ul class="flex items-center">
-
-
                         @for ($i = 0; $i < count($breadcrumbs); $i++) <li class="flex items-center">
-                            <a href="{{$breadcrumbs[$i]['link']}}" class="text-base font-semibold text-black hover:text-primary">
-                                {{$breadcrumbs[$i]["name"]}}
+                            <a href="{{ $breadcrumbs[$i]['link'] }}" class="text-base font-semibold text-black hover:text-primary">
+                                {{ $breadcrumbs[$i]["name"] }}
                             </a>
 
                             @if(isset($breadcrumbs[$i+1]))
@@ -32,11 +30,9 @@
                                 </svg>
                             </span>
                             @endif
-
                             </li>
 
                             @endfor
-
 
                             <!-- @if(isset($type))
                             <li class="flex items-center">
@@ -58,10 +54,8 @@
     </section>
     <!-- ====== breadcrumbs Section End -->
 
-
-
     <!-- ====== Title Section End -->
-    <section style="padding-bottom: 10px ;">
+    <section style="padding-bottom: 10px">
         <div class="container mx-auto px-6">
             <div class="flex flex-wrap items-center justify-between rounded-lg bg-blue-700 py-8 px-6 xs:px-10 md:px-8 lg:px-10">
                 <div class="w-full md:w-7/12 lg:w-2/3">
@@ -83,10 +77,10 @@
                             </p>
                             @elseif(isset($title))
                             <h4 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
-                                {{$title['name']}}
+                                {{ $title["name"] }}
                             </h4>
                             <p class="text-base font-medium text-white">
-                                {{$title['description']}}
+                                {{ $title["description"] }}
                             </p>
                             @else
                             <h4 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
@@ -105,7 +99,6 @@
 
     <!-- ====== Title Section End -->
 
-
     <!-- ====== Filter Section End -->
     <!-- <section class="container" style="padding-bottom: 10px ;">
         <button @click="modalOpen = true" class="inline-flex items-center justify-center rounded-full bg-primary py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
@@ -113,16 +106,15 @@
         </button>
     </section> -->
 
-
     <!-- ======Modal Start -->
 
     <section x-data="{modalOpen: false}">
         <div class="container mx-auto px-4">
-            <button @click="modalOpen = true" class="rounded-full bg-blue-700 py-3 px-6 text-base font-medium text-white" style="margin-bottom:10px ;">
+            <button @click="modalOpen = true" class="rounded-full bg-blue-700 py-3 px-6 text-base font-medium text-white" style="margin-bottom: 10px">
                 Filtros
             </button>
         </div>
-        <div style="display: none;" x-show="modalOpen" x-transition class="fixed top-0 left-0 flex h-full min-h-screen w-full items-center justify-center bg-black bg-opacity-90 px-4 py-5 z-50">
+        <div style="display: none" x-show="modalOpen" x-transition class="fixed top-0 left-0 flex h-full min-h-screen w-full items-center justify-center bg-black bg-opacity-90 px-4 py-5 z-50">
             <div @click.outside="modalOpen = false" class="w-full max-w-[570px] rounded-[20px] bg-white py-12 px-8 text-center md:py-[60px] md:px-[70px]">
                 <h3 class="pb-2 text-xl font-bold text-dark sm:text-2xl">
                     Busca Grupo de tu Preferencia
@@ -137,10 +129,14 @@
                             <div class="mb-6">
                                 <div class="relative">
                                     <select name="social_id" id="social_id" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]">
-                                        <option value="">---Plataforma---</option>
+                                        <option value="">
+                                            ---Plataforma---
+                                        </option>
                                         @foreach($redesSociales as $red)
 
-                                        <option value="{{$red->id}}">{{$red->name}}</option>
+                                        <option value="{{$red->id}}">
+                                            {{$red->name}}
+                                        </option>
                                         @endforeach
                                     </select>
                                     <span class="absolute right-4 top-1/2 mt-[-2px] h-[10px] w-[10px] -translate-y-1/2 rotate-45 border-r-2 border-b-2 border-body-color">
@@ -150,9 +146,13 @@
                             <div class="mb-6">
                                 <div class="relative">
                                     <select name="categoria_id" id="categoria" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]">
-                                        <option value="">---Categoria---</option>
+                                        <option value="">
+                                            ---Categoria---
+                                        </option>
                                         @foreach($categorias as $categoria)
-                                        <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+                                        <option value="{{$categoria->id}}">
+                                            {{$categoria->name}}
+                                        </option>
                                         @endforeach
                                     </select>
                                     <span class="absolute right-4 top-1/2 mt-[-2px] h-[10px] w-[10px] -translate-y-1/2 rotate-45 border-r-2 border-b-2 border-body-color">
@@ -163,13 +163,14 @@
                             <div class="mb-6">
                                 <div class="relative">
                                     <select name="subcategoria_id" id="subcategoria" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]">
-                                        <option value="">---Seleccione Categoria---</option>
+                                        <option value="">
+                                            ---Seleccione Categoria---
+                                        </option>
                                     </select>
                                     <span class="absolute right-4 top-1/2 mt-[-2px] h-[10px] w-[10px] -translate-y-1/2 rotate-45 border-r-2 border-b-2 border-body-color">
                                     </span>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -188,18 +189,13 @@
                 </form>
             </div>
         </div>
-
-
     </section>
 
     <!-- ======Modal ENd -->
     <!-- ====== Filter Section End -->
 
-
-
     <!-- ======Category Tabs Start -->
-    @if(isset($socialMedia))
-    @if(!$socialMedia && !$search)
+    @if(isset($socialMedia)) @if(!$socialMedia && !$search)
     <section class="py-20">
         <div class="container mx-auto px-4">
             <div class="mb-11 flex w-full rounded-lg border-l-[6px] border-[#F87171] bg-[#F87171] bg-opacity-[15%] px-7 py-8 shadow-md md:p-9">
@@ -214,7 +210,8 @@
                     </h5>
                     <ul class="list-inside list-disc">
                         <li class="text-base leading-relaxed text-[#CD5D5D]">
-                            La web que estas buscando posiblemente haya sido movida
+                            La web que estas buscando posiblemente haya sido
+                            movida
                         </li>
                     </ul>
                 </div>
@@ -223,39 +220,49 @@
     </section>
     @endif
     @endif
-
+    
     @if(!!count($mejores->items()))
     <section>
-
-
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                 @foreach($mejores as $key => $groupx)
-                @if($key > 3)
-                <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[$key]->imagen ? '/storage/img/'. $mejores[$key]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
-                    <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
-                    </div>
+                <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center {{$key % rand(1,2) == 0? '': 'border-solid border-4 border-yellow-500'}} rounded-lg" style="background-image:url('{{ ( !!$groupx->imagen ? '/storage/img/'. $groupx->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                    <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
                     <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                        <a href="#" class="text-xs bg-blue-700 text-white p-3 rounded-lg uppercase hover:bg-white hover:text-indigo-600 transition ease-in-out duration-500">OF</a>
+                        <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                            @if($groupx->social->slug === "onlyfans")
+                            <i class="onlyfans2 text-white fa-2xl"></i>
+                            @else
+                            <i class="{{$groupx->social->icon}} text-white" style="font-size:50px;"></i>
+                            @endif
+                        </a>
+                        @if(!!$groupx->precio_membresia)
                         <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                             <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                            <span class="">Free Trial</span>
+                            <span class="">{{$groupx->precio_membresia}}</span>
                         </div>
+                        @else
+                        <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
+                            <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
+                            <span class="">Gratis</span>
+                        </div>
+                        @endif
                     </div>
+
                     <main class="p-5 z-10">
-                        <p class="text-white">@maridiza</p>
-                        <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Mariannys Gutierrez
-                        </a>
+                        <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="text-white">{{ !!$groupx->username ? '@'.$groupx->username : '' }}</a>
+                        <p>
+                            <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$groupx->name}}
+                            </a>
+                        </p>
                     </main>
                 </div>
 
-                @endif
                 @endforeach
-
             </div>
             <!-- @foreach($mejores as $key => $group)
                 <div class="w-full px-4 md:w-1/3 xl:w-1/4">
-                    <div class="relative mb-12  {{$key % rand(2,3) == 0 ? '' :'gold' }}">
+                    <div class="relative mb-12  ">
                         <div class="overflow-hidden rounded-lg">
                             <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}">
                                 <img src="{{(!!$mejores[$key]->imagen ? '/storage/img/'. $mejores[$key]->images : '/storage/placeholder/placeholder-avatar.jpg')}}" alt="{{$mejores[$key]->name}}" class="w-full rounded-xl" style="filter:blur(6px)" />
@@ -265,16 +272,11 @@
                         </div>
                     </div>
                 </div>
-
                 @endforeach -->
 
-                <br>
+            <br />
             {{ $mejores->links('vendor.pagination.tailwind') }}
-
-
         </div>
-
-
     </section>
     @else
     <section class="py-20">
@@ -291,8 +293,10 @@
                     </h5>
                     <ul class="list-inside list-disc">
                         <li class="text-base leading-relaxed text-[#CD5D5D]">
-                            :'( no tenemos un grupo con estas caracteristicas, por favor revisa que estes buscando adecuadamente. Hecha un vistaso a los grupos de
-                            @foreach($redesSociales as $red)
+                            :'( no tenemos un grupo con estas
+                            caracteristicas, por favor revisa que estes
+                            buscando adecuadamente. Hecha un vistaso a los
+                            grupos de @foreach($redesSociales as $red)
                             <a href="/{{$red->name}}">{{$red->name}}</a>
                             @endforeach
                         </li>
@@ -308,8 +312,6 @@
 </body>
 
 </html>
-
-
 
 <!-- @if(Route::has('login'))
         <div class="absolute top-0 right-0 mt-4 mr-4 space-x-4 sm:mt-6 sm:mr-6 sm:space-x-6">

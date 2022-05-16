@@ -183,15 +183,13 @@ class GroupController extends Controller
 
         // try {
         $request->validate([
-            "name" => 'required|max:50',
+            "name" => 'required|max:30',
             "url" => ['url', 'required', Rule::unique('groups')->ignore($id)],
             "group_type_id" => 'required',
             "social_id" => 'required',
             "categoria_id" => 'required',
             "subcategoria_id" => 'required|exists:subcategories,id',
         ]);
-
-
 
         if (isset($data['avatar'])) {
             $image = $request->file('avatar');
@@ -219,7 +217,7 @@ class GroupController extends Controller
         $grupos = Group::where('user_id', auth()->id())->with('social', 'type')->orderBy('id', 'ASC')->get();
         $message = ["status" => "success", "message" => "Grupo creado Perfectamente 👌"];
         $cookies = $this->home->ccookie($request);
-        return redirect('home', compact('cookies'));
+        return redirect('home');
     }
 
     /**

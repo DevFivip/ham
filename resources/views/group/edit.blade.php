@@ -41,6 +41,7 @@
                                     @endif
                                 </div>
                             </div>
+                            
                             <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                                 <div class="py-6 px-3 mt-32 sm:mt-0">
                                     <label for="" class="font-medium">Imagen Principal (300x300 px)</label>
@@ -58,6 +59,7 @@
                                 <label for="" class="text-base font-normal text-primary ">Titulo del Sitio*</label>
                                 <input value="{{$group->name}}" type="text" name="name" placeholder="Titulo del Sitio" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('name') }}" required autocomplete="name" autofocus>
                             </div>
+
                             @error('name')
                             <p class="text-red-500 text-xs italic mt-4">
                                 {{ $message }}
@@ -66,7 +68,7 @@
 
                             <div class="mb-6">
                                 <label for="" class="text-base font-normal text-primary">Username</label>
-                                <input value="{{$group->username}}" type="text" name="url" placeholder="username*" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('username') }}" required autocomplete="username">
+                                <input value="{{$group->username}}" type="text" name="username" placeholder="username*" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('username') }}" required autocomplete="username">
                             </div>
 
                             @error('username')
