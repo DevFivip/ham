@@ -12,14 +12,8 @@
         @include("layouts.navbar")
     </div>
 
-
-    <section class="relative block -z-10  md:h-72">
-        @if(!!$group["banner"])
-        <img style="min-height:300px;" id="preview-banner" src="{{ url('storage/') }}/img/{{ $group['banner'] }}" alt="imagen" />
-        <!-- <span id="blackOverlay" class="w-full h-full absolute opacity-80 bg-primary"></span> -->
-        @else
-        <img style="min-height:300px;" id="preview-banner" src="{{ url('storage/') }}/placeholder/background.png" alt="imagen" />
-        @endif
+    <section class="relative block -z-10 md:h-72">
+        <img style="min-height:300px;" id="preview-banner" src="{{ url('storage/') }}/placeholder/background.png" alt="background-{{$group['name']}}" />
     </section>
 
 
@@ -140,11 +134,24 @@
                                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                             </div>
                                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                                                <a href="#" class="text-xs bg-blue-700 text-white p-3 rounded-lg uppercase hover:bg-white hover:text-indigo-600 transition ease-in-out duration-500">OF</a>
+                                                <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                                                    @if($mejores[0]->social->slug === "onlyfans")
+                                                    <i class="onlyfans2 text-white fa-2xl"></i>
+                                                    @else
+                                                    <i class="{{$mejores[0]->social->icon}} text-white" style="font-size:50px;"></i>
+                                                    @endif
+                                                </a>
+                                                @if($mejores[0]->precio_membresia > 0)
                                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                    <span class="">Free Trial</span>
+                                                    <span class="">{{$mejores[0]->precio_membresia}}</span>
                                                 </div>
+                                                @else
+                                                <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
+                                                    <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
+                                                    <span class="">Gratis</span>
+                                                </div>
+                                                @endif
                                             </div>
                                             <main class="p-5 z-10">
                                                 <p class="text-white">@maridiza</p>
@@ -159,11 +166,26 @@
                                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                             </div>
                                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                                                <a href="#" class="text-xs bg-blue-700 text-white p-3 rounded-lg uppercase hover:bg-white hover:text-indigo-600 transition ease-in-out duration-500">OF</a>
+
+                                                <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                                                    @if($mejores[1]->social->slug === "onlyfans")
+                                                    <i class="onlyfans2 text-white fa-2xl"></i>
+                                                    @else
+                                                    <i class="{{$mejores[1]->social->icon}} text-white" style="font-size:50px;"></i>
+                                                    @endif
+                                                </a>
+
+                                                @if($mejores[1]->precio_membresia > 0)
                                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                    <span class="">Free Trial</span>
+                                                    <span class="">{{$mejores[1]->precio_membresia}}</span>
                                                 </div>
+                                                @else
+                                                <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
+                                                    <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
+                                                    <span class="">Gratis</span>
+                                                </div>
+                                                @endif
                                             </div>
                                             <main class="p-5 z-10">
                                                 <p class="text-white">@maridiza</p>
@@ -179,11 +201,26 @@
                                         <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                         </div>
                                         <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                                            <a href="#" class="text-xs bg-blue-700 text-white p-3 rounded-lg uppercase hover:bg-white hover:text-indigo-600 transition ease-in-out duration-500">OF</a>
+
+                                            <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                                                @if($mejores[2]->social->slug === "onlyfans")
+                                                <i class="onlyfans2 text-white fa-2xl"></i>
+                                                @else
+                                                <i class="{{$mejores[2]->social->icon}} text-white" style="font-size:50px;"></i>
+                                                @endif
+                                            </a>
+
+                                            @if($mejores[2]->precio_membresia > 0)
                                             <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                 <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                <span class="">Free Trial</span>
+                                                <span class="">{{$mejores[2]->precio_membresia}}</span>
                                             </div>
+                                            @else
+                                            <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
+                                                <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
+                                                <span class="">Gratis</span>
+                                            </div>
+                                            @endif
                                         </div>
                                         <main class="p-5 z-10">
                                             <p class="text-white">@maridiza</p>
@@ -275,10 +312,17 @@
                             </div>
                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
                                 <a href="#" class="text-xs bg-blue-700 text-white p-3 rounded-lg uppercase hover:bg-white hover:text-indigo-600 transition ease-in-out duration-500">OF</a>
+                                @if($mejores[3]->precio_membresia > 0)
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                    <span class="">Free Trial</span>
+                                    <span class="">{{$mejores[3]->precio_membresia}}</span>
                                 </div>
+                                @else
+                                <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
+                                    <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
+                                    <span class="">Gratis</span>
+                                </div>
+                                @endif
                             </div>
                             <main class="p-5 z-10">
                                 <p class="text-white">@maridiza</p>

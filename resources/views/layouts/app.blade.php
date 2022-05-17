@@ -16,7 +16,7 @@
     <script defer src="/assets/js/alpine.min.js"></script>
 </head>
 
-<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
+<body class="bg-gray-700 h-screen antialiased leading-none font-sans">
     <div id="app">
         <header x-data="
         {
@@ -24,9 +24,9 @@
         }
       " class="absolute left-0 top-0 z-50 w-full">
             <div class="container">
-                <div class="relative -mx-4 flex items-center justify-between">
+                <div class="relative -mx-4 flex items-center justify-between bg-white">
                     <div class="w-60 max-w-full px-4">
-                        <a href="/home" class="block w-full py-5">
+                        <a href="/{{app()->getLocale() }}/home" class="block w-full py-5">
                             <img src="/assets/images/logo/logo.svg" alt="logo" class="w-full" />
                         </a>
                     </div>
@@ -37,7 +37,7 @@
                                 <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
                                 <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
                             </button>
-                            <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse" class="absolute right-4 top-full w-full max-w-[250px] rounded-lg  py-5 px-6 shadow transition-all lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none">
+                            <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse" class="bg-white absolute right-4 top-full w-full max-w-[250px] rounded-lg  py-5 px-6 shadow transition-all lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none">
                                 <ul class="blcok lg:flex">
                                     <li>
                                         <a href="/" class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
@@ -45,7 +45,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/precios" class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
+                                        <a href="/{{app()->getLocale() }}/precios" class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
                                             Precios
                                         </a>
                                     </li>
@@ -61,17 +61,17 @@
                         <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
 
                             @guest
-                            <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="{{ route('login',app()->getLocale()) }}">{{ __('Login') }}</a>
                             @if (Route::has('register'))
-                            <a class="rounded-lg bg-primary py-3 px-7 text-base font-medium text-white hover:bg-opacity-90" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="rounded-lg bg-primary py-3 px-7 text-base font-medium text-white hover:bg-opacity-90" href="{{ route('register',app()->getLocale()) }}">{{ __('Register') }}</a>
                             @endif
                             @else
 
                             <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="/home">Panel</a>
 
-                            <a href="{{ route('logout') }}" class="rounded-lg bg-primary py-3 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault();
+                            <a href="{{ route('logout',app()->getLocale()) }}" class="rounded-lg bg-primary py-3 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                            <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}" method="POST" class="hidden">
                                 {{ csrf_field() }}
                             </form>
                             @endguest
@@ -93,16 +93,16 @@
                 </div>
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
                     @guest
-                    <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="no-underline hover:underline" href="{{ route('login',app()->getLocale()) }}">{{ __('Login') }}</a>
                     @if (Route::has('register'))
-                    <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    <a class="no-underline hover:underline" href="{{ route('register',app()->getLocale()) }}">{{ __('Register') }}</a>
                     @endif
                     @else
                     <span>{{ Auth::user()->name }}</span>
 
-                    <a href="{{ route('logout') }}" class="no-underline hover:underline" onclick="event.preventDefault();
+                    <a href="{{ route('logout',app()->getLocale()) }}" class="no-underline hover:underline" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                    <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}" method="POST" class="hidden">
                         {{ csrf_field() }}
                     </form>
                     @endguest

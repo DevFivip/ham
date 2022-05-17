@@ -24,7 +24,7 @@
         <div class="container mx-auto px-4">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
                 <div class="px-6">
-                    <form action="{{route('group.store')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{route('group.store',app()->getLocale() )}}" method="POST" enctype="multipart/form-data">
                         @method('POST')
                         @csrf
                         <div class="flex flex-wrap justify-center">
@@ -363,7 +363,7 @@
 
 
                             <div class="mb-6 py-10 w-full text-center mt-12">
-                                <button class="inline-flex items-center justify-center bg-secondary py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                                <button class="inline-flex items-center justify-center bg-blue-700 py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
                                     Guardar
                                 </button>
                             </div>

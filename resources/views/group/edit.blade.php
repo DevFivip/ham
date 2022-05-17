@@ -28,7 +28,7 @@
         <div class="container mx-auto px-4">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
                 <div class="px-6">
-                    <form action="{{route('group.update',$group->id)}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{route('group.update',[app()->getLocale(),$group->id])}}" method="POST" enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
                         <div class="flex flex-wrap justify-center">
@@ -41,7 +41,7 @@
                                     @endif
                                 </div>
                             </div>
-                            
+
                             <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                                 <div class="py-6 px-3 mt-32 sm:mt-0">
                                     <label for="" class="font-medium">Imagen Principal (300x300 px)</label>
@@ -386,6 +386,7 @@
                                     @enderror
 
 
+
                                 </div>
                             </div>
 
@@ -400,7 +401,7 @@
 
 
                         <div class="mb-1 py-10 w-full text-center mt-12">
-                            <button class="inline-flex items-center justify-center bg-secondary py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                            <button class="inline-flex items-center justify-center bg-blue-700 py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
                                 Guardar Cambios
                             </button>
                         </div>

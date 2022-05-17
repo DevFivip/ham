@@ -20,15 +20,16 @@
             <div class="-mx-4 flex flex-wrap">
                 <div class="w-full px-4">
                     <div x-data="
+
                 {
                   openTab: 99,
-                  activeClasses: 'bg-primary text-white',
-                  inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
+                  activeClasses: 'bg-blue-700 text-white',
+                  inactiveClasses: 'text-body-color hover:bg-blue-700 hover:text-white',
                 }
               " class="mb-14 w-full">
                         <div class="flex flex-wrap rounded-lg border border-[#E4E4E4] py-3 px-4">
                             <a href="javascript:void(0)" @click="openTab = 99" :class="openTab === 99 ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
-                                Top Populares
+                                Populares 🔥
                             </a>
 
                             @foreach ($redes as $red)
@@ -36,9 +37,7 @@
                             <a href="javascript:void(0)" @click="openTab = {{$red->id}}" :class="openTab === {{$red->id}} ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
                                 {{$red->name}}
                             </a>
-
                             @endforeach
-
                         </div>
                         <div>
                             <div x-show="openTab === 99" class="p-6 text-base leading-relaxed text-body-color">
@@ -46,28 +45,28 @@
                                 <div class="flex border border-gray-100 rounded-xl py-3 cursor-pointer hover:shadow-md px-2 ">
 
                                     @if(!!$i['imagen'])
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="{{ url('storage/') }}/img/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar" src="thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
                                     @else
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="{{ url('storage/') }}/placeholder/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar" src="thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
                                     @endif
 
-                                    <!-- <img class='w-15 h-12 object-cover rounded-lg' alt='User avatar' src='https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200'> -->
+
                                     <div class="px-2 w-full">
-                                        <a class="capitalize font-semibold " href="/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}">
+                                        <a class="capitalize font-semibold " href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}">
                                             {{$i["name"]}}
                                         </a>
                                         <p class=" capitalize">
-                                            <a href="/{{$i['social']['name']}}"> {{$i["social"]["name"]}}</a>/<a href="/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
-                                            <a href="/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
+                                            <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}"> {{$i["social"]["name"]}}</a>/<a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
+                                            <a href="/{{app()->getLocale() }}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
                                                 {{$i['categoria']['name']}}
                                             </a>
-                                            <a href="/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
+                                            <a href="/{{app()->getLocale() }}/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
                                                 {{$i['subcategoria']['name']}}
                                             </a>
                                         </p>
                                     </div>
                                     <div class="">
-                                        <button class="inline-flex items-center justify-center rounded-md border border-primary py-2 px-2 text-center text-base text-primary transition hover:border-primary hover:bg-primary hover:text-white lg:px-8 xl:px-10"> Ver</button>
+                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-primary py-2 px-2 text-center text-base text-primary transition lg:px-8 xl:px-10"> Ver</a>
                                     </div>
                                 </div>
                                 <br>
@@ -88,35 +87,36 @@
                                 <div class="flex border border-gray-100 rounded-xl py-3 cursor-pointer hover:shadow-md px-2 ">
 
                                     @if(!!$i['imagen'])
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="{{ url('storage/') }}/img/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar" src="thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
                                     @else
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="{{ url('storage/') }}/placeholder/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar" src="thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
                                     @endif
 
                                     <!-- <img class='w-15 h-12 object-cover rounded-lg' alt='User avatar' src='https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200'> -->
                                     <div class="px-2 w-full">
-                                        <a href="/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class=" capitalize font-semibold ">
+                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class=" capitalize font-semibold ">
                                             {{$i['name']}}
                                         </a>
                                         <p class=" capitalize">
-                                            <a href="/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
+                                            <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
                                             @if(isset($i["categoria"]))
-                                            <a href="/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
+                                            <a href="/{{app()->getLocale() }}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
                                                 {{$i['categoria']['name']}}
                                             </a>
+
                                             @else
-                                            <a href="/categoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
+                                            <a href="/{{app()->getLocale() }}/categoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
                                                 Todos
                                             </a>
-
                                             @endif
+
                                             @if(isset($i["subcategoria"]))
-                                            <a href="/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
+                                            <a href="/{{app()->getLocale() }}/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
                                                 {{$i['subcategoria']['name']}}
                                             </a>
                                             @else
 
-                                            <a href="/subcategoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
+                                            <a href="/{{app()->getLocale() }}/subcategoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
                                                 Todos
                                             </a>
 
@@ -124,34 +124,34 @@
                                         </p>
                                     </div>
                                     <div class="">
-                                        <a href="/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-primary py-2 px-2 text-center text-base text-primary transition hover:border-primary hover:bg-primary hover:text-white lg:px-8 xl:px-10"> Ver</a>
+                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-primary py-2 px-2 text-center text-primary transition lg:px-8 xl:px-10"> Ver</a>
                                     </div>
+                                    </di v>
+                                    <br>
+
+                                    @endforeach
+
+                                    @endif
+
+                                    @endforeach
+
+
+
+                                    @endif
+
+
+
+                                    @endforeach
+
                                 </div>
-                                <br>
-
                                 @endforeach
 
-                                @endif
-
-                                @endforeach
-
-
-
-                                @endif
-
-
-
-                                @endforeach
 
                             </div>
-                            @endforeach
-
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
 

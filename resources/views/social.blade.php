@@ -18,7 +18,7 @@
                 <div class="rounded-lg border border-light bg-white py-4 px-4 shadow-card sm:px-6 md:px-8 md:py-5">
                     <ul class="flex items-center">
                         @for ($i = 0; $i < count($breadcrumbs); $i++) <li class="flex items-center">
-                            <a href="{{ $breadcrumbs[$i]['link'] }}" class="text-base font-semibold text-black hover:text-primary">
+                            <a href="/{{app()->getLocale() }}/{{ $breadcrumbs[$i]['link'] }}" class="text-base font-semibold text-black hover:text-primary">
                                 {{ $breadcrumbs[$i]["name"] }}
                             </a>
 
@@ -31,22 +31,7 @@
                             </span>
                             @endif
                             </li>
-
                             @endfor
-
-                            <!-- @if(isset($type))
-                            <li class="flex items-center">
-                                @if(isset($socialMedia))
-                                <a href="/{{$socialMedia->name}}/{{$type}}" class="text-base font-semibold text-body-color hover:text-primary">
-                                    {{$type}}
-                                </a>
-                                @else
-                                <a href="#" class="text-base font-semibold text-body-color hover:text-primary">
-                                    Buscador
-                                </a>
-                                @endif
-                            </li>
-                            @endif -->
                     </ul>
                 </div>
             </div>
@@ -100,11 +85,7 @@
     <!-- ====== Title Section End -->
 
     <!-- ====== Filter Section End -->
-    <!-- <section class="container" style="padding-bottom: 10px ;">
-        <button @click="modalOpen = true" class="inline-flex items-center justify-center rounded-full bg-primary py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
-            Filtros
-        </button>
-    </section> -->
+
 
     <!-- ======Modal Start -->
 
@@ -120,7 +101,7 @@
                     Busca Grupo de tu Preferencia
                 </h3>
                 <span class="mx-auto mb-6 inline-block h-1 w-[90px] rounded bg-primary"></span>
-                <form action="/search" method="GET">
+                <form action="/{{app()->getLocale() }}/search" method="GET">
                     <div class="w-full">
                         <div class="relative mx-auto">
                             <div class="mb-6">
@@ -220,13 +201,13 @@
     </section>
     @endif
     @endif
-    
+
     @if(!!count($mejores->items()))
     <section>
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                 @foreach($mejores as $key => $groupx)
-                <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center {{$key % rand(1,2) == 0? '': 'border-solid border-4 border-yellow-500'}} rounded-lg" style="background-image:url('{{ ( !!$groupx->imagen ? '/storage/img/'. $groupx->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center {{$key % rand(1,2) == 0? '': 'border-solid border-4 border-yellow-500'}} rounded-lg" style="background-image:url('{{ ( !!$groupx->imagen ? '/thumbnail/'. $groupx->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                     <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
                     <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
                         <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
@@ -250,9 +231,9 @@
                     </div>
 
                     <main class="p-5 z-10">
-                        <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="text-white">{{ !!$groupx->username ? '@'.$groupx->username : '' }}</a>
+                        <a href="/{{app()->getLocale() }}/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="text-white">{{ !!$groupx->username ? '@'.$groupx->username : '' }}</a>
                         <p>
-                            <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$groupx->name}}
+                            <a href="/{{app()->getLocale() }}/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$groupx->name}}
                             </a>
                         </p>
                     </main>
@@ -260,19 +241,6 @@
 
                 @endforeach
             </div>
-            <!-- @foreach($mejores as $key => $group)
-                <div class="w-full px-4 md:w-1/3 xl:w-1/4">
-                    <div class="relative mb-12  ">
-                        <div class="overflow-hidden rounded-lg">
-                            <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}">
-                                <img src="{{(!!$mejores[$key]->imagen ? '/storage/img/'. $mejores[$key]->images : '/storage/placeholder/placeholder-avatar.jpg')}}" alt="{{$mejores[$key]->name}}" class="w-full rounded-xl" style="filter:blur(6px)" />
-                                <div class="fondo con"></div>
-                                <div class="censured"></div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                @endforeach -->
 
             <br />
             {{ $mejores->links('vendor.pagination.tailwind') }}
@@ -297,7 +265,7 @@
                             caracteristicas, por favor revisa que estes
                             buscando adecuadamente. Hecha un vistaso a los
                             grupos de @foreach($redesSociales as $red)
-                            <a href="/{{$red->name}}">{{$red->name}}</a>
+                            <a href="/{{app()->getLocale() }}/{{$red->name}}">{{$red->name}}</a>
                             @endforeach
                         </li>
                     </ul>

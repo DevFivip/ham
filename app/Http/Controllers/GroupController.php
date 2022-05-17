@@ -13,8 +13,9 @@ use DateTime;
 use Illuminate\Validation\Rule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Date;
+use Illuminate\Support\Str;
 
-
+use Intervention\Image\Facades\Image;
 
 class GroupController extends Controller
 {
@@ -98,18 +99,26 @@ class GroupController extends Controller
         if (isset($data['avatar'])) {
             $image = $request->file('avatar');
             $filename = time() . '.' . $image->getClientOriginalName();
-            $path = $request->avatar->storeAs('public/img/', $filename);
+            $path = $request->avatar->storeAs('public/img', $filename);
             $data['imagen'] = $filename;
+
+            // dd(public_path($path2));
+
+            $img = Image::make($image);
+
+            $img->resize(200, 200, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save(public_path('thumbnail/' . $filename));
+
+            $img = Image::make($image);
+
+            $img->resize(500, 500, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save(public_path('avatar/' . $filename));
         }
 
-        if (isset($data['banner'])) {
-            $image = $request->file('banner');
-            $filename = time() . '.' . $image->getClientOriginalName();
-            $path = $request->banner->storeAs('public/img/', $filename);
-            $data['banner'] = $filename;
-        }
 
-        $data["slug"] = $this->slugfy($data['name'] . " " . time());
+        $data["slug"] = $this->slugfy($data['name'] . " " . Str::random(3));
         $data["user_id"] = auth()->id();
         $data["description"] = $data["post-trixFields"]["content"];
 
@@ -125,7 +134,7 @@ class GroupController extends Controller
         $grupos = Group::where('user_id', auth()->id())->with('social', 'type')->orderBy('id', 'ASC')->get();
         $message = ["status" => "success", "message" => "Grupo creado Perfectamente 👌"];
 
-        return redirect('home');
+        return redirect(app()->getLocale() . '/home');
         // return view('home', compact('cookies','grupos', 'message'));
 
         // } catch (\Throwable $th) {
@@ -157,8 +166,10 @@ class GroupController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $req, $id)
+    public function edit(Request $req, $lang,$id)
     {
+        // dd($req,$lang,$id);
+
         $group = Group::find($id);
         $locations = Location::all();
         $categories = Category::all();
@@ -176,8 +187,9 @@ class GroupController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $lang,$id)
     {
+
 
         $data = $request->all();
 
@@ -196,16 +208,22 @@ class GroupController extends Controller
             $filename = time() . '.' . $image->getClientOriginalName();
             $path = $request->avatar->storeAs('public/img/', $filename);
             $data['imagen'] = $filename;
+
+            $img = Image::make($image);
+
+            $img->resize(200, 200, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save(public_path('thumbnail/' . $filename));
+
+            $img = Image::make($image);
+
+            $img->resize(300, 300, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save(public_path('avatar/' . $filename));
         }
 
-        if (isset($data['banner'])) {
-            $image = $request->file('banner');
-            $filename = time() . '.' . $image->getClientOriginalName();
-            $path = $request->banner->storeAs('public/img/', $filename);
-            $data['banner'] = $filename;
-        }
 
-        $data["slug"] = $this->slugfy($data['name'] . " " . time());
+        $data["slug"] = $this->slugfy($data['name'] . " " . Str::random(3));
         $data["user_id"] = auth()->id();
         $data["description"] = $data["post-trixFields"]["content"];
 
@@ -217,7 +235,7 @@ class GroupController extends Controller
         $grupos = Group::where('user_id', auth()->id())->with('social', 'type')->orderBy('id', 'ASC')->get();
         $message = ["status" => "success", "message" => "Grupo creado Perfectamente 👌"];
         $cookies = $this->home->ccookie($request);
-        return redirect('home');
+        return redirect(app()->getLocale() . '/home');
     }
 
     /**

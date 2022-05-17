@@ -47,10 +47,10 @@
                         </div>
                         <div class="w-full px-4 lg:w-1/2">
                             <div class="flex flex-wrap lg:justify-end">
-                                <a href="/precios" class="my-1 mr-4 inline-block rounded bg-white bg-opacity-[15%] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-100 hover:text-primary md:px-9 lg:px-6 xl:px-9">
+                                <a href="/{{app()->getLocale() }}/precios" class="my-1 mr-4 inline-block rounded bg-white bg-opacity-[15%] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-100 hover:text-primary md:px-9 lg:px-6 xl:px-9">
                                     Actualizate a la Versión PRO
                                 </a>
-                                <a href="/home/group/create" class="my-1 inline-block rounded bg-[#13C296] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9">
+                                <a href="/{{app()->getLocale() }}/home/group/create" class="my-1 inline-block rounded bg-[#13C296] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9">
                                     Crea Un Nuevo Grupo
                                 </a>
                             </div>
@@ -112,20 +112,20 @@
                                 </span>
                                 @endif
                                 <br>
-                                <a href="/home/group/{{$grupo->id}}/edit" class="inline-block rounded-md border py-3 px-7 text-sm font-semibold text-body-color transition hover:border-primary hover:bg-primary hover:text-white">
+                                <a href="/{{app()->getLocale() }}/home/group/{{$grupo->id}}/edit" class="inline-block rounded-md border py-3 px-7 text-sm font-semibold text-body-color transition hover:border-primary hover:bg-primary hover:text-white">
                                     Editar
                                 </a>
-                                <a href="/{{$grupo->social->name}}/{{$grupo->type->name}}/categoria/{{$grupo->categoria->slug}}/{{$grupo->subcategoria->slug}}/{{$grupo->slug}}" class="inline-block rounded-md border py-3 px-7 text-sm font-semibold text-body-color transition hover:border-primary hover:bg-primary hover:text-white">
+                                <a href="/{{app()->getLocale() }}/{{$grupo->social->name}}/{{$grupo->type->name}}/categoria/{{$grupo->categoria->slug}}/{{$grupo->subcategoria->slug}}/{{$grupo->slug}}" class="inline-block rounded-md border py-3 px-7 text-sm font-semibold text-body-color transition hover:border-primary hover:bg-primary hover:text-white">
                                     Ver
                                 </a>
 
 
                                 @if(!!$grupo->status)
-                                <a href="#" class="inline-block rounded-md border py-3 px-7 text-sm font-semibold text-danger transition border-danger">
+                                <a href="/{{app()->getLocale() }}#" class="inline-block rounded-md border py-3 px-7 text-sm font-semibold text-danger transition border-danger">
                                     Desactivar
                                 </a>
                                 @else
-                                <a href="/home/payment/{{$grupo->id}}" class="inline-block rounded-md border py-3 px-7 text-sm font-semibold text-secondary transition border-secondary">
+                                <a href="/{{app()->getLocale() }}/home/payment/{{$grupo->id}}" class="inline-block rounded-md border py-3 px-7 text-sm font-semibold text-secondary transition border-secondary">
                                     Activar
                                 </a>
                                 @endif
@@ -156,7 +156,7 @@
                         Puedes crear <b>1</b> (un) grupo de muestra y publicarlo por 15 dias y darte a conocer.
                     </p>
                     <div class="flex">
-                        <a href="/home/group/create" class="mr-6 inline-block text-sm font-medium text-[#34D399]">
+                        <a href="/{{app()->getLocale() }}/home/group/create" class="mr-6 inline-block text-sm font-medium text-[#34D399]">
                             Crear Grupo
                         </a>
                     </div>

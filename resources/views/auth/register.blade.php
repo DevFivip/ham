@@ -14,7 +14,7 @@
                                         <img src="assets/images/logo/logo.svg" alt="logo" />
                                     </a>
                                 </div>
-                                <form method="POST" action="{{ route('register') }}">
+                                <form method="POST" action="{{ route('register',app()->getLocale()) }}">
                                     @csrf
                                     <div class="mb-6">
                                         <input type="text" placeholder="Nombre y Apellido" class="bordder-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none" class="form-input w-full @error('name') border-red-500 @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus />
