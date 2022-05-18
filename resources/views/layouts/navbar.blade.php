@@ -23,8 +23,8 @@
                                     {{$red->name}}
                                 </a>
                             </li>
-
                             @endforeach
+
 
                             @guest
                             <li class="md:hidden lg:hidden">

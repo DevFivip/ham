@@ -16,7 +16,6 @@
         <img style="min-height:300px;" id="preview-banner" src="{{ url('storage/') }}/placeholder/background.png" alt="background-{{$group['name']}}" />
     </section>
 
-
     <section class="py-16 bg-blueGray-200 z-100 mt-0 sm:mt-44">
         <div class="container mx-auto">
             <div class="flex flex-col min-w-0 break-words bg-white md:w-4/5 sm:w-full mx-auto mb-6 shadow-xl rounded-lg  space pt-10">
@@ -105,7 +104,7 @@
                                         <p class="mb-8 text-base text-body-color">
                                             Las categorías que mejor describen esta cuenta de {{ $group->social->name }} son
                                             {{ $group->categoria->name }}, {{ $group->subcategoria->name }} .
-                                            Puedes ver perfiles similares en el apartado de <a href="/categoria/{{ $group->categoria->slug }}" class="text-primary">Categorias</a>
+                                            Puedes ver perfiles similares en el apartado de <a href="/categoria/{{ $group->categoria->slug }}" class="text-blue-700">Categorias</a>
                                         </p>
                                     </div>
                                 </div>
@@ -116,8 +115,8 @@
                                     De dónde es {{ $group->name }}?
                                 </h2>
                                 <p class="mb-8 text-base text-body-color">
-                                    Es de <a href="/" class="text-primary">{{ $group->location->name }}</a>. Si quieres
-                                    ver más Contenido de ese país, echa un vistazo a la sección de buscar <a href="" class="text-primary">{{ $group->social->name }} por Localización </a> en nuestra
+                                    Es de <a href="/" class="text-blue-700">{{ $group->location->name }}</a>. Si quieres
+                                    ver más Contenido de ese país, echa un vistazo a la sección de buscar <a href="" class="text-blue-700">{{ $group->social->name }} por Localización </a> en nuestra
                                     web
                                 </p>
                             </div>
@@ -130,7 +129,7 @@
                                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
 
                                     <div class="py-3 sm:py-4">
-                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[1]->imagen ? '/storage/img/'. $mejores[1]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[0]->imagen ? '/storage/img/'. $mejores[0]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                             </div>
                                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -154,15 +153,15 @@
                                                 @endif
                                             </div>
                                             <main class="p-5 z-10">
-                                                <p class="text-white">@maridiza</p>
-                                                <a href="" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Mariannys Gutierrez
+                                                <p class="text-white">{{ !!$mejores[0]->username ? '@'.$mejores[0]->username : '' }}</p>
+                                                <a href="" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[0]->name}}
                                                 </a>
                                             </main>
                                         </div>
                                     </div>
 
                                     <div class="py-3 sm:py-4">
-                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[2]->imagen ? '/storage/img/'. $mejores[2]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[1]->imagen ? '/storage/img/'. $mejores[1]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                             </div>
                                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -188,8 +187,8 @@
                                                 @endif
                                             </div>
                                             <main class="p-5 z-10">
-                                                <p class="text-white">@maridiza</p>
-                                                <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Mariannys Gutierrez
+                                                <p class="text-white">{{ !!$mejores[1]->username ? '@'.$mejores[1]->username : '' }}</p>
+                                                <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[1]->name}}
                                                 </a>
                                             </main>
                                         </div>
@@ -197,7 +196,7 @@
 
                                 </div>
                                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                                    <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[3]->imagen ? '/storage/img/'. $mejores[3]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                    <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[2]->imagen ? '/storage/img/'. $mejores[2]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                                         <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                         </div>
                                         <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -223,8 +222,8 @@
                                             @endif
                                         </div>
                                         <main class="p-5 z-10">
-                                            <p class="text-white">@maridiza</p>
-                                            <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Mariannys Gutierrez
+                                            <p class="text-white">{{ !!$mejores[2]->username ? '@'.$mejores[2]->username : '' }}</p>
+                                            <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[2]->name}}
                                             </a>
                                         </main>
                                     </div>
@@ -307,11 +306,20 @@
                     </div>
 
                     <div class="w-full px-4 lg:w-1/2 xl:w-5/12 px-6">
-                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[4]->imagen ? '/storage/img/'. $mejores[4]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[3]->imagen ? '/storage/img/'. $mejores[3]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                             </div>
                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                                <a href="#" class="text-xs bg-blue-700 text-white p-3 rounded-lg uppercase hover:bg-white hover:text-indigo-600 transition ease-in-out duration-500">OF</a>
+
+                                <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                                    @if($mejores[3]->social->slug === "onlyfans")
+                                    <i class="onlyfans2 text-white fa-2xl"></i>
+                                    @else
+                                    <i class="{{$mejores[3]->social->icon}} text-white" style="font-size:50px;"></i>
+                                    @endif
+                                </a>
+
+
                                 @if($mejores[3]->precio_membresia > 0)
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
@@ -325,8 +333,8 @@
                                 @endif
                             </div>
                             <main class="p-5 z-10">
-                                <p class="text-white">@maridiza</p>
-                                <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Mariannys Gutierrez
+                                <p class="text-white">{{ !!$mejores[3]->username ? '@'.$mejores[3]->username : '' }}</p>
+                                <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[3]->name}}
                                 </a>
                             </main>
                         </div>
@@ -335,30 +343,30 @@
                 </section>
 
                 <hr class="mt-10 pb-5">
-                <section class="px-6">
-                    <div class="w-full ">
-                        <div class="mt-10 lg:mt-0">
-                            <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-                                Preguntas y Respuestas Frecuentes
-                            </h2>
-                            <p class="mb-8 text-base text-body-color">
-                                Estas son las preguntas más frecuentes que hacen los usuarios antes de ingresar a
-                                {{ $group->name }}. Haznos saber si tienes má preguntas o te gustaría añadir más
-                                información de este {{ $group->type->name }}
-                            </p>
+                    <section class="px-6">
+                        <div class="w-full ">
+                            <div class="mt-10 lg:mt-0">
+                                <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
+                                    Preguntas y Respuestas Frecuentes
+                                </h2>
+                                <p class="mb-8 text-base text-body-color">
+                                    Estas son las preguntas más frecuentes que hacen los usuarios antes de ingresar a
+                                    {{ $group->name }}. Haznos saber si tienes má preguntas o te gustaría añadir más
+                                    información de este {{ $group->type->name }}
+                                </p>
 
+                            </div>
                         </div>
-                    </div>
 
-                </section>
+                    </section>
 
-                <section x-data="{openFaq1: false, openFaq4: false}" class="relative z-20 overflow-hidden bg-white">
+                <section x-data="{openFaq1: false, openFaq2: false, openFaq4: false}" class="relative z-20 overflow-hidden bg-white">
                     <div class="container">
                         <div class="-mx-4 flex flex-wrap">
                             <div class="w-full px-4 lg:w-1/2">
                                 <div class="single-faq mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8">
                                     <button class="faq-btn flex w-full text-left" @click="openFaq1 = !openFaq1">
-                                        <div class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary">
+                                        <div class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-blue-700">
                                             <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
                                                 <path d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z" fill="#3056D3" stroke="#3056D3" />
                                             </svg>
@@ -380,8 +388,29 @@
                             </div>
                             <div class="w-full px-4 lg:w-1/2">
                                 <div class="single-faq mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8">
+                                    <button class="faq-btn flex w-full text-left" @click="openFaq2 = !openFaq2">
+                                        <div class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-blue-700">
+                                            <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
+                                                <path d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z" fill="#3056D3" stroke="#3056D3" />
+                                            </svg>
+                                        </div>
+                                        <div class="w-full">
+                                            <h4 class="text-lg font-semibold text-black">
+                                                ¿Como puedo conseguir el {{ $group->social->name }} de {{ $group->name }} gratis?
+                                            </h4>
+                                        </div>
+                                    </button>
+                                    <div x-show="openFaq2" class="faq-content pl-[62px]">
+                                        <p class="py-3 text-base leading-relaxed text-body-color">
+                                            Estás de suerte! Esta cuenta es TOTALMENTE GRATIS así que no pierdas ni un minuto más y suscríbete!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full px-4 lg:w-1/2">
+                                <div class="single-faq mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8">
                                     <button class="faq-btn flex w-full text-left" @click="openFaq4 = !openFaq4">
-                                        <div class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary">
+                                        <div class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-blue-700">
                                             <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
                                                 <path d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z" fill="#3056D3" stroke="#3056D3" />
                                             </svg>

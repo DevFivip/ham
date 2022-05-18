@@ -22,9 +22,9 @@
         {
           navbarOpen: false,
         }
-      " class="absolute left-0 top-0 z-50 w-full">
+      " class="absolute left-0 top-0 z-50 w-full ">
             <div class="container">
-                <div class="relative -mx-4 flex items-center justify-between bg-white">
+                <div class="relative -mx-4 flex items-center justify-between bg-white rounded-lg ">
                     <div class="w-60 max-w-full px-4">
                         <a href="/{{app()->getLocale() }}/home" class="block w-full py-5">
                             <img src="/assets/images/logo/logo.svg" alt="logo" class="w-full" />

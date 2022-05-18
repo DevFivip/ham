@@ -164,32 +164,31 @@ class CategoriesSeeder extends Seeder
             "status" => 1,
         ]);
 
-        Social::create([
-            "name" => "Facebook",
-            "description" => "ejemplo de descripcion de red social",
-            "icon" => "fa-facebook-f fa-brands",
-            "status" => 1,
-        ]);
+        // Social::create([
+        //     "name" => "Facebook",
+        //     "description" => "ejemplo de descripcion de red social",
+        //     "icon" => "fa-facebook-f fa-brands",
+        //     "status" => 1,
+        // ]);
 
-        Social::create([
-            "name" => "Twitch",
-            "description" => "ejemplo de descripcion de red social",
-            "icon" => "fa-twitch fa-brands",
-            "status" => 1,
-        ]);
+        // Social::create([
+        //     "name" => "Twitch",
+        //     "description" => "ejemplo de descripcion de red social",
+        //     "icon" => "fa-twitch fa-brands",
+        //     "status" => 1,
+        // ]);
 
-        Social::create([
-            "name" => "Youtube",
-            "description" => "ejemplo de descripcion de red social",
-            "icon" => "fa-youtube fa-brands",
-            "status" => 1,
-        ]);
-
+        // Social::create([
+        //     "name" => "Youtube",
+        //     "description" => "ejemplo de descripcion de red social",
+        //     "icon" => "fa-youtube fa-brands",
+        //     "status" => 1,
+        // ]);
 
         Social::create([
             "name" => "OnlyFans",
             "description" => "ejemplo de descripcion de red social",
-            "icon" => "fa-discord fa-brands",
+            "icon" => "onlyfans",
             "status" => 1,
         ]);
 

@@ -26,7 +26,7 @@ class GroupFactory extends Factory
             "categoria_id" => rand(1, 24),
             "subcategoria_id" => rand(1, 801),
             "location_id" => rand(1, 214),
-            "social_id" => rand(1, 6),
+            "social_id" => rand(1, 3),
             "user_id" => 1,
             "group_type_id" => rand(1, 2),
             "status" => 1,

@@ -47,6 +47,10 @@ Route::group([
     Route::get('/', function (Request $req) {
         $redes = Social::all();
         $mejores = Group::limit(10)->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->get()->toArray();
+        $mejores3 = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('precio_membresia', 0)->inRandomOrder()->limit(3)->get();
+        $mejores_onlyfans = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 3)->inRandomOrder()->limit(3)->get();
+        $mejores_whatsapp = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 1)->inRandomOrder()->limit(3)->get();
+        $mejores_telegram = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 2)->inRandomOrder()->limit(3)->get();
         $redesSociales = Social::all();
         $listas = [];
 
@@ -56,16 +60,13 @@ Route::group([
             array_push($listas[$i], $social->toArray());
         }
         $cookies = ccookie($req);
-        return view('welcome', compact("cookies", "mejores", "redes", "social", "listas", "redesSociales"));
+        return view('welcome', compact("cookies", "mejores", "mejores3", "mejores_onlyfans", "mejores_telegram", "mejores_whatsapp", "redes", "social", "listas", "redesSociales"));
     });
 
     Route::get("precios", function (Request $req) {
         $cookies = ccookie($req);
         return view("precios", compact('cookies'));
     });
-
-
-
 
     Auth::routes();
 
@@ -175,9 +176,9 @@ Route::group([
             $socialMedia = Social::where("name", $social)->first();
             $categorias = Category::all();
 
-            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('social_id', $socialMedia->id)->inRandomOrder()->limit(12)->get();
 
             $group = Group::where("slug", $group_slug)->first();
+            $mejores = Group::whereNotIn('id', [$group->id])->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('social_id', $socialMedia->id)->inRandomOrder()->limit(11)->get();
 
             /**cookie de visita */
 
@@ -203,10 +204,6 @@ Route::group([
             abort(404);
         }
     });
-
-
-
-
 
 
     // Route::get('categoria/{category_slug}/{subcategoria}', function (Request $req, $category_slug, $subcategoria) {
