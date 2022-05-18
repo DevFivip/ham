@@ -31,9 +31,7 @@
                             <a href="javascript:void(0)" @click="openTab = 99" :class="openTab === 99 ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
                                 Populares 🔥
                             </a>
-
                             @foreach ($redes as $red)
-
                             <a href="javascript:void(0)" @click="openTab = {{$red->id}}" :class="openTab === {{$red->id}} ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
                                 {{$red->name}}
                             </a>
@@ -45,9 +43,9 @@
                                 <div class="flex border border-gray-100 rounded-xl py-3 cursor-pointer hover:shadow-md px-2 ">
 
                                     @if(!!$i['imagen'])
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar" src="/thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
                                     @else
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar" src="/thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
                                     @endif
 
 
@@ -87,9 +85,9 @@
                                 <div class="flex border border-gray-100 rounded-xl py-3 cursor-pointer hover:shadow-md px-2 ">
 
                                     @if(!!$i['imagen'])
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar" src="/thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
                                     @else
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar" src="/thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
                                     @endif
 
                                     <!-- <img class='w-15 h-12 object-cover rounded-lg' alt='User avatar' src='https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200'> -->
@@ -126,7 +124,7 @@
                                     <div class="">
                                         <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-primary py-2 px-2 text-center text-primary transition lg:px-8 xl:px-10"> Ver</a>
                                     </div>
-                                    </di v>
+                                    </div>
                                     <br>
 
                                     @endforeach
@@ -144,8 +142,9 @@
                                     @endforeach
 
                                 </div>
-                                @endforeach
 
+                                @endforeach
+                                    
 
                             </div>
                         </div>
