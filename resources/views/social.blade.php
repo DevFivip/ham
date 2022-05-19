@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{app()->getLocale()}}">
 
 <head>
     @include("layouts.header")
@@ -7,11 +7,11 @@
 
 <body>
     <!-- ====== Navbar Section Start -->
-    @include("layouts.navbar")
+    @include("layouts.navbar2")
     <!-- ====== Navbar Section End -->
 
-    <!-- ====== breadcrumbs Section Start -->
 
+    <!-- ====== breadcrumbs Section Start -->
     <section class="pt-20" style="padding-top: 110px !important">
         <div class="container mx-auto px-6">
             <div class="mb-8 w-full">

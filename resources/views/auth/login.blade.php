@@ -50,7 +50,7 @@
                                 </a>
                                 <p class="text-base text-[#adadad]">
                                     ¿Aun no posees cuenta?
-                                    <a href="/register" class="text-primary hover:underline">
+                                    <a href="/{{app()->getLocale()}}/register" class="text-primary hover:underline">
                                         Registrate ahora mismo
                                     </a>
                                 </p>

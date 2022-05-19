@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Group;
+use App\Models\Social;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -26,7 +27,8 @@ class HomeController extends Controller
     {
         $cookies = $this->ccookie($req);
         $grupos = Group::where('user_id', auth()->id())->with('social', 'categoria', 'subcategoria', 'location', 'type')->orderBy('id', 'ASC')->get();
-        return view('home', compact("cookies", 'grupos'));
+        $redesSociales = Social::all();
+        return view('home', compact("cookies", 'grupos', 'redesSociales'));
     }
 
 

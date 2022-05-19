@@ -19,10 +19,10 @@
 <body class="bg-gray-700 h-screen antialiased leading-none font-sans">
     <div id="app">
         <header x-data="
-        {
-          navbarOpen: false,
-        }
-      " class="absolute left-0 top-0 z-50 w-full ">
+                 {
+                   navbarOpen: false,
+                 }
+                   " class="absolute left-0 top-0 z-50 w-full ">
             <div class="container">
                 <div class="relative -mx-4 flex items-center justify-between bg-white rounded-lg ">
                     <div class="w-60 max-w-full px-4">
@@ -82,6 +82,8 @@
             </div>
         </header>
 
+
+        @include("layouts.navbar2")
         @yield('content')
     </div>
 </body>

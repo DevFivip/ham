@@ -7,9 +7,9 @@
 
 <body>
     <!-- ====== Navbar Section Start -->
-    @include("layouts.navbar")
+    @include("layouts.navbar2")
     <!-- ====== Navbar Section End -->
-
+    
     <!-- ====== Hero Section Start -->
     @include("layouts.hero")
     <!-- ====== Hero Section END -->

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{app()->getLocale()}}">
 <!-- <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"> -->
 
 <head>
@@ -9,7 +9,7 @@
 <body class="bg-gray-100">
 
     <div class="">
-        @include("layouts.navbar")
+        @include("layouts.navbar2")
     </div>
 
     <section class="relative block -z-10 md:h-72">

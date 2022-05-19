@@ -34,8 +34,16 @@ function ccookie($req)
     return ["__CAC" => $cookie_de_aceptacion, "__CAD" => $cookie_de_contenido_adulto];
 }
 
-Route::get('/', function () {
-    return redirect(app()->getLocale());
+Route::get('/', function (Request $req) {
+
+    $lang = $req->server()["HTTP_ACCEPT_LANGUAGE"];
+    $lang = explode(',', $lang);
+
+    try {
+        $lang = explode('-', $lang[0]);
+    } catch (\Throwable $th) {
+    }
+    return redirect($lang[0]);
 });
 
 Route::group([
@@ -46,7 +54,7 @@ Route::group([
 
     Route::get('/', function (Request $req) {
         $redes = Social::all();
-        $mejores = Group::limit(10)->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->get()->toArray();
+        $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->limit(3)->get()->toArray();
         $mejores3 = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('precio_membresia', 0)->inRandomOrder()->limit(3)->get();
         $mejores_onlyfans = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 3)->inRandomOrder()->limit(3)->get();
         $mejores_whatsapp = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 1)->inRandomOrder()->limit(3)->get();
@@ -56,7 +64,7 @@ Route::group([
 
         for ($i = 0; $i < count($redes); $i++) {
             $listas[$i] = [];
-            $social = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('social_id', $redes[$i]->id)->limit(10)->get();
+            $social = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('social_id', $redes[$i]->id)->inRandomOrder()->limit(3)->get();
             array_push($listas[$i], $social->toArray());
         }
         $cookies = ccookie($req);
