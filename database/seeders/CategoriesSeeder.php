@@ -22,45 +22,46 @@ class CategoriesSeeder extends Seeder
         $string = file_get_contents(__dir__ . "/../../resources/js/subcategorias.json");
         $json = json_decode($string, true);
 
+
         $categorias = [
             [
-                "name" => "Aficiones y Ocio",
+                "name" => "Hobbies and Leisure",
                 "slug" => "aficiones-y-ocio"
             ],
             [
-                "name" => "Amistad y Conocer gente",
+                "name" => "Friendship and Meeting people",
                 "slug" => "amistad-y-conocer-gente"
             ],
             [
-                "name" => "Amor",
+                "name" => "Love",
                 "slug" => "amor"
             ],
             [
-                "name" => "Anime, Cine y TV",
+                "name" => "Anime, Movies and TV",
                 "slug" => "anime-cine-tv"
             ],
             [
-                "name" => "Anuncios",
+                "name" => "Ads",
                 "slug" => "anuncions"
             ],
             [
-                "name" => "Deportes y Fitness",
+                "name" => "Sports and Fitness",
                 "slug" => "deportes"
             ],
             [
-                "name" => "Dinero y Negocios",
+                "name" => "Money and Business",
                 "slug" => "dinero-negocios"
             ],
             [
-                "name" => "Esoterismo y Energia",
+                "name" => "Esotericism and Energy",
                 "slug" => "esoterismo-y-energia"
             ],
             [
-                "name" => "Expatriados",
+                "name" => "Expatriates",
                 "slug" => "expatriados"
             ],
             [
-                "name" => "Formación, Arte y Cultura",
+                "name" => "Training, Art and Culture",
                 "slug" => "formacion-arte-y-cultura"
             ],
             [
@@ -68,11 +69,11 @@ class CategoriesSeeder extends Seeder
                 "slug" => "humor-memes"
             ],
             [
-                "name" => "Internet y Ciencia",
+                "name" => "Internet and Science",
                 "slug" => "internet-y-ciencia"
             ],
             [
-                "name" => "Juegos y Videojuegos",
+                "name" => "Games and Video Games",
                 "slug" => "juegos-y-videojuegos"
             ],
             [
@@ -80,11 +81,11 @@ class CategoriesSeeder extends Seeder
                 "slug" => "lgbtqia+"
             ],
             [
-                "name" => "Mascotas y Animales",
+                "name" => "Pets and Animals",
                 "slug" => "mascotas-y-animales"
             ],
             [
-                "name" => "Moda y Belleza",
+                "name" => "Fashion and Beauty",
                 "slug" => "moda-y-belleza"
             ],
             [
@@ -92,27 +93,27 @@ class CategoriesSeeder extends Seeder
                 "slug" => "motor"
             ],
             [
-                "name" => "Música y Danza",
+                "name" => "Music and Dance",
                 "slug" => "musica-y-danza"
             ],
             [
-                "name" => "Organizaciones y Movimientos",
+                "name" => "Organizations and Movements",
                 "slug" => "organizaciones-y-movimientos"
             ],
             [
-                "name" => "Padres y Familia",
+                "name" => "Parents and Family",
                 "slug" => "padres-y-familia"
             ],
             [
-                "name" => "Religión y Creencias",
+                "name" => "Religion and Beliefs",
                 "slug" => "religion-y-creencias"
             ],
             [
-                "name" => "Salud y Bienestar",
+                "name" => "Health and Wellness",
                 "slug" => "salud-y-bienestar"
             ],
             [
-                "name" => "Viajes",
+                "name" => "Travel",
                 "slug" => "viajes"
             ],
             [

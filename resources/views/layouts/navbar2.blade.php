@@ -7,7 +7,6 @@
 
 
 
-
         <div class="flex md:order-2">
 
             @guest

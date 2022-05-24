@@ -92,26 +92,26 @@
     <section x-data="{modalOpen: false}">
         <div class="container mx-auto px-4">
             <button @click="modalOpen = true" class="rounded-full bg-blue-700 py-3 px-6 text-base font-medium text-white" style="margin-bottom: 10px">
-                Filtros
+                {{__("Filters")}}
             </button>
         </div>
         <div style="display: none" x-show="modalOpen" x-transition class="fixed top-0 left-0 flex h-full min-h-screen w-full items-center justify-center bg-black bg-opacity-90 px-4 py-5 z-50">
             <div @click.outside="modalOpen = false" class="w-full max-w-[570px] rounded-[20px] bg-white py-12 px-8 text-center md:py-[60px] md:px-[70px]">
                 <h3 class="pb-2 text-xl font-bold text-dark sm:text-2xl">
-                    Busca Grupo de tu Preferencia
+                    {{__("Search according to your preferences")}}
                 </h3>
                 <span class="mx-auto mb-6 inline-block h-1 w-[90px] rounded bg-primary"></span>
                 <form action="/{{app()->getLocale() }}/search" method="GET">
                     <div class="w-full">
                         <div class="relative mx-auto">
                             <div class="mb-6">
-                                <input type="text" name="name" placeholder="Buscar" class="bordder-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none" />
+                                <input type="text" name="name" placeholder="{{__('Search')}}" class="bordder-[#E9EDF4] w-full rounded-md border bg-[#FCFDFE] py-3 px-5 text-base text-body-color placeholder-[#ACB6BE] outline-none focus:border-primary focus-visible:shadow-none" />
                             </div>
                             <div class="mb-6">
                                 <div class="relative">
                                     <select name="social_id" id="social_id" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]">
                                         <option value="">
-                                            ---Plataforma---
+                                            ---{{__("Platform")}}---
                                         </option>
                                         @foreach($redesSociales as $red)
                                         <option value="{{$red->id}}">
@@ -127,7 +127,7 @@
                                 <div class="relative">
                                     <select name="categoria_id" id="categoria" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]">
                                         <option value="">
-                                            ---Categoria---
+                                            ---{{__("Category")}}---
                                         </option>
                                         @foreach($categorias as $categoria)
                                         <option value="{{$categoria->id}}">
@@ -144,7 +144,7 @@
                                 <div class="relative">
                                     <select name="subcategoria_id" id="subcategoria" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]">
                                         <option value="">
-                                            ---Seleccione Categoria---
+                                            ---{{__("Select")}} {{__("Category")}}---
                                         </option>
                                     </select>
                                     <span class="absolute right-4 top-1/2 mt-[-2px] h-[10px] w-[10px] -translate-y-1/2 rotate-45 border-r-2 border-b-2 border-body-color">
@@ -162,7 +162,7 @@
                         </div>
                         <div class="w-1/2 px-3">
                             <button class="block w-full rounded-lg border border-primary bg-blue-700 p-3 text-center text-base font-medium text-white transition hover:bg-opacity-90">
-                                Buscar
+                                {{__('Search')}}
                             </button>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="w-full">
                     <h5 class="mb-3 text-base font-semibold text-[#B45454]">
-                        404 Not Fund
+                        404 Not Found
                     </h5>
                     <ul class="list-inside list-disc">
                         <li class="text-base leading-relaxed text-[#CD5D5D]">
@@ -224,7 +224,7 @@
                         @else
                         <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                             <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                            <span class="">Gratis</span>
+                            <span class="">{{__("Free")}}</span>
                         </div>
                         @endif
                     </div>
