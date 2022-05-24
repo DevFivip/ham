@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{app()->getLocale()}}">
 
 <head>
     @include("layouts.header")
@@ -29,7 +29,7 @@
                         " class="mb-14 w-full">
                         <div class="flex flex-wrap rounded-lg border border-[#E4E4E4] py-3 px-4">
                             <a href="javascript:void(0)" @click="openTab = 99" :class="openTab === 99 ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
-                                Populares 🔥
+                                {{__("Best")}} 🔥
                             </a>
                             @foreach ($redes as $red)
                             <a href="javascript:void(0)" @click="openTab = {{$red->id}}" :class="openTab === {{$red->id}} ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
@@ -64,7 +64,7 @@
                                         </p>
                                     </div>
                                     <div class="">
-                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-blue-700 py-2 px-2 text-center text-bold text-white transition bg-blue-700 lg:px-8 xl:px-10"> Ver</a>
+                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-blue-700 py-2 px-2 text-center text-bold text-white transition bg-blue-700 lg:px-8 xl:px-10"> {{__("Go")}}</a>
                                     </div>
                                 </div>
                                 <br>
@@ -104,7 +104,7 @@
 
                                             @else
                                             <a href="/{{app()->getLocale() }}/categoria/" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
-                                                Todos
+                                                {{__("All")}}
                                             </a>
                                             @endif
 
@@ -115,14 +115,14 @@
                                             @else
 
                                             <a href="/{{app()->getLocale() }}/subcategoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
-                                                Todos
+                                            {{__("All")}}
                                             </a>
 
                                             @endif
                                         </p>
                                     </div>
                                     <div class="">
-                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-blue-700 py-2 px-2 text-center text-bold text-white transition bg-blue-700 lg:px-8 xl:px-10"> Ver</a>
+                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-blue-700 py-2 px-2 text-center text-bold text-white transition bg-blue-700 lg:px-8 xl:px-10"> {{__("Go")}}</a>
                                     </div>
                                 </div>
                                 <br>

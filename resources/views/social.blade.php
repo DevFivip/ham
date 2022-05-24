@@ -58,7 +58,7 @@
                                 {{$socialMedia->name}}
                             </h4>
                             <p class="text-base font-medium text-white">
-                                {{$socialMedia->description}}
+                                {{__($socialMedia->description)}}
                             </p>
                             @elseif(isset($title))
                             <h4 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
@@ -69,10 +69,10 @@
                             </p>
                             @else
                             <h4 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
-                                Buscador
+                                {{__("Search")}}
                             </h4>
                             <p class="text-base font-medium text-white">
-                                Encuentra los mejores grupos
+                                {{__("Find the best groups and channels")}}
                             </p>
                             @endif
                         </div>

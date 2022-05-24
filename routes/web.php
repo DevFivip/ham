@@ -149,6 +149,11 @@ Route::group([
             $categorias = Category::all();
             $mejores = Group::where($query)->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->paginate(PAGINATION);
 
+            if (!count($mejores)) {
+                 $rand = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->limit(11)->paginate(PAGINATION);
+                 $mejores = $rand;
+            };
+
             $breadcrumbs = [
                 ["name" =>  "Inicio", "link" => "/"],
                 ["name" =>  "Buscador", "link" => "/search"]

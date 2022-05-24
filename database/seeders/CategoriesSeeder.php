@@ -152,14 +152,14 @@ class CategoriesSeeder extends Seeder
 
         Social::create([
             "name" => "WhatsApp",
-            "description" => "ejemplo de descripcion de red social",
+            "description" => "You are ready to establish a contact",
             "icon" => "fa-brands fa-whatsapp",
             "status" => 1,
         ]);
 
         Social::create([
             "name" => "Telegram",
-            "description" => "ejemplo de descripcion de red social",
+            "description" => "You are ready to establish a contact",
             "icon" => "fa-telegram fa-brands",
             "status" => 1,
         ]);
@@ -187,7 +187,7 @@ class CategoriesSeeder extends Seeder
 
         Social::create([
             "name" => "OnlyFans",
-            "description" => "ejemplo de descripcion de red social",
+            "description" => "Select an onlyfans and give your love to your favorite content creator",
             "icon" => "onlyfans",
             "status" => 1,
         ]);

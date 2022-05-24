@@ -1,65 +1,33 @@
-<div class="relative bg-white pt-[120px] pb-[110px] lg:pt-[150px]">
-    <div class="container mx-auto px-4">
+<section class="overflow-hidden bg-blue-200 py-20 ">
+    <div class="container mx-auto px-12">
         <div class="-mx-4 flex flex-wrap">
-            <div class="w-full px-4 lg:w-5/12">
-                <div class="hero-content">
-                    <h1 class="mb-3 text-4xl font-bold leading-snug text-dark sm:text-[42px] lg:text-[40px] xl:text-[42px]">
-                        Kickstart <br />
-                        Startup Website <br />
-                        with TailGrids
-                    </h1>
-                    <p class="mb-8 max-w-[480px] text-base text-body-color">
-                        With TailGrids, business and students thrive together. Business
-                        can perfectly match their staffing to changing demand throughout
-                        the dayed.
-                    </p>
-                    <ul class="flex flex-wrap items-center">
-                        <li>
-                            <a href="javascript:void(0)" class="inline-flex items-center justify-center rounded-lg bg-primary py-4 px-6 text-center text-base font-normal text-white hover:bg-opacity-90 sm:px-10 lg:px-8 xl:px-10">
-                                Get Started
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="inline-flex items-center justify-center py-4 px-6 text-center text-base font-normal text-body-color hover:text-primary sm:px-10 lg:px-8 xl:px-10">
-                                <span class="mr-2">
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="11" cy="11" r="11" fill="#3056D3" />
-                                        <rect x="6.90906" y="13.3636" width="8.18182" height="1.63636" fill="white" />
-                                        <rect x="10.1818" y="6" width="1.63636" height="4.09091" fill="white" />
-                                        <path d="M11 12.5454L13.8343 9.47726H8.16576L11 12.5454Z" fill="white" />
-                                    </svg>
-                                </span>
-                                Download App
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="clients pt-16">
-                        <h6 class="mb-2 flex items-center text-xs font-normal text-body-color">
-                            Some Of Our Clients
-                            <span class="ml-2 inline-block h-[1px] w-8 bg-body-color"></span>
-                        </h6>
-                        <div class="flex items-center">
-                            <div class="mr-4 w-full py-3">
-                                <img src="/assets/images/brands/ayroui.svg" alt="ayroui" />
-                            </div>
-                            <div class="mr-4 w-full py-3">
-                                <img src="/assets/images/brands/graygrids.svg" alt="graygrids" />
-                            </div>
-                            <div class="mr-4 w-full py-3">
-                                <img src="/assets/images/brands/uideck.svg" alt="uideck" />
-                            </div>
+            <div class="w-full text-center">
+                <h1 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">
+                    {{ __("OnlyHam.co Find what you're looking for") }}
+                </h1>
+
+                <h2 class="mb-8 font-bold text-fuchsia-600">
+
+                    {{ __("Start now to search for OnlyFans accounts, Telegram groups and WhatsApp groups and find Content Creators and communities.")}}
+                </h2>
+
+                <form class="flex items-center" action="{{app()->getLocale()}}/search">
+                    <label for="voice-search" class="sr-only">{{__("Search")}}</label>
+                    <div class="relative w-full">
+                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
+                        <input type="text" name="name" id="voice-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 " placeholder="{{__('Find content creator, channel, and groups')}}" required>
+
                     </div>
-                </div>
-            </div>
-            <div class="hidden px-4 lg:block lg:w-1/12"></div>
-            <div class="w-full px-4 lg:w-6/12">
-                <div class="lg:ml-auto lg:text-right">
-                    <div class="relative z-10 inline-block pt-11 lg:pt-0">
-                        <img src="/assets/images/hero/hero-image-01.png" alt="hero" class="max-w-full lg:ml-auto" />
-                    </div>
-                </div>
+                    <button type="submit" class="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg class="mr-2 -ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>{{__("Search")}}</button>
+                </form>
+
             </div>
         </div>
     </div>
-</div>
+</section>

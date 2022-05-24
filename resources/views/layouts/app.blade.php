@@ -83,7 +83,6 @@
         </header>
 
 
-        @include("layouts.navbar2")
         @yield('content')
     </div>
 </body>

@@ -2,9 +2,9 @@
     <div class="container mx-auto px-4">
         <div class="-mx-4 flex flex-wrap items-center justify-between">
             <div class="w-full px-4 lg:w-6/12">
-                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> Mejores Onlyfans, Telegram y WhatsApp</h2>
+                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">{{__("Best Onlyfans, Telegram and WhatsApp")}}</h2>
                 <p class="mb-8 text-fuchsia-600">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti, asperiores veniam quam inventore laboriosam iusto! Sequi tenetur, consequuntur aliquid nam voluptatem labore! Magni exercitationem cum, voluptatem saepe aut reprehenderit!
+                    {{__("Top Onlyfans, Telegram and WhatsApp Creators are the best way to show your love for thousands of live cam models on the internet. Forget about downloading low quality videos and watching them later, all with this innovative app you will be able to find them right now!")}}
                 </p>
             </div>
         </div>
@@ -18,14 +18,16 @@
             <div class="w-full px-4 lg:w-6/12">
             </div>
             <div class="w-full px-4 lg:w-6/12">
-                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">Todo Gratis!</h2>
+                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">{{__("All Free")}}</h2>
                 <p class="mb-8 text-fuchsia-600">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti, asperiores veniam quam inventore laboriosam iusto! Sequi tenetur, consequuntur aliquid nam voluptatem labore! Magni exercitationem cum, voluptatem saepe aut reprehenderit!
+                    {{__("You can find content creators on many different platforms")}}
+                    {{__("Some of these platforms are free, while others require a fee to be paid.")}}
+
                 </p>
                 <span class="flex">
-                    <a href="/{{app()->getLocale()}}/onlyfans" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">Onlyfans Gratis</a>
-                    <a href="/{{app()->getLocale()}}/Telegram" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">Telegram Gratis</a>
-                    <a href="/{{app()->getLocale()}}/WhatsApp" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">WhatsApp Gratis</a>
+                    <a href="/{{app()->getLocale()}}/onlyfans" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">Onlyfans {{__("Free")}}</a>
+                    <a href="/{{app()->getLocale()}}/Telegram" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">Telegram {{__("Free")}}</a>
+                    <a href="/{{app()->getLocale()}}/WhatsApp" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">WhatsApp {{__("Free")}}</a>
                 </span>
             </div>
         </div>
@@ -38,12 +40,11 @@
         <div class="-mx-4 flex flex-wrap items-center justify-between">
             <div class="w-full text-center ">
                 <span class="mb-8 text-3xl">🪙</span>
-                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> ¡El mayor listado de Free Trials para ver cuentas gratis! </h2>
+                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">{{__("The largest list of to see free accounts!")}}</h2>
 
                 <p class="mb-8 text-fuchsia-600">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat perferendis, qui explicabo consequuntur voluptatem est quasi dolorem. Tenetur voluptatibus porro animi quos optio necessitatibus nulla quasi ipsa, molestias recusandae nisi.
+                    {{__("The app Onlyham.co has a list of creators and communities that is the largest in the world.")}}
                 </p>
-
 
 
                 <section>
@@ -68,7 +69,7 @@
                                     @else
                                     <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                         <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                        <span class="">Gratis</span>
+                                        <span class="">{{__("Free")}}</span>
                                     </div>
                                     @endif
                                 </div>
@@ -98,32 +99,29 @@
         <div class="-mx-4 flex flex-wrap items-center justify-between">
 
             <div class="w-full text-center">
-                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> ¿Cómo promocionar mi contenido de OnlyFans, Telegram y WhatsApp? </h2>
+                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> {{__("How to promote my OnlyFans, Telegram and WhatsApp content?")}}</h2>
 
                 <p class="mb-8 font-bold text-fuchsia-600">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti, asperiores veniam quam inventore laboriosam iusto! Sequi tenetur, consequuntur aliquid nam voluptatem labore! Magni exercitationem cum, voluptatem saepe aut reprehenderit!
+                    {{__("Promoting your content on different platforms is an excellent one way to get more followers. It can be done by using hashtags, posting in groups or relevant pages and following influencers in your niche. But it is an arduous task and it takes a lot of time.  in onlyham.co you can publish your profile, group or channel and you will get more than 10000 daily visits")}}
                 </p>
 
                 <ul class="list-none bg-blue-500 rounded-lg shadow-md px-10 py-10">
                     <li>
-                        <h3 class="mb-2 text-3xl font-bold text-white sm:text-4xl"> Los fans no te encuentran?</h3>
+                        <h3 class="mb-2 text-3xl font-bold text-white sm:text-4xl"> {{__("your audience can't find you?")}}</h3>
                         <p class="mb-8 text-white">
-                            ✨Si anuncias tu OnlyFans en Hubite, te verán millones de usuarios mensuales!
-                            Now this is a story all about how, my life got flipped turned upside down✨
+                            ✨{{__("If you advertise your group o channel on Onlyham.co, you will be seen by millions of monthly users!")}}✨
                         </p>
                     </li>
                     <li>
-                        <h3 class="mb-2 text-3xl font-bold text-white sm:text-4xl"> Cansada de hacer SFS y posts en redes sociales?</h3>
+                        <h3 class="mb-2 text-3xl font-bold text-white sm:text-4xl"> {{__("Tired of doing SFS and social media posts?")}}</h3>
                         <p class="mb-8 text-white">
-                            ✨Si anuncias tu OnlyFans en Hubite, te verán millones de usuarios mensuales!
-                            Now this is a story all about how, my life got flipped turned upside down✨
+                            ✨{{__("Promoting your content on different platforms is a great way to get more followers. but it takes a long time and the growth is slow, announce in onlyham.co instateneamente more than 1000 visits per hour")}}✨
                         </p>
                     </li>
                     <li>
-                        <h3 class="mb-2 text-3xl font-bold text-white sm:text-4xl"> Promocionate profesionalmente</h3>
+                        <h3 class="mb-2 text-3xl font-bold text-white sm:text-4xl"> {{__("Promote professionally")}}</h3>
                         <p class="mb-8 text-white">
-                            ✨Si anuncias tu OnlyFans en Hubite, te verán millones de usuarios mensuales!
-                            Now this is a story all about how, my life got flipped turned upside down✨
+                            ✨{{__("We use the latest tools to create content for our clients' websites and social media channels. We also help them with their SEO strategy using best practices in this field.")}}✨
                         </p>
                     </li>
                 </ul>
@@ -140,10 +138,10 @@
             <div class="w-full text-center">
                 <span class="mb-8 text-3xl">🏅</span>
 
-                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">Las Cuentas de OnlyFans más buscadas</h2>
+                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">{{__("Onlyfans Free Subscription")}}</h2>
 
                 <p class="mb-8 text-fuchsia-600">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti, asperiores veniam quam inventore laboriosam iusto! Sequi tenetur, consequuntur aliquid nam voluptatem labore! Magni exercitationem cum, voluptatem saepe aut reprehenderit!
+                    {{__("The free onlyfans subscription means it's a great option for people who want to save money and still get access to explicit content.")}}
                 </p>
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
@@ -198,10 +196,10 @@
             <div class="w-full text-center">
                 <span class="mb-8 text-3xl">🏅</span>
 
-                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> Las Cuentas de Telegram más buscadas</h2>
+                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> {{__("How to Find Telegram Groups?")}}</h2>
 
                 <p class="mb-8 text-fuchsia-600">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti, asperiores veniam quam inventore laboriosam iusto! Sequi tenetur, consequuntur aliquid nam voluptatem labore! Magni exercitationem cum, voluptatem saepe aut reprehenderit!
+                    {{__("The app Onlyham.co has a list of creators and communities that is the largest in the world.")}}
                 </p>
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
@@ -253,11 +251,11 @@
             <div class="w-full text-center">
                 <span class="mb-8 text-3xl">🏅</span>
 
-                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> Las Cuentas de WhatsApp más buscadas</h2>
+                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> {{ __("Top Whatsapp Groups") }}</h2>
 
                 <p class="mb-8 text-fuchsia-600">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti, asperiores veniam quam inventore laboriosam iusto! Sequi tenetur, consequuntur aliquid nam voluptatem labore! Magni exercitationem cum, voluptatem saepe aut reprehenderit!
-                </p>
+                      {{__("Whatsapp groups are a great way to stay in touch with people that share the same activity, topic or community")}}
+            </p>
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                         @foreach($mejores_whatsapp as $key => $group6)
