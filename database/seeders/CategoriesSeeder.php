@@ -140,14 +140,14 @@ class CategoriesSeeder extends Seeder
         }
 
         GroupType::create([
-            "name" => "Grupo",
-            "slug" => "grupo",
+            "name" => "Group",
+            "slug" => "group",
             "status" => 1,
         ]);
 
         GroupType::create([
-            "name" => "Canal",
-            "slug" => "canal",
+            "name" => "Channel",
+            "slug" => "channel",
             "status" => 1,
         ]);
 

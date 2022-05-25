@@ -131,7 +131,7 @@
                                         </option>
                                         @foreach($categorias as $categoria)
                                         <option value="{{$categoria->id}}">
-                                            {{$categoria->name}}
+                                            {{__($categoria->name)}}
                                         </option>
                                         @endforeach
                                     </select>

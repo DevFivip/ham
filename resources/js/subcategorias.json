@@ -2,6 +2,7 @@
     {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 1,
+        "categoryName": "aquaristry",
         "categoryUrl": "aquaristry",
         "categoryGroupID": 1,
         "adultContent": 0
@@ -182,7 +183,8 @@
         "categoryGroupID": 1,
         "adultContent": 0
     },
-    {"__type": "MoreGroups.classes.categoryBLL",
+    {
+        "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 793,
         "categoryName": "Gastronomy",
         "categoryUrl": "gastronomy",
@@ -363,8 +365,7 @@
         "categoryName": "Tattoos",
         "categoryUrl": "tattoos",
         "categoryGroupID": 1,
-        "adultContent":
-0
+        "adultContent": 0
     },
     {
         "__type": "MoreGroups.classes.categoryBLL",
@@ -542,7 +543,7 @@
         "categoryGroupID": 3,
         "adultContent": 0
     },
-{
+    {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 774,
         "categoryName": "Actors and actresses",
@@ -1797,7 +1798,8 @@
         "categoryUrl": "etherum",
         "categoryGroupID": 8,
         "adultContent": 0
-    },{
+    },
+    {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 583,
         "categoryName": "Finance",
@@ -2156,7 +2158,8 @@
         "categoryUrl": "Colombians",
         "categoryGroupID": 10,
         "adultContent": 0
-    },{
+    },
+    {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 286,
         "categoryName": "Korean",
@@ -2335,7 +2338,7 @@
     {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 308,
-        "ACtegoryName": "Portuguese",
+        "categoryName": "Portuguese",
         "categoryUrl": "Portuguese",
         "categoryGroupID": 10,
         "adultContent": 0
@@ -2510,7 +2513,8 @@
     },
     {
         "__type": "MoreGroups.classes.categoryBLL",
-        "categoryID": 328,"categoryName": "Courses",
+        "categoryID": 328,
+        "categoryName": "Courses",
         "categoryUrl": "courses",
         "categoryGroupID": 11,
         "adultContent": 0
@@ -2691,7 +2695,8 @@
         "categoryGroupID": 12,
         "adultContent": 0
     },
-    {"__type": "MoreGroups.classes.categoryBLL",
+    {
+        "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 350,
         "categoryName": "Monologues",
         "categoryUrl": "monologues",
@@ -3055,7 +3060,7 @@
         "categoryID": 122,
         "categoryName": "Twitch",
         "categoryUrl": "twitch",
-        "categoryryGroupID": 5,
+        "categoryGroupID": 5,
         "adultContent": 0
     },
     {
@@ -3236,7 +3241,8 @@
     },
     {
         "__type": "MoreGroups.classes.categoryBLL",
-        "categoryID": 369,"categoryName": "Fortnite",
+        "categoryID": 369,
+        "categoryName": "Fortnite",
         "categoryUrl": "fortnite",
         "categoryGroupID": 13,
         "adultContent": 0
@@ -3356,7 +3362,7 @@
     {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 384,
-        "categoryName": "PlayerUnknown\u0027s Battlegrounds",
+        "categoryName": "PlayerUnknown's Battlegrounds",
         "categoryUrl": "playerunknowns-battlegrounds",
         "categoryGroupID": 13,
         "adultContent": 0
@@ -3590,7 +3596,8 @@
         "categoryID": 599,
         "categoryName": "American Staffordshire Terrier",
         "categoryUrl": "american-staffordshire-terrier",
-        "categoryGroupID": 15,"adultContent": 0
+        "categoryGroupID": 15,
+        "adultContent": 0
     },
     {
         "__type": "MoreGroups.classes.categoryBLL",
@@ -3943,7 +3950,8 @@
         "categoryUrl": "manx-cat",
         "categoryGroupID": 15,
         "adultContent": 0
-    },{
+    },
+    {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 640,
         "categoryName": "Persian Cat",
@@ -4298,7 +4306,7 @@
     {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 422,
-        "categoryryName": "Cosmetics",
+        "categoryName": "Cosmetics",
         "categoryUrl": "cosmetics",
         "categoryGroupID": 16,
         "adultContent": 0
@@ -4480,7 +4488,7 @@
         "adultContent": 0
     },
     {
-        "__type":"MoreGroups.classes.categoryBLL",
+        "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 585,
         "categoryName": "Electric cars",
         "categoryUrl": "electric-cars",
@@ -4661,7 +4669,8 @@
         "categoryName": "KTM",
         "categoryUrl": "ktm",
         "categoryGroupID": 17,
-        "adultContent": 0},
+        "adultContent": 0
+    },
     {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 709,
@@ -4846,7 +4855,8 @@
         "categoryGroupID": 17,
         "adultContent": 0
     },
-    {"__type": "MoreGroups.classes.categoryBLL",
+    {
+        "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 728,
         "categoryName": "Piaggio",
         "categoryUrl": "piaggio",
@@ -5211,7 +5221,8 @@
         "categoryName": "Fans",
         "categoryUrl": "fans",
         "categoryGroupID": 18,
-        "adultContent": 0},
+        "adultContent": 0
+    },
     {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 456,
@@ -5577,7 +5588,7 @@
         "categoryID": 489,
         "categoryName": "Zumba",
         "categoryUrl": "zumba",
-        "categoryGroupID":18,
+        "categoryGroupID": 18,
         "adultContent": 0
     },
     {
@@ -6114,7 +6125,8 @@
         "categoryName": "Health",
         "categoryUrl": "health",
         "categoryGroupID": 22,
-        "adultContent": 0},
+        "adultContent": 0
+    },
     {
         "__type": "MoreGroups.classes.categoryBLL",
         "categoryID": 751,

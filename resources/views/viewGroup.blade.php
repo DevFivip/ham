@@ -44,8 +44,8 @@
                                         </h4>
                                         @endif
                                         <p class="mb-5 text-base text-body-color">
-                                            {{ $group->type->name }}, {{ $group->categoria->name }},
-                                            {{ $group->subcategoria->name }}
+                                            {{ __($group->type->name) }}, {{ __($group->categoria->name) }},
+                                            {{ __($group->subcategoria->name) }}
                                         </p>
                                         <p class="mb-5 text-base text-body-color">
                                             <span> <i class="fa-solid fa-eye"></i> <span id="count_views">0</span> </span>
@@ -58,7 +58,7 @@
                             </div>
                             <div class="absolute left-0 right-0 -bottom-5 flex items-center justify-center">
                                 <button id="ingresar" class="inline-flex items-center justify-center rounded-full bg-secondary py-4 px-10 text-center text-base font-normal text-white bg-blue-700 hover:bg-opacity-90 lg:px-8 xl:px-10">
-                                    <i class="fa-solid fa-unlock-keyhole"></i> &nbsp; Ingresar
+                                    <i class="fa-solid fa-unlock-keyhole"></i> &nbsp; {{__("Enter")}}
                                 </button>
                             </div>
                         </div>
@@ -71,25 +71,20 @@
                             <div class="mt-10 lg:mt-0">
 
                                 <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-                                    Cuantos suscriptores tiene {{ $group->name }}?
+
+                                    {{__('profile.many_subcribers',["name"=>$group->name])}}
+
                                 </h2>
 
                                 @if($group->cant_suscriptores === 0)
 
                                 <p class="mb-8 text-base text-body-color">
-                                    Vaya! No sabemos el número de fans que tiene
-                                    {{ $group->name }} Esto significa
-                                    que ha configurado la cuenta para no compartir el número total,
-                                    pero para saber si es una buena cuenta puedes fijarte en cuantos
-                                    posts y de likes tiene. Podrías ser de las mejores y tú sin saberlo!
+                                    {{__('profile.many_subcribers_resp_false',["name"=>$group->name,"type"=>$group->type->name,"number"=>$group->cant_suscriptores])}}
                                 </p>
 
                                 @elseif($group->cant_suscriptores > 1)
                                 <p class="mb-8 text-base text-body-color">
-                                    {{ $group->name }} es una de las cuentas MÁS GRANDES que hay.
-                                    Te puedes imaginar tener 48483 suscriptores?
-                                    Es increíble! Esto quiere decir que tienes que suscribirte inmediatamente
-                                    a esta cuenta si quieres seguir a una de las mejores Creadoras de Contenido!
+                                    {{__('profile.many_subcribers_resp_true',["name"=>$group->name,"type"=>$group->type->name,"number"=>$group->cant_suscriptores])}}
                                 </p>
                                 @endif
                             </div>
@@ -98,13 +93,11 @@
                                 <div class="w-full ">
                                     <div class="mt-10 lg:mt-0">
                                         <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-                                            Cuales son las Categorías que mejor describen a {{ $group->name }}?
+                                            {{__("profile.how_category_describeme",["name"=>$group->name])}}
                                         </h2>
 
                                         <p class="mb-8 text-base text-body-color">
-                                            Las categorías que mejor describen esta cuenta de {{ $group->social->name }} son
-                                            {{ $group->categoria->name }}, {{ $group->subcategoria->name }} .
-                                            Puedes ver perfiles similares en el apartado de <a href="/categoria/{{ $group->categoria->slug }}" class="text-blue-700">Categorias</a>
+                                            {!!__("profile.how_category_describeme_resp",["name"=>$group->name,'original_category'=>$group->categoria->name,'category'=>__($group->categoria->name),"subcategory"=>__($group->subcategoria->name),'social'=>$group->social->name])!!}
                                         </p>
                                     </div>
                                 </div>
@@ -112,12 +105,10 @@
 
                             <div class="mt-10 lg:mt-0">
                                 <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-                                    De dónde es {{ $group->name }}?
+                                    {{__("profile.where_from",['name'=>$group->name])}}
                                 </h2>
                                 <p class="mb-8 text-base text-body-color">
-                                    Es de <a href="/" class="text-blue-700">{{ $group->location->name }}</a>. Si quieres
-                                    ver más Contenido de ese país, echa un vistazo a la sección de buscar <a href="" class="text-blue-700">{{ $group->social->name }} por Localización </a> en nuestra
-                                    web
+                                    {!!__("profile.where_from_resp",['name'=>$group->name,"social"=>$group->social->name,"location"=>$group->location->name])!!}
                                 </p>
                             </div>
 
@@ -148,7 +139,7 @@
                                                 @else
                                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                    <span class="">Gratis</span>
+                                                    <span class="">{{__("Free")}}</span>
                                                 </div>
                                                 @endif
                                             </div>
@@ -182,7 +173,7 @@
                                                 @else
                                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                    <span class="">Gratis</span>
+                                                    <span class="">{{__("Free")}}</span>
                                                 </div>
                                                 @endif
                                             </div>
@@ -217,7 +208,7 @@
                                             @else
                                             <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                 <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                <span class="">Gratis</span>
+                                                <span class="">{{__("Free")}}</span>
                                             </div>
                                             @endif
                                         </div>
@@ -236,25 +227,15 @@
                 <section class="px-6">
                     <div class="mt-10 lg:mt-0">
                         <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-                            Puedo ingresar a el {{ strtolower($group->type->name) }} de
-                            {{ $group->social->name }} de {{ $group->name }} gratis?
+                            {{__("profile.can_join",["name"=>$group->name,"social"=>$group->social->name, "type"=>$group->type->name])}}
                         </h2>
                         @if($group->precio_membresia == 0)
                         <p class="mb-8 text-base text-body-color">
-                            Estás de suerte! Ahora mismo, {{ $group->name }} no require una suscripcion o pago
-                            para poder acceder a
-                            todo el contenido de su {{ $group->social->name }}.
-                            Ingresa ahora y no esperes a que sea demasiado tarde!
+                            {{__("profile.can_join_resp_true",["name"=>$group->name,"social"=>$group->social->name, "type"=>$group->type->name])}}
                         </p>
                         @else
                         <p class="mb-8 text-base text-body-color">
-                            Lo sentimos, pero {{ $group->name }} no tiene un {{ $group->social->name }}
-                            gratis. Puedes acceder a su contenido suscribiéndote
-                            directamente a su cuenta, por tan sólo ${{ $group->precio_membresia }} al mes.
-                            Piénsalo, es súper barato! Cuanto dinero gastas al mes en cerveza, café, Netflix?
-                            Date un capricho,
-                            suscríbete al {{ $group->social->name }} de {{ $group->name }}, y harás muy
-                            feliz a la Creadora de Contenido!
+                            {{__("profile.can_join_resp_false",["price"=>$group->precio_membresia,"name"=>$group->name,"social"=>$group->social->name, "type"=>$group->type->name])}}
                         </p>
                         @endif
                     </div>
@@ -264,42 +245,32 @@
                     <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
                         <div>
                             <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-                                Tiene {{ $group->name }} más redes sociales?
+                                {{__("profile.more_social_medias",['name'=>$group->name])}}
                             </h2>
 
                             @if(!!$group->show_more_social_medias)
                             <p class="mb-8 text-base text-body-color">
-                                Si, al ingresar al {{ strtolower($group->type->name) }} encontraras mas links de las
-                                redes sociales
-                            </p>
-                            @else
+                                {{__("profile.more_social_medias_resp_true",['type'=>$group->type->name])}}
+
+                                @else
                             <p class="mb-8 text-base text-body-color">
-                                Parece ser que no tiene mas informacion de sus redes sociales conectadas con su cuenta
+                                {{__("profile.more_social_medias_resp_false",['type'=>$group->type->name])}}
                             </p>
                             @endif
                         </div>
                         <div class="mt-10 lg:mt-0">
                             <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-                                Puedo mandar un mensaje o hablar con {{ $group->name }}?
+                                {{__("profile.can_talk",['name'=>$group->name])}}
                             </h2>
 
                             @if(!!$group->usuarios_comunicación)
                             <p class="mb-8 text-base text-body-color">
-                                Por supuesto, si se puede hablar directamente con {{ $group->name }}, la mejor
-                                forma es ir a su {{ $group->social->name }} y mandar un mensaje directo. No te
-                                defraudará!
-                                Si, al ingresar al {{ strtolower($group->type->name) }} encontraras mas links de
-                                las redes sociales
+                                {{__("profile.can_talk_resp_true",['name'=>$group->name,'social'=>$group->social->name])}}
+
                             </p>
                             @else
                             <p class="mb-8 text-base text-body-color">
-                                Por este momento no se puede contactar directamente, ingresa directamente si se
-                                puede hablar directamente con {{ $group->name }}, la mejor forma es ir a su
-                                {{ $group->social->name }} y mandar un mensaje directo. No te defraudará!
-                                Si, al ingresar al {{ strtolower($group->type->name) }} encontraras mas links de
-                                las redes sociales
-                                Parece ser que no tiene mas informacion de sus redes sociales conectadas con su
-                                cuenta
+                                {{__("profile.can_talk_resp_false",['name'=>$group->name,'social'=>$group->social->name, 'type'=>$group->type->name])}}
                             </p>
                             @endif
                         </div>
@@ -328,7 +299,7 @@
                                 @else
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                    <span class="">Gratis</span>
+                                    <span class="">{{__("Free")}}</span>
                                 </div>
                                 @endif
                             </div>
@@ -343,22 +314,20 @@
                 </section>
 
                 <hr class="mt-10 pb-5">
-                    <section class="px-6">
-                        <div class="w-full ">
-                            <div class="mt-10 lg:mt-0">
-                                <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-                                    Preguntas y Respuestas Frecuentes
-                                </h2>
-                                <p class="mb-8 text-base text-body-color">
-                                    Estas son las preguntas más frecuentes que hacen los usuarios antes de ingresar a
-                                    {{ $group->name }}. Haznos saber si tienes má preguntas o te gustaría añadir más
-                                    información de este {{ $group->type->name }}
-                                </p>
+                <section class="px-6">
+                    <div class="w-full ">
+                        <div class="mt-10 lg:mt-0">
+                            <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
+                                {{__("FAQ")}}
+                            </h2>
+                            <p class="mb-8 text-base text-body-color">
+                                {{__("profile.faq_description",["name"=>$group->name,"type"=>$group->type->name])}}
+                            </p>
 
-                            </div>
                         </div>
+                    </div>
 
-                    </section>
+                </section>
 
                 <section x-data="{openFaq1: false, openFaq2: false, openFaq4: false}" class="relative z-20 overflow-hidden bg-white">
                     <div class="container">
@@ -373,15 +342,13 @@
                                         </div>
                                         <div class="w-full">
                                             <h4 class="text-lg font-semibold text-black">
-                                                ¿Cuanto gana {{ $group->name }}?
+                                                {{__("profile.faq_how_money",["name"=>$group->name])}}
                                             </h4>
                                         </div>
                                     </button>
                                     <div x-show="openFaq1" class="faq-content pl-[62px]">
                                         <p class="py-3 text-base leading-relaxed text-body-color">
-                                            El dinero que {{ $group->name }} gana en {{ $group->social->name }} no
-                                            nos importa! Respetamos la privacidad de los Creadores de Contenido y
-                                            además, revelar sus ganancias les puede poner en peligro!.
+                                            {{__("profile.faq_how_money_resp",["name"=>$group->name,'social'=>$group->social->name])}}
                                         </p>
                                     </div>
                                 </div>
@@ -396,13 +363,13 @@
                                         </div>
                                         <div class="w-full">
                                             <h4 class="text-lg font-semibold text-black">
-                                                ¿Como puedo conseguir el {{ $group->social->name }} de {{ $group->name }} gratis?
+                                                {{__("profile.faq_free_access",["name"=>$group->name,"social"=>$group->social->name])}}
                                             </h4>
                                         </div>
                                     </button>
                                     <div x-show="openFaq2" class="faq-content pl-[62px]">
                                         <p class="py-3 text-base leading-relaxed text-body-color">
-                                            Estás de suerte! Esta cuenta es TOTALMENTE GRATIS así que no pierdas ni un minuto más y suscríbete!
+                                            {{__("profile.faq_free_access_resp_true",["name"=>$group->name,"social"=>$group->social->name])}}
                                         </p>
                                     </div>
                                 </div>
@@ -417,16 +384,14 @@
                                         </div>
                                         <div class="w-full">
                                             <h4 class="text-lg font-semibold text-black">
-                                                Donde puedo encontrar filtraciones de {{ $group->name }}
+                                                {{__("profile.faq_leaks",["name"=>$group->name,"social"=>$group->social->name])}}
                                             </h4>
                                         </div>
                                     </button>
                                     <div x-show="openFaq4" class="faq-content pl-[62px]">
                                         <p class="py-3 text-base leading-relaxed text-body-color">
-                                            Estás buscando filtraciones del {{ $group->social->name }} de
-                                            {{ $group->name }}? Pues estás en el sitio equivocado! estamos en contra
-                                            de los leaks.
-                                            Nos gusta {{ $group->name }} y nos encantan los Creadores de Contenido.
+                                            {{__("profile.faq_leaks_resp_true",["name"=>$group->name,"social"=>$group->social->name])}}
+
                                         </p>
                                     </div>
                                 </div>
@@ -457,7 +422,7 @@
                                 @else
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                    <span class="">Gratis</span>
+                                    <span class="">{{__("Free")}}</span>
                                 </div>
                                 @endif
                             </div>

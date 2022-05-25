@@ -17,7 +17,7 @@
             @endif
 
             @else
-            <a class="py-2 px-7 font-medium text-dark hover:text-primary" href="/{{app()->getLocale()}}/home">Panel</a>
+            <a class="py-2 px-7 font-medium text-white hover:text-primary" href="/{{app()->getLocale()}}/home">Panel</a>
             <a href="{{ route('logout', app()->getLocale()) }}" class="rounded-lg bg-blue-700 py-2 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
             <form id="logout-form" action="{{ route('logout', app()->getLocale()) }}" method="POST" class="hidden">
                 {{ csrf_field() }}
@@ -60,7 +60,9 @@
                         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
                     </svg>
                 </div>
-                <input type="text" id="search-navbar" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 " placeholder="Search...">
+                <form action="/{{app()->getLocale()}}/search">
+                    <input type="text" id="search-navbar" name="name" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 " placeholder="{{__('Search')}}...">
+                </form>
             </div>
             <button data-collapse-toggle="mobile-menu-3" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-3" aria-expanded="false">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
