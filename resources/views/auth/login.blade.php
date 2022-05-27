@@ -35,28 +35,26 @@
                                     <div class="flex items-center">
                                         <label class="inline-flex items-center text-sm text-gray-700" for="remember">
                                             <input type="checkbox" name="remember" id="remember" class="form-checkbox" {{ old('remember') ? 'checked' : '' }}>
-                                            <span class="ml-2">{{ __('Recuerdame') }}</span>
+                                            <span class="ml-2">{{ __('Remember Me') }}</span>
                                         </label>
                                     </div>
-                                    <d  iv class="mb-10 mt-10">
+                                    <d iv class="mb-10 mt-10">
                                         <input type="submit" value="Sign In" class="bordder-primary w-full cursor-pointer rounded-md border bg-primary py-3 px-5 text-base text-white transition hover:bg-opacity-90" />
-                                    </div>
-                                </form>
 
-                                <a href="/{{app()->getLocale()}}/forget" class="mb-2 mt-2 inline-block text-base text-[#adadad] hover:text-primary hover:underline">
-                                    ¿Olvidaste Tu Contraseña?
-                                </a>
-                                <p class="text-base text-[#adadad]">
-                                    ¿Aun no posees cuenta?
-                                    <a href="/{{app()->getLocale()}}/register" class="text-primary hover:underline">
-                                        Registrate ahora mismo
-                                    </a>
-                                </p>
+                                        <a href="/{{app()->getLocale()}}/forget" class="mb-2 mt-2 inline-block text-base text-[#adadad] hover:text-primary hover:underline">
+                                            {{__("Forgot Your Password?")}}
+                                        </a>
+                                        <p class="text-base text-[#adadad]">
+                                            {{__("You don't have an account yet?")}}
+                                            <a href="/{{app()->getLocale()}}/register" class="text-primary hover:underline">
+                                                {{__("Register")}}
+                                            </a>
+                                        </p>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
         </div>
     </div>
 </main>

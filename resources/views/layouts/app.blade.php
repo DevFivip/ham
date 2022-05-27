@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og: http://ogp.me/ns#">
 
 <head>
     <meta charset="utf-8">
@@ -41,17 +41,17 @@
                                 <ul class="blcok lg:flex">
                                     <li>
                                         <a href="/" class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            Inicio
+                                            {{__("Home")}}
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/{{app()->getLocale() }}/precios" class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            Precios
+                                            {{__("Prices")}}
                                         </a>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)" class="flex py-2 text-base font-medium text-dark hover:text-primary lg:ml-12 lg:inline-flex">
-                                            Contactanos
+                                            {{__("Contact Us")}}
                                         </a>
                                     </li>
                                 </ul>
@@ -67,7 +67,7 @@
                             @endif
                             @else
 
-                            <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="/home">Panel</a>
+                            <a class="py-3 px-7 text-base font-medium text-dark hover:text-primary" href="/{{app()->getLocale()}}/home">{{__("Dashboard")}}</a>
 
                             <a href="{{ route('logout',app()->getLocale()) }}" class="rounded-lg bg-primary py-3 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>

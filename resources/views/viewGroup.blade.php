@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{app()->getLocale()}}">
+<html lang="{{app()->getLocale()}}" prefix="og: http://ogp.me/ns#">
 <!-- <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"> -->
 
 <head>
@@ -71,12 +71,10 @@
                             <div class="mt-10 lg:mt-0">
 
                                 <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
-
                                     {{__('profile.many_subcribers',["name"=>$group->name])}}
-
                                 </h2>
 
-                                @if($group->cant_suscriptores === 0)
+                                @if($group->cant_suscriptores === 0 )
 
                                 <p class="mb-8 text-base text-body-color">
                                     {{__('profile.many_subcribers_resp_false',["name"=>$group->name,"type"=>$group->type->name,"number"=>$group->cant_suscriptores])}}
@@ -428,9 +426,9 @@
                             </div>
 
                             <main class="p-5 z-10">
-                                <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="text-white">{{ !!$groupx->username ? '@'.$groupx->username : '' }}</a>
+                                <a href="/{{app()->getLocale()}}/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="text-white">{{ !!$groupx->username ? '@'.$groupx->username : '' }}</a>
                                 <p>
-                                    <a href="/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$groupx->name}}
+                                    <a href="/{{app()->getLocale()}}/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$groupx->name}}
                                     </a>
                                 </p>
                             </main>

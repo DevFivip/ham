@@ -1,7 +1,40 @@
 <!DOCTYPE html>
-<html lang="{{app()->getLocale()}}">
+<html lang="{{app()->getLocale()}}" prefix="og: http://ogp.me/ns#">
 
 <head>
+    <title>{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}</title>
+    <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
+    <!-- <meta name="description" content="Search OnlyFans Accounts in Hubite. Find OnlyFans, Fansly and FanCentro profiles classified by username, Country, Free accounts, Best Content Creators and more than 2 million reviewed accounts!"> -->
+    <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
+
+    <link rel="alternate" hreflang="es" href="https://onlyham.co/es/">
+    <link rel="alternate" hreflang="en" href="https://onlyham.co/en/">
+    <link rel="alternate" hreflang="fr" href="https://onlyham.co/fr/">
+    <link rel="alternate" href="https://onlyham.co/en/" hreflang="x-default">
+    <link rel="canonical" href="https://onlyham.co/en/">
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <meta property="og:locale" content="{{app()->getLocale()}}">
+    <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta property="og:description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
+    <meta property="og:url" content="https://onlyham.co/{{app()->getLocale()}}/">
+    <meta property="og:site_name" content="OnlyHam">
+
+    <meta property="og:image" content="https://hubite.com/static/images/home/hubite3.png">
+    <meta property="og:image:secure_url" content="https://hubite.com/static/images/home/hubite3.png">
+
+    <meta property="og:image:width" content="499">
+    <meta property="og:image:height" content="333">
+    <meta property="og:image:alt" content="Search OnlyFans accounts">
+    <meta property="og:image:type" content="image/jpeg">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Search OnlyFans Accounts | Hubite - OnlyFans Finder">
+    <meta name="twitter:description" content="Search OnlyFans Accounts in Hubite. Find OnlyFans, Fansly and FanCentro profiles classified by username, Country, Free accounts, Best Content Creators and more than 2 million reviewed accounts!">
+    <meta name="twitter:site" content="@Hubite">
+    <meta name="twitter:creator" content="@Hubite">
+    <meta name="twitter:image" content="https://hubite.com/static/images/home/hubite3.png">
+
     @include("layouts.header")
 </head>
 
@@ -9,7 +42,7 @@
     <!-- ====== Navbar Section Start -->
     @include("layouts.navbar2")
     <!-- ====== Navbar Section End -->
-    
+
     <!-- ====== Hero Section Start -->
     @include("layouts.hero")
     <!-- ====== Hero Section END -->
@@ -56,10 +89,10 @@
                                         <p class="capitalize">
                                             <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}"> {{$i["social"]["name"]}}</a>/<a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
                                             <a href="/{{app()->getLocale() }}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
-                                                {{$i['categoria']['name']}}
+                                                {{__($i['categoria']['name'])}}
                                             </a>
                                             <a href="/{{app()->getLocale() }}/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500 ">
-                                                {{$i['subcategoria']['name']}}
+                                                {{__($i['subcategoria']['name'])}}
                                             </a>
                                         </p>
                                     </div>
@@ -96,10 +129,10 @@
                                             {{$i['name']}}
                                         </a>
                                         <p class="capitalize">
-                                            <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
+                                            <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{__($i["type"]["name"])}}</a>
                                             @if(isset($i["categoria"]))
                                             <a href="/{{app()->getLocale() }}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
-                                                {{$i['categoria']['name']}}
+                                                {{__($i['categoria']['name'])}}
                                             </a>
 
                                             @else
@@ -110,12 +143,12 @@
 
                                             @if(isset($i["subcategoria"]))
                                             <a href="/{{app()->getLocale() }}/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
-                                                {{$i['subcategoria']['name']}}
+                                                {{__($i['subcategoria']['name'])}}
                                             </a>
                                             @else
 
                                             <a href="/{{app()->getLocale() }}/subcategoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
-                                            {{__("All")}}
+                                                {{__("All")}}
                                             </a>
 
                                             @endif
@@ -126,40 +159,23 @@
                                     </div>
                                 </div>
                                 <br>
-
                                 @endforeach
-
                                 @endif
-
                                 @endforeach
-
-
-
                                 @endif
-
-
-
                                 @endforeach
-
                             </div>
-
                             @endforeach
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    @include("layouts.mejoresMedios")
-
-    @include("layouts.faq")
-
-    <!-- ======About Us ENd -->
-    @include("layouts.footer")
+        </sect ion>
+        @include("layouts.mejoresMedios")
+        @include("layouts.faq")
+        <!-- ======About Us ENd -->
+        @include("layouts.footer")
 </body>
 
 </html>

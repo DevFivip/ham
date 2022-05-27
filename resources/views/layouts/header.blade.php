@@ -4,8 +4,6 @@
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>Hero Section | TailGrids</title>
-
 <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon" />
 <!-- <link rel="stylesheet" href="/assets/css/tailwind.css" /> -->
 <link rel="stylesheet" href="/css/style.css" />

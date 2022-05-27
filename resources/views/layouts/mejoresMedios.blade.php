@@ -18,7 +18,7 @@
             <div class="w-full px-4 lg:w-6/12">
             </div>
             <div class="w-full px-4 lg:w-6/12">
-                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">{{__("All Free")}}</h2>
+                <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">{{__("All Free!")}}</h2>
                 <p class="mb-8 text-fuchsia-600">
                     {{__("You can find content creators on many different platforms")}}
                     {{__("Some of these platforms are free, while others require a fee to be paid.")}}

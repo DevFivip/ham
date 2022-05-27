@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{app()->getLocale()}}">
+<html lang="{{app()->getLocale()}}" prefix="og: http://ogp.me/ns#">
 
 <head>
     @include("layouts.header")
@@ -18,8 +18,9 @@
                 <div class="rounded-lg border border-light bg-white py-4 px-4 shadow-card sm:px-6 md:px-8 md:py-5">
                     <ul class="flex items-center">
                         @for ($i = 0; $i < count($breadcrumbs); $i++) <li class="flex items-center">
-                            <a href="/{{app()->getLocale() }}/{{ $breadcrumbs[$i]['link'] }}" class="text-base font-semibold text-black hover:text-primary">
+                            <a href="/{{app()->getLocale() }}{{ $breadcrumbs[$i]['link'] }}" class="text-base font-semibold text-black hover:text-primary">
                                 {{ $breadcrumbs[$i]["name"] }}
+                                
                             </a>
 
                             @if(isset($breadcrumbs[$i+1]))

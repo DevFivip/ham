@@ -13,6 +13,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laraveles/spanish": "^1.5",
+        "spatie/laravel-sitemap": "^5.9",
         "srmklive/paypal": "^3.0",
         "te7a-houdini/laravel-trix": "^2.0"
     },

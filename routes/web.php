@@ -36,14 +36,31 @@ function ccookie($req)
 
 Route::get('/', function (Request $req) {
 
+    try {
     $lang = $req->server()["HTTP_ACCEPT_LANGUAGE"];
     $lang = explode(',', $lang);
 
-    try {
         $lang = explode('-', $lang[0]);
+        return redirect($lang[0]);
     } catch (\Throwable $th) {
+
+        $redes = Social::all();
+        $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->limit(3)->get()->toArray();
+        $mejores3 = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('precio_membresia', 0)->inRandomOrder()->limit(3)->get();
+        $mejores_onlyfans = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 3)->inRandomOrder()->limit(3)->get();
+        $mejores_whatsapp = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 1)->inRandomOrder()->limit(3)->get();
+        $mejores_telegram = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 2)->inRandomOrder()->limit(3)->get();
+        $redesSociales = Social::all();
+        $listas = [];
+
+        for ($i = 0; $i < count($redes); $i++) {
+            $listas[$i] = [];
+            $social = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('social_id', $redes[$i]->id)->inRandomOrder()->limit(3)->get();
+            array_push($listas[$i], $social->toArray());
+        }
+        $cookies = ccookie($req);
+        return view('welcome', compact("cookies", "mejores", "mejores3", "mejores_onlyfans", "mejores_telegram", "mejores_whatsapp", "redes", "social", "listas", "redesSociales"));
     }
-    return redirect($lang[0]);
 });
 
 Route::group([
@@ -101,7 +118,7 @@ Route::group([
     })->name('autorizarEdad');
 
     Route::prefix('/home')->group(function () {
-        Route::get('payment/{id}', function (Request $req, $id) {
+        Route::get('payment/{id}', function (Request $req, $lang, $id) {
 
             $precios = [1 => '5.00', 2 => '3.00', 3 => '1.00'];
             $precio = $precios[auth()->user()->categoria_id];
@@ -150,8 +167,8 @@ Route::group([
             $mejores = Group::where($query)->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->paginate(PAGINATION);
 
             if (!count($mejores)) {
-                 $rand = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->limit(11)->paginate(PAGINATION);
-                 $mejores = $rand;
+                $rand = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->limit(11)->paginate(PAGINATION);
+                $mejores = $rand;
             };
 
             $breadcrumbs = [
@@ -236,6 +253,8 @@ Route::group([
 
 
     Route::get('/categoria/{category_slug}', function (Request $req, $lang, $category_slug) {
+
+
         try {
             $redesSociales = Social::all();
             $categorias = Category::all();
@@ -347,8 +366,6 @@ Route::group([
             abort(404);
         }
     });
-
-
 
 
     Route::get('/{social}/{type}', function (Request $req, $lang, $social, $type) {

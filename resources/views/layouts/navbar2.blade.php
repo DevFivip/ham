@@ -5,8 +5,6 @@
             <img src="/assets/images/logo/logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo OnlyHam">
         </a>
 
-
-
         <div class="flex md:order-2">
 
             @guest
@@ -17,7 +15,7 @@
             @endif
 
             @else
-            <a class="py-2 px-7 font-medium text-white hover:text-primary" href="/{{app()->getLocale()}}/home">Panel</a>
+            <a class="py-2 px-7 font-medium text-white hover:text-primary" href="/{{app()->getLocale()}}/home">{{__("Dashboard")}}</a>
             <a href="{{ route('logout', app()->getLocale()) }}" class="rounded-lg bg-blue-700 py-2 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
             <form id="logout-form" action="{{ route('logout', app()->getLocale()) }}" method="POST" class="hidden">
                 {{ csrf_field() }}
