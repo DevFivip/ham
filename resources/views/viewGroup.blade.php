@@ -2,6 +2,42 @@
 <html lang="{{app()->getLocale()}}" prefix="og: http://ogp.me/ns#">
 
 <head>
+    <title>{{ $group['name'] }} | {{env('APP_NAME')}} {{__("Seacher")}}</title>
+    <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher, {{ $group['name'] }}" name="keywords">
+    <!-- <meta name="description" content="Search OnlyFans Accounts in Hubite. Find OnlyFans, Fansly and FanCentro profiles classified by username, Country, Free accounts, Best Content Creators and more than 2 million reviewed accounts!"> -->
+    @if(!!$group->description)
+    <meta name="description" content="{{strip_tags($group->description)}}">
+    @else
+    <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
+    @endif
+
+    <link rel="alternate" hreflang="es" href="{{$_SERVER['APP_URL']}}/es/">
+    <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
+    <link rel="alternate" hreflang="fr" href="{{$_SERVER['APP_URL']}}/fr/">
+    <link rel="alternate" href="{{$_SERVER['APP_URL']}}/en/" hreflang="x-default">
+    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['PATH_INFO']}}">
+
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <meta property="og:locale" content="{{app()->getLocale()}}">
+    <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta property="og:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
+    <meta property="og:site_name" content="OnlyHam.co">
+
+    <meta property="og:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta property="og:image:secure_url" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+
+    <meta property="og:image:width" content="499">
+    <meta property="og:image:height" content="333">
+    <meta property="og:image:alt" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}}'>
+    <meta property="og:image:type" content="image/jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta name="twitter:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta name="twitter:site" content="@OnlyHamOficial">
+    <meta name="twitter:creator" content="@OnlyHamOficial">
+    <meta name="twitter:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
     @include("layouts.header")
 </head>
 
@@ -49,7 +85,7 @@
                                         <p class="mb-5 text-base text-body-color">
                                             <span> <i class="fa-solid fa-eye"></i> <span id="count_views">0</span> </span>
                                             <span> <i class="fa-solid fa-arrow-right-to-bracket"></i> <span id="count_click">0</span> </span>
-                                            <span> <i class="f" id=""></i> <span id="count_members">0</span> </span>
+
                                         </p>
                                     </div>
                                 </div>
@@ -92,7 +128,7 @@
                                         <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
                                             {{__("profile.how_category_describeme",["name"=>$group->name])}}
                                         </h2>
-                                        
+
                                         <p class="mb-8 text-base text-body-color">
                                             {!!__("profile.how_category_describeme_resp",["name"=>$group->name,'original_category'=>$group->categoria->slug,'category'=>__($group->categoria->name),"subcategory"=>__($group->subcategoria->name),'social'=>$group->social->name])!!}
                                         </p>

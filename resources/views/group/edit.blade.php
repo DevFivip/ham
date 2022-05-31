@@ -68,7 +68,7 @@
 
                             <div class="mb-6">
                                 <label for="" class="text-base font-normal text-primary">Username</label>
-                                <input value="{{$group->username}}" type="text" name="username" placeholder="username*" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('username') }}" required autocomplete="username">
+                                <input value="{{$group->username}}" type="text" name="username" placeholder="username*" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('username') }}" autocomplete="username">
                             </div>
 
                             @error('username')
