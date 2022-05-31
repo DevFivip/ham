@@ -239,11 +239,11 @@
 
                             <div class="mt-10 py-10 border-t border-blueGray-200 text-left">
 
-                                <h3 class="px-5 mb-5 text-[26px] font-semibold text-dark">Preguntas Frecuentes <br><span class=" mb-5 text-[13px] font-semibold text-dark" style="font-size: 13px;">las siguientes preguntas son opcionales, eres libre de no responderlas y dejar los valores por defecto</span></h3>
+                                <h3 class="px-5 mb-5 text-[26px] font-semibold text-dark">{{__("FAQ")}} <br><span class=" mb-5 text-[13px] font-semibold text-dark" style="font-size: 13px;">las siguientes preguntas son opcionales, eres libre de no responderlas y dejar los valores por defecto</span></h3>
                                 <div class="flex mb-5">
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary ml-10">¿Cuantos Suscriptores Tienes Actualmente?</label>
-                                        <input value="{{$group->cant_suscriptores}}" type="number" name="cant_suscriptores" placeholder="Cantidad usuarios, suscriptores ó miembros" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_suscriptores') }}" required autocomplete="cant_suscriptores">
+                                        <label for="" class="text-base font-normal text-primary ml-10">{{__("How many subscribers do you currently have?")}}</label>
+                                        <input value="{{$group->cant_suscriptores}}" type="number" name="cant_suscriptores" placeholder="" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_suscriptores') }}" required autocomplete="cant_suscriptores">
                                     </div>
 
                                     @error('cant_suscriptores')
@@ -254,8 +254,8 @@
                                 </div>
                                 <div class="flex mb-5">
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary">¿Cuantas fotografias ó imagenes se pueden encontrar?</label>
-                                        <input value="{{$group->cant_fotos}}" type="number" name="cant_fotos" placeholder="Cantidad de fotografias ó imagenes" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_fotos') }}" required autocomplete="cant_fotos">
+                                        <label for="" class="text-base font-normal text-primary">{{__("How many photographs or images can be found?")}}</label>
+                                        <input value="{{$group->cant_fotos}}" type="number" name="cant_fotos" placeholder="{{__('Number of Images')}}" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_fotos') }}" required autocomplete="cant_fotos">
                                     </div>
 
                                     @error('cant_fotos')
@@ -268,8 +268,8 @@
                                 <div class="flex mb-5">
 
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary ml-10">¿Cuantos videos posees actualmente?</label>
-                                        <input value="{{$group->cant_videos}}" type="number" name="cant_videos" placeholder="Cantidad de videos" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_videos') }}" required autocomplete="cant_videos">
+                                        <label for="" class="text-base font-normal text-primary ml-10">{{__("How many videos do you currently own?")}}</label>
+                                        <input value="{{$group->cant_videos}}" type="number" name="cant_videos" placeholder="{{__('Number of Videos')}}" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_videos') }}" required autocomplete="cant_videos">
                                     </div>
 
                                     @error('cant_videos')
@@ -281,8 +281,8 @@
 
                                 <div class="flex mb-5">
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary">¿Cuantas posts posees actualmente?</label>
-                                        <input value="{{$group->cant_posts}}" type="number" name="cant_posts" placeholder="Cantidad de Post" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_posts') }}" required autocomplete="cant_posts">
+                                        <label for="" class="text-base font-normal text-primary">{{__("How many posts do you currently have?")}}</label>
+                                        <input value="{{$group->cant_posts}}" type="number" name="cant_posts" placeholder="{{__('Number of Post')}}" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_posts') }}" required autocomplete="cant_posts">
                                     </div>
 
                                     @error('cant_posts')
@@ -297,8 +297,8 @@
                                 <div class="flex mb-5">
 
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary ml-10">¿Cuanto es el precio para ingresar ó mensualidad?</label>
-                                        <input value="{{$group->precio_membresia}}" type="number" name="precio_membresia" placeholder="Precio de membresia" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('precio_membresia') }}" required autocomplete="precio_membresia">
+                                        <label for="" class="text-base font-normal text-primary ml-10">{{__("How much is the price to enter or monthly?")}}</label>
+                                        <input value="{{$group->precio_membresia}}" type="number" name="precio_membresia" placeholder="" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('precio_membresia') }}" required autocomplete="precio_membresia">
                                     </div>
 
                                     @error('precio_membresia')
@@ -311,10 +311,10 @@
 
                                 <div class="flex mb-5">
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary">¿Dentro de tu grupo o canal hay enlaces para tus distintas redes sociales?</label>
+                                        <label for="" class="text-base font-normal text-primary">{{__("Within your group or channel are there links for your different social networks?")}}</label>
                                         <select name="show_more_social_medias" id="show_more_social_medias" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" required autocomplete="show_more_social_medias">
-                                            <option value="1">Si</option>
-                                            <option value="0">No</option>
+                                            <option value="1">{{__("Yes")}}</option>
+                                            <option value="0">{{__("No")}}</option>
                                         </select>
                                     </div>
 
@@ -330,10 +330,10 @@
                                 <div class="flex mb-5">
 
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary ml-10">¿Los usuarios podran comunicarse directamente contigo?</label>
+                                        <label for="" class="text-base font-normal text-primary ml-10">{{__("Will users be able to communicate directly with you?")}}</label>
                                         <select name="usuarios_comunicación" id="usuarios_comunicación" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" required autocomplete="usuarios_comunicación">
-                                            <option value="1">Si</option>
-                                            <option value="0">No</option>
+                                            <option value="1">{{__("Yes")}}</option>
+                                            <option value="0">{{__("No")}}</option>
                                         </select>
                                     </div>
 
@@ -347,7 +347,7 @@
 
                                 <div class="flex mb-5">
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary">¿Cuanto mensualmente generas con este medio? expresa el monto en (USD) $</label>
+                                        <label for="" class="text-base font-normal text-primary">{{__("How much monthly do you generate with this medium? express the amount in (USD) $")}}</label>
                                         <input value="{{$group->cant_ganancias}}" type="text" name="cant_ganancias" placeholder="Dejar en 0 para no mostar" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_ganancias') }}" required autocomplete="cant_ganancias">
                                     </div>
 
@@ -362,20 +362,20 @@
 
                                 <div class="flex mb-5">
                                     <div class="w-full">
-                                        <label for="" class="text-base font-normal text-primary">¿Cuanto tiempo de creacion tiene este medio?</label>
+                                        <label for="" class="text-base font-normal text-primary">{{__("How long has this media been created?")}}</label>
                                         <select name="show_more_social_medias" id="show_more_social_medias" class="w-full appearance-none rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" required autocomplete="show_more_social_medias">
-                                            <option value="0">No mostrar</option>
-                                            <option value="1">Mas de 1 (una) Semana </option>
-                                            <option value="2">Mas de 2 (dos) Semana </option>
-                                            <option value="3">Mas de 1 (un) Mes </option>
-                                            <option value="4">Mas de 2 (dos) Meses </option>
-                                            <option value="5">Mas de 6 (seis) Meses </option>
-                                            <option value="6">Mas de 1 (un) Año </option>
-                                            <option value="7">Mas de 1 (un) Año y 6 (seis) Meses </option>
-                                            <option value="8">Mas de 2 (dos) Años </option>
-                                            <option value="9">Mas de 3 (tres) Años </option>
-                                            <option value="10">Mas de 4 (cuatro) Años </option>
-                                            <option value="11">Mas de 5 (cinco) Años </option>
+                                            <option value="0">{{__("Dot Show")}}</option>
+                                            <option value="1">{{__("More at")}} 1 {{__("Week")}} </option>
+                                            <option value="2">{{__("More at")}} 2 {{__("Week")}} </option>
+                                            <option value="3">{{__("More at")}} 1 {{__("Month")}} </option>
+                                            <option value="4">{{__("More at")}} 2 {{__("Months")}} </option>
+                                            <option value="5">{{__("More at")}} 6 {{__("Months")}} </option>
+                                            <option value="6">{{__("More at")}} 1 {{__("Year")}} </option>
+                                            <option value="7">{{__("More at")}} 1 {{__("Year")}} y 6 {{__("Months")}} </option>
+                                            <option value="8">{{__("More at")}} 2 {{__("Years")}} </option>
+                                            <option value="9">{{__("More at")}} 3 {{__("Years")}} </option>
+                                            <option value="10">{{__("More at")}} 4 {{__("Years")}} </option>
+                                            <option value="11">{{__("More at")}} 5 {{__("Years")}} </option>
                                         </select>
                                     </div>
 
@@ -385,28 +385,18 @@
                                     </p>
                                     @enderror
 
-
-
                                 </div>
                             </div>
-
-
                         </div>
-
-
-
-
-
-
 
 
                         <div class="mb-1 py-10 w-full text-center mt-12">
                             <button class="inline-flex items-center justify-center bg-blue-700 py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
-                                Guardar Cambios
+                                {{__("Save Changes")}}
                             </button>
                         </div>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
         </div>

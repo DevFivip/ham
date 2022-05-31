@@ -71,8 +71,8 @@
     <div class="flex flex-wrap bg-white md:w-4/5 sm:w-full mx-auto p-10 rounded-lg shadow-lg">
         <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div class="mb-10 w-full">
-                <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]">
-                    <img src="/assets/images/logo/logo.svg" alt="logo" class="max-w-full" />
+                <a href="/{{app()->getLocale() }}" class="mb-6 inline-block max-w-[160px] bg-blue-700">
+                    <img src="/assets/images/onlyham-logo.png" alt="logo" class="max-w-full" />
                 </a>
                 <p class="mb-7 text-base text-body-color">
                     {{ __("Start now to search for OnlyFans accounts, Telegram groups and WhatsApp groups and find Content Creators and communities.")}}
@@ -101,12 +101,12 @@
                 <h4 class="mb-9 text-lg font-semibold text-dark">{{__("User")}}</h4>
                 <ul>
                     <li>
-                        <a href="javascript:void(0)" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
+                        <a href="/{{app()->getLocale() }}/login" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                             {{__("Login")}}
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
+                        <a href="/{{app()->getLocale() }}/register" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                             {{__("Register")}}
                         </a>
                     </li>
@@ -119,17 +119,17 @@
                 <ul>
                     <li>
                         <a href="/{{app()->getLocale()}}/search?location_id=64" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
-                            {{__("Mejores")}} Onlyfans EEUU
+                            {{__("Best")}} Onlyfans EEUU
                         </a>
                     </li>
                     <li>
                         <a href="/{{app()->getLocale()}}/search?location_id=63" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
-                            {{__("Mejores")}} Onlyfans Spain
+                            {{__("Best")}} Onlyfans Spain
                         </a>
                     </li>
                     <li>
                         <a href="/{{app()->getLocale()}}/search?location_id=43" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
-                            {{__("Mejores")}} Onlyfans Colombia
+                            {{__("Best")}} Onlyfans Colombia
                         </a>
                     </li>
                 </ul>
@@ -146,7 +146,7 @@
                         <i class="fa-brands fa-reddit"></i>
                     </a>
                     <a href="https://twitter.com/OnlyHamOficial" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark sm:mr-4 lg:mr-3 xl:mr-4">
-                        <i class="fa-brands fa-reddit"></i>
+                        <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
                 <p class="text-base text-body-color">&copy; 2022 OnlyHam.co</p>

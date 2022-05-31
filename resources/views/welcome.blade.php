@@ -7,33 +7,33 @@
     <!-- <meta name="description" content="Search OnlyFans Accounts in Hubite. Find OnlyFans, Fansly and FanCentro profiles classified by username, Country, Free accounts, Best Content Creators and more than 2 million reviewed accounts!"> -->
     <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
 
-    <link rel="alternate" hreflang="es" href="https://onlyham.co/es/">
-    <link rel="alternate" hreflang="en" href="https://onlyham.co/en/">
-    <link rel="alternate" hreflang="fr" href="https://onlyham.co/fr/">
-    <link rel="alternate" href="https://onlyham.co/en/" hreflang="x-default">
-    <link rel="canonical" href="https://onlyham.co/en/">
+    <link rel="alternate" hreflang="es" href="{{$_SERVER['APP_URL']}}/es/">
+    <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
+    <link rel="alternate" hreflang="fr" href="{{$_SERVER['APP_URL']}}/fr/">
+    <link rel="alternate" href="{{$_SERVER['APP_URL']}}/en/" hreflang="x-default">
+    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['PATH_INFO']}}">
+
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
     <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
-    <meta property="og:description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
-    <meta property="og:url" content="https://onlyham.co/{{app()->getLocale()}}/">
-    <meta property="og:site_name" content="OnlyHam">
+    <meta property="og:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
+    <meta property="og:site_name" content="OnlyHam.co">
 
-    <meta property="og:image" content="https://hubite.com/static/images/home/hubite3.png">
-    <meta property="og:image:secure_url" content="https://hubite.com/static/images/home/hubite3.png">
+    <meta property="og:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta property="og:image:secure_url" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
 
     <meta property="og:image:width" content="499">
     <meta property="og:image:height" content="333">
-    <meta property="og:image:alt" content="Search OnlyFans accounts">
+    <meta property="og:image:alt" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}}'>
     <meta property="og:image:type" content="image/jpeg">
 
-
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Search OnlyFans Accounts | Hubite - OnlyFans Finder">
-    <meta name="twitter:description" content="Search OnlyFans Accounts in Hubite. Find OnlyFans, Fansly and FanCentro profiles classified by username, Country, Free accounts, Best Content Creators and more than 2 million reviewed accounts!">
-    <meta name="twitter:site" content="@Hubite">
-    <meta name="twitter:creator" content="@Hubite">
-    <meta name="twitter:image" content="https://hubite.com/static/images/home/hubite3.png">
+    <meta name="twitter:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta name="twitter:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta name="twitter:site" content="@OnlyHamOficial">
+    <meta name="twitter:creator" content="@OnlyHamOficial">
+    <meta name="twitter:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
 
     @include("layouts.header")
 </head>
@@ -53,7 +53,6 @@
             <div class="-mx-4 flex flex-wrap">
                 <div class="w-full px-4">
                     <div x-data="
-
                           {
                             openTab: 99,
                             activeClasses: 'bg-blue-700 text-white ',
@@ -171,11 +170,11 @@
                 </div>
             </div>
         </div>
-        </sect ion>
-        @include("layouts.mejoresMedios")
-        @include("layouts.faq")
-        <!-- ======About Us ENd -->
-        @include("layouts.footer")
+    </section>
+    @include("layouts.mejoresMedios")
+    @include("layouts.faq")
+    <!-- ======About Us ENd -->
+    @include("layouts.footer")
 </body>
 
 </html>

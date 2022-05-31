@@ -37,8 +37,8 @@ function ccookie($req)
 Route::get('/', function (Request $req) {
 
     try {
-    $lang = $req->server()["HTTP_ACCEPT_LANGUAGE"];
-    $lang = explode(',', $lang);
+        $lang = $req->server()["HTTP_ACCEPT_LANGUAGE"];
+        $lang = explode(',', $lang);
 
         $lang = explode('-', $lang[0]);
         return redirect($lang[0]);
@@ -90,7 +90,8 @@ Route::group([
 
     Route::get("precios", function (Request $req) {
         $cookies = ccookie($req);
-        return view("precios", compact('cookies'));
+        $redesSociales = Social::all();
+        return view("precios", compact('cookies', 'redesSociales'));
     });
 
     Auth::routes();
@@ -119,15 +120,14 @@ Route::group([
 
     Route::prefix('/home')->group(function () {
         Route::get('payment/{id}', function (Request $req, $lang, $id) {
-
             $precios = [1 => '5.00', 2 => '3.00', 3 => '1.00'];
             $precio = $precios[auth()->user()->categoria_id];
-
+            $redesSociales = Social::all();
             $group = Group::find($id);
             if (auth()->id() === $group->user_id) {
                 $token = Crypt::encryptString($id);
                 $cookies = ccookie($req);
-                return view("payment", compact("cookies", 'group', 'precio', 'token'));
+                return view("payment", compact("cookies", 'group', 'precio', 'token', 'redesSociales'));
             } else {
                 abort(404);
             }

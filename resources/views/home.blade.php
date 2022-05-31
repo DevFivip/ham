@@ -72,7 +72,7 @@
                             </div>
                             <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-9 px-3 text-center shadow-lg">
                                 <span class="mb-2 block text-sm font-semibold text-primary">
-                                    {{$grupo->social->name}} {{$grupo->type->name}}
+                                    {{$grupo->social->name}} {{__($grupo->type->name)}}
                                 </span>
                                 <h3 class="mb-4 text-xl font-bold text-dark">
                                     {{$grupo->name}}

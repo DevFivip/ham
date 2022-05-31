@@ -10,9 +10,17 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="theme-color" content="#2563eb">
+
     <link rel="stylesheet" href="/assets/css/tailwind.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="/assets/js/alpine.min.js"></script>
 </head>
 
@@ -26,8 +34,8 @@
             <div class="container">
                 <div class="relative -mx-4 flex items-center justify-between bg-white rounded-lg ">
                     <div class="w-60 max-w-full px-4">
-                        <a href="/{{app()->getLocale() }}/home" class="block w-full py-5">
-                            <img src="/assets/images/logo/logo.svg" alt="logo" class="w-full" />
+                        <a href="/{{app()->getLocale() }}" class="block w-full py-5">
+                            <img src="/assets/images/onlyham-logo.png" alt="Logo OnlyHam" class="w-full" />
                         </a>
                     </div>
                     <div class="flex w-full items-center justify-between px-4">

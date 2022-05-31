@@ -2,7 +2,7 @@
     <div class="container flex flex-wrap justify-between items-center mx-auto">
 
         <a href="/{{app()->getLocale()}}" class="flex items-center">
-            <img src="/assets/images/logo/logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo OnlyHam">
+            <img src="/assets/images/onlyham-logo.png" class="mr-3 h-6 sm:h-9" alt="Logo OnlyHam">
         </a>
 
         <div class="flex md:order-2">

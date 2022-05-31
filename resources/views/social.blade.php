@@ -2,14 +2,48 @@
 <html lang="{{app()->getLocale()}}" prefix="og: http://ogp.me/ns#">
 
 <head>
+
+    <title> {{end($breadcrumbs)['name']}} | OnlyHam.co {{__("Seacher")}}</title>
+    <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
+    <!-- <meta name="description" content="Search OnlyFans Accounts in Hubite. Find OnlyFans, Fansly and FanCentro profiles classified by username, Country, Free accounts, Best Content Creators and more than 2 million reviewed accounts!"> -->
+    <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
+
+    <link rel="alternate" hreflang="es" href="{{$_SERVER['APP_URL']}}/es/">
+    <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
+    <link rel="alternate" hreflang="fr" href="{{$_SERVER['APP_URL']}}/fr/">
+    <link rel="alternate" href="{{$_SERVER['APP_URL']}}/en/" hreflang="x-default">
+    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['PATH_INFO']}}">
+
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <meta property="og:locale" content="{{app()->getLocale()}}">
+    <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta property="og:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
+    <meta property="og:site_name" content="OnlyHam.co">
+
+    <meta property="og:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta property="og:image:secure_url" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+
+    <meta property="og:image:width" content="499">
+    <meta property="og:image:height" content="333">
+    <meta property="og:image:alt" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}}'>
+    <meta property="og:image:type" content="image/jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta name="twitter:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta name="twitter:site" content="@OnlyHamOficial">
+    <meta name="twitter:creator" content="@OnlyHamOficial">
+    <meta name="twitter:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+
     @include("layouts.header")
+
 </head>
 
 <body>
     <!-- ====== Navbar Section Start -->
     @include("layouts.navbar2")
     <!-- ====== Navbar Section End -->
-
 
     <!-- ====== breadcrumbs Section Start -->
     <section class="pt-20" style="padding-top: 110px !important">
@@ -20,7 +54,6 @@
                         @for ($i = 0; $i < count($breadcrumbs); $i++) <li class="flex items-center">
                             <a href="/{{app()->getLocale() }}{{ $breadcrumbs[$i]['link'] }}" class="text-base font-semibold text-black hover:text-primary">
                                 {{ $breadcrumbs[$i]["name"] }}
-                                
                             </a>
 
                             @if(isset($breadcrumbs[$i+1]))

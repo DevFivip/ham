@@ -215,7 +215,7 @@
                                 <div class="flex mb-5">
                                     <div class="w-full">
                                         <label for="" class="text-base font-normal text-primary ml-10">{{__("How many subscribers do you currently have?")}}</label>
-                                        <input value="0" type="number" name="cant_suscriptores" placeholder="Cantidad usuarios, suscriptores ó miembros" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_suscriptores') }}" required autocomplete="cant_suscriptores">
+                                        <input value="0" type="number" name="cant_suscriptores" placeholder="" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('cant_suscriptores') }}" required autocomplete="cant_suscriptores">
                                     </div>
 
                                     @error('cant_suscriptores')
@@ -269,7 +269,7 @@
                                 <div class="flex mb-5">
                                     <div class="w-full">
                                         <label for="" class="text-base font-normal text-primary ml-10">{{__("How much is the price to enter or monthly?")}}</label>
-                                        <input value="0" type="number" name="precio_membresia" placeholder="Precio de membresia" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('precio_membresia') }}" required autocomplete="precio_membresia">
+                                        <input value="0" type="number" name="precio_membresia" placeholder="" class="w-full rounded-lg border-[1.5px] border-form-stroke py-3 px-5 font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-[#F5F7FD]" value="{{ old('precio_membresia') }}" required autocomplete="precio_membresia">
                                     </div>
 
                                     @error('precio_membresia')

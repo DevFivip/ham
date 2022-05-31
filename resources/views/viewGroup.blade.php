@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{app()->getLocale()}}" prefix="og: http://ogp.me/ns#">
-<!-- <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"> -->
 
 <head>
     @include("layouts.header")
@@ -93,9 +92,9 @@
                                         <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
                                             {{__("profile.how_category_describeme",["name"=>$group->name])}}
                                         </h2>
-
+                                        
                                         <p class="mb-8 text-base text-body-color">
-                                            {!!__("profile.how_category_describeme_resp",["name"=>$group->name,'original_category'=>$group->categoria->name,'category'=>__($group->categoria->name),"subcategory"=>__($group->subcategoria->name),'social'=>$group->social->name])!!}
+                                            {!!__("profile.how_category_describeme_resp",["name"=>$group->name,'original_category'=>$group->categoria->slug,'category'=>__($group->categoria->name),"subcategory"=>__($group->subcategoria->name),'social'=>$group->social->name])!!}
                                         </p>
                                     </div>
                                 </div>

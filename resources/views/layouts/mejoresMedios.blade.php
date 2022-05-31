@@ -7,6 +7,9 @@
                     {{__("Top Onlyfans, Telegram and WhatsApp Creators are the best way to show your love for thousands of live cam models on the internet. Forget about downloading low quality videos and watching them later, all with this innovative app you will be able to find them right now!")}}
                 </p>
             </div>
+            <div class="w-full px-4 lg:w-6/12">
+                <img src="/assets/images/onlyham-logo.png" alt="logo onlyham.co onlyham">
+            </div>
         </div>
     </div>
 </section>
@@ -15,7 +18,8 @@
 <section class="overflow-hidden bg-blue-100 py-10">
     <div class="container mx-auto px-4">
         <div class="-mx-4 flex flex-wrap items-center justify-between">
-            <div class="w-full px-4 lg:w-6/12">
+            <div class="w-full px-4 lg:w-6/12 sm:pb-10">
+                <img src="/assets/images/1-2.png" alt="logo onlyham.co onlyham ham caracter" class="rounded-lg">
             </div>
             <div class="w-full px-4 lg:w-6/12">
                 <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl">{{__("All Free!")}}</h2>
@@ -46,13 +50,13 @@
                     {{__("The app Onlyham.co has a list of creators and communities that is the largest in the world.")}}
                 </p>
 
-
                 <section>
                     <div class="container mx-auto px-4">
                         <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                             @foreach($mejores3 as $key => $group3)
                             <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ ( !!$group3->imagen ? '/thumbnail/'. $group3->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
-                                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
+                                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
+                                </div>
                                 <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
                                     <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
                                         @if($group3->social->slug === "onlyfans")
@@ -254,8 +258,8 @@
                 <h2 class="mb-8 text-3xl font-bold text-fuchsia-700 sm:text-4xl"> {{ __("Top Whatsapp Groups") }}</h2>
 
                 <p class="mb-8 text-fuchsia-600">
-                      {{__("Whatsapp groups are a great way to stay in touch with people that share the same activity, topic or community")}}
-            </p>
+                    {{__("Whatsapp groups are a great way to stay in touch with people that share the same activity, topic or community")}}
+                </p>
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                         @foreach($mejores_whatsapp as $key => $group6)

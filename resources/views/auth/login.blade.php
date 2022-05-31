@@ -10,8 +10,8 @@
                         <div class="w-full px-4">
                             <div class="relative mx-auto max-w-[525px] overflow-hidden rounded-lg bg-white py-16 px-10 text-center sm:px-12 md:px-[60px]">
                                 <div class="mb-10 text-center md:mb-16">
-                                    <a href="javascript:void(0)" class="mx-auto inline-block max-w-[160px]">
-                                        <img src="/assets/images/logo/logo.svg" alt="logo" />
+                                    <a href="javascript:void(0)" class="mx-auto inline-block max-w-[260px]">
+                                        <img src="/assets/images/1-3.png" alt="logo" />
                                     </a>
                                 </div>
                                 <form method="POST" action="{{ route('login',app()->getLocale() ) }}">
