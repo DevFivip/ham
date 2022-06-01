@@ -16,6 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call(
             [UserSeeder::class, LocationSeeder::class, CategoriesSeeder::class]
         );
-     \App\Models\Group::factory(1000)->create();
+     //\App\Models\Group::factory(1000)->create();
     }
 }
