@@ -117,7 +117,7 @@ class CategoriesSeeder extends Seeder
                 "slug" => "viajes"
             ],
             [
-                "name" => "+18",
+                "name" => "NSFW",
                 "slug" => "nsfw"
             ],
         ];

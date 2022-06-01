@@ -192,7 +192,6 @@ class GroupController extends Controller
     public function update(Request $request, $lang,$id)
     {
 
-
         $data = $request->all();
 
         // try {

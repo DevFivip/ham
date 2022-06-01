@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "almazary/laravel-word-censor": "^1.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.7",
@@ -13,6 +14,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laraveles/spanish": "^1.5",
+        "snipe/banbuilder": "dev-master",
         "spatie/laravel-sitemap": "^5.9",
         "srmklive/paypal": "^3.0",
         "te7a-houdini/laravel-trix": "^2.0"

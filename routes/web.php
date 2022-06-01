@@ -13,6 +13,8 @@ use App\Models\Visitor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Route;
+use Snipe\BanBuilder\CensorWords;
+use Almazary\LaravelWordCensor\LaravelWordCensorFacade;
 
 /*
 |--------------------------------------------------------------------------
@@ -225,10 +227,13 @@ Route::group([
             }
 
             $cookie = Crypt::encryptString($cookie);
+      
+            $censor = new LaravelWordCensorFacade();
 
             /**end cookie de visita */
             $cookies = ccookie($req);
-            return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group")))->cookie('__VID', $cookie, time() * 365 * 5);
+
+            return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group",'censor')))->cookie('__VID', $cookie, time() * 365 * 5);
         } catch (\Throwable $th) {
             dd($th);
             abort(404);

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AXX2_MQO52FZAjbMh1_hy3kVqLOCYDfKlbpFqt0KqU_QVAVAody4ZjNPj7JC0psX_Qdp-fQqBwpMeil1&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
 @section('content')
 
 <main class="sm:container sm:mx-auto sm:mt-10">
@@ -31,7 +31,7 @@
                     // This function sets up the details of the transaction, including the amount and line item details.
                     return actions.order.create({
                         application_context: {
-                            brand_name: 'Laravel Book Store Demo Paypal App',
+                            brand_name: 'OnlyHam Payment Service',
                             user_action: 'PAY_NOW',
                         },
                         purchase_units: [{

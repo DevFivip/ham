@@ -178,6 +178,7 @@ return [
 
         Intervention\Image\ImageServiceProvider::class,
         Laraveles\Spanish\SpanishServiceProvider::class,
+        
 
     ],
 

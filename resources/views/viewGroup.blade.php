@@ -2,11 +2,11 @@
 <html lang="{{app()->getLocale()}}" prefix="og: http://ogp.me/ns#">
 
 <head>
-    <title>{{ $group['name'] }} | {{env('APP_NAME')}} {{__("Seacher")}}</title>
+    <title> {{$censor::replace($group->name)}} | {{env('APP_NAME')}} {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher, {{ $group['name'] }}" name="keywords">
     <!-- <meta name="description" content="Search OnlyFans Accounts in Hubite. Find OnlyFans, Fansly and FanCentro profiles classified by username, Country, Free accounts, Best Content Creators and more than 2 million reviewed accounts!"> -->
     @if(!!$group->description)
-    <meta name="description" content="{{strip_tags($group->description)}}">
+    <meta name="description" content='{{$censor::replace(strip_tags($group->description))}}'>
     @else
     <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
     @endif
@@ -15,12 +15,12 @@
     <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
     <link rel="alternate" hreflang="fr" href="{{$_SERVER['APP_URL']}}/fr/">
     <link rel="alternate" href="{{$_SERVER['APP_URL']}}/en/" hreflang="x-default">
-    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['PATH_INFO']}}">
+    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['REQUEST_URI']}}">
 
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
-    <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
-    <meta property="og:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta property="og:title" content='{{$censor::replace((strip_tags($group->name)))}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta property="og:description" content='{{$censor::replace((strip_tags($group->description)))}}'>
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">
 
@@ -29,12 +29,12 @@
 
     <meta property="og:image:width" content="499">
     <meta property="og:image:height" content="333">
-    <meta property="og:image:alt" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}}'>
+    <meta property="og:image:alt" content='{{$censor::replace(strip_tags($group->name))}}'>
     <meta property="og:image:type" content="image/jpeg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
-    <meta name="twitter:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta name="twitter:title" content='{{$censor::replace(strip_tags($group->name))}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta name="twitter:description" content='{{$censor::replace(strip_tags($group->description))}}'>
     <meta name="twitter:site" content="@OnlyHamOficial">
     <meta name="twitter:creator" content="@OnlyHamOficial">
     <meta name="twitter:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
@@ -70,26 +70,24 @@
                                     </div>
                                     <div class="p-5">
 
-                                        <h3 class="font-semibold text-dark text-3xl">{{ $group->name }}</h3>
+                                        <h3 class="font-semibold text-dark text-3xl">{{ $censor::replace($group->name) }}</h3>
 
-                                        <p class="box-content">{{strip_tags($group->description)}}</p>
+                                        <p class="box-content">{{$censor::replace(strip_tags($group->description))}}</p>
                                         @if(isset($group->username))
                                         <h4 class="mb-5 text-xl font-semibold text-dark">
                                             {{ $group->username }}
                                         </h4>
                                         @endif
                                         <p class="mb-5 text-base text-body-color">
-                                            {{ __($group->type->name) }}, {{ __($group->categoria->name) }},
-                                            {{ __($group->subcategoria->name) }}
+                                            {{ __($group->type->name) }}, {{ $censor::replace(__($group->categoria->name))}},
+                                            {{ $censor::replace(__($group->subcategoria->name)) }}
                                         </p>
                                         <p class="mb-5 text-base text-body-color">
-                                            <span> <i class="fa-solid fa-eye"></i> <span id="count_views">0</span> </span>
-                                            <span> <i class="fa-solid fa-arrow-right-to-bracket"></i> <span id="count_click">0</span> </span>
-
+                                            <span> <i class="fa-solid fa-eye"></i> <span id="count_views">0</span></span>
+                                            <span> <i class="fa-solid fa-arrow-right-to-bracket"></i> <span id="count_click">0</span></span>
                                         </p>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="absolute left-0 right-0 -bottom-5 flex items-center justify-center">
                                 <button id="ingresar" class="inline-flex items-center justify-center rounded-full bg-secondary py-4 px-10 text-center text-base font-normal text-white bg-blue-700 hover:bg-opacity-90 lg:px-8 xl:px-10">
