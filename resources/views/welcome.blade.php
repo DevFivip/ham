@@ -11,7 +11,7 @@
     <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
     <link rel="alternate" hreflang="fr" href="{{$_SERVER['APP_URL']}}/fr/">
     <link rel="alternate" href="{{$_SERVER['APP_URL']}}/en/" hreflang="x-default">
-    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['PATH_INFO']}}">
+    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['REQUEST_URI']}}">
 
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
@@ -60,7 +60,7 @@
                           }
                         " class="mb-14 w-full">
                         <div class="flex flex-wrap rounded-lg border border-[#E4E4E4] py-3 px-4">
-                            <a href="javascript:void(0)" @click="openTab = 99" :class="openTab === 99 ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
+                            <a href="javascript:void(0)" @click="openTab = 99" :class="openTab === 99 ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm PATH_INFO -medium md:text-base lg:px-6">
                                 {{__("Best")}} 🔥
                             </a>
                             @foreach ($redes as $red)
