@@ -12,7 +12,7 @@
     <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
     <link rel="alternate" hreflang="fr" href="{{$_SERVER['APP_URL']}}/fr/">
     <link rel="alternate" href="{{$_SERVER['APP_URL']}}/en/" hreflang="x-default">
-    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['PATH_INFO']}}">
+    <link rel="canonical" href="{{$_SERVER['APP_URL']}}{{$_SERVER['REQUEST_URI']}}">
 
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
