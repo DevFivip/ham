@@ -445,7 +445,7 @@
                                     <i class="{{$groupx->social->icon}} text-white" style="font-size:50px;"></i>
                                     @endif
                                 </a>
-                                @if(!!$groupx->precio_membresia)
+                                @if(!!intval($groupx->precio_membresia))
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
                                     <span class="">{{$groupx->precio_membresia}}</span>
@@ -465,6 +465,7 @@
                                     </a>
                                 </p>
                             </main>
+
                         </div>
 
                         @endif
