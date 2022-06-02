@@ -4,7 +4,6 @@
 <head>
     <title> {{$censor::replace($group->name)}} | {{env('APP_NAME')}} {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher, {{ $group['name'] }}" name="keywords">
-    <!-- <meta name="description" content="Search OnlyFans Accounts in Hubite. Find OnlyFans, Fansly and FanCentro profiles classified by username, Country, Free accounts, Best Content Creators and more than 2 million reviewed accounts!"> -->
     @if(!!$group->description)
     <meta name="description" content='{{$censor::replace(strip_tags($group->description))}}'>
     @else
