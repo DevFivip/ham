@@ -24,8 +24,8 @@
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">
 
-    <meta property="og:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
-    <meta property="og:image:secure_url" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta property="og:image" content="{{ (!!$group['imagen'] ? $_SERVER['APP_URL'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_URL'].'/assets/images/1.png') }}">
+    <meta property="og:image:secure_url" content="{{ (!!$group['imagen'] ? $_SERVER['APP_URL'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_URL'].'/assets/images/1.png') }}">
 
     <meta property="og:image:width" content="499">
     <meta property="og:image:height" content="333">
@@ -37,7 +37,7 @@
     <meta name="twitter:description" content='{{$censor::replace(strip_tags($group->description))}}'>
     <meta name="twitter:site" content="@OnlyHamOficial">
     <meta name="twitter:creator" content="@OnlyHamOficial">
-    <meta name="twitter:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta name="twitter:image" content="{{ (!!$group['imagen'] ? $_SERVER['APP_URL'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_URL'].'/assets/images/1.png') }}">
     @include("layouts.header")
 </head>
 
