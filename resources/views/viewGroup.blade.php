@@ -107,13 +107,13 @@
                                     {{__('profile.many_subcribers',["name"=>$group->name])}}
                                 </h2>
 
-                                @if($group->cant_suscriptores === 0 )
+                                @if(intval($group->cant_suscriptores) === 0 )
 
                                 <p class="mb-8 text-base text-body-color">
                                     {{__('profile.many_subcribers_resp_false',["name"=>$group->name,"type"=>$group->type->name,"number"=>$group->cant_suscriptores])}}
                                 </p>
 
-                                @elseif($group->cant_suscriptores > 1)
+                                @elseif(intval($group->cant_suscriptores) > 1)
                                 <p class="mb-8 text-base text-body-color">
                                     {{__('profile.many_subcribers_resp_true',["name"=>$group->name,"type"=>$group->type->name,"number"=>$group->cant_suscriptores])}}
                                 </p>
