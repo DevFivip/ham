@@ -125,22 +125,19 @@
                         </p>
                         <div class="mb-7">
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                maximo 5 anuncios activos al mismo tiempo
+                                1 publicación activa
                             </p>
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                3$ por activar cada anuncio
-                            </p>
-                            <p class="mb-1 text-base leading-loose text-body-color">
-                                SEO optmizado y eso
+                                15 dias publicacion
                             </p>
                             <p class="mb-1 text-base leading-loose text-body-color">
                                 Free updates
                             </p>
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                20 dias de anuncio
+                                Use on 1 (one) project
                             </p>
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                4 Months support
+                                3 Months support
                             </p>
                         </div>
                         <a href="javascript:void(0)" class="block w-full rounded-md border border-primary bg-primary p-4 text-center text-base font-semibold text-white transition hover:bg-opacity-90">
@@ -214,22 +211,19 @@
                         </p>
                         <div class="mb-7">
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                1$ por activar cada anuncio
+                                1 publicación activa
                             </p>
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                las mismas weadas del otro beta
+                                15 dias publicacion
                             </p>
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                Maximo 100 anuncios activos al mismo tiempo
+                                Free updates
                             </p>
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                30 dias de anuncio
+                                Use on 1 (one) project
                             </p>
                             <p class="mb-1 text-base leading-loose text-body-color">
-                                Use on Unlimited project
-                            </p>
-                            <p class="mb-1 text-base leading-loose text-body-color">
-                                12 Months support
+                                3 Months support
                             </p>
                         </div>
                         <a href="javascript:void(0)" class="block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold text-primary transition hover:border-primary hover:bg-primary hover:text-white">
