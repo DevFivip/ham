@@ -11,7 +11,7 @@ return [
     "where_from" => "¿De donde es :Name?",
     "where_from_resp" => "Es de :location. Si quieres ver más Contenido de ese país, échale un vistazo a la sección buscar <a href='/es/:social-:location' class='text -blue-700'> :social por ubicación</a> en nuestro sitio web",
 
-    "can_join" => "¿Puedo unirme al tipo :name :social :gratis?",
+    "can_join" => "¿Puedo unirme al :type :name :social gratis?",
     "can_join_resp_true" => "¡Tienes suerte! Ahora mismo, :name no requiere una suscripción o pago para acceder a todo el contenido de su :social. Entra ahora y no esperes a que sea demasiado tarde!",
     "can_join_resp_false" => "Lo sentimos, pero :name no tiene un :social gratuito. Puedes acceder a su contenido suscribiéndote directamente a su cuenta, por sólo $:price al mes. Piénsalo, ¡es súper barato! ¿Cuánto dinero te gastas al mes en cerveza, café o Netflix? Date un capricho, suscríbete a :name :social, ¡y harás muy feliz al creador de contenidos!",
 
