@@ -19,6 +19,8 @@
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
     <meta property="og:title" content='{{$censor::replace((strip_tags($group->name)))}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="754192775575289">
     <meta property="og:description" content='{{$censor::replace((strip_tags($group->description)))}}'>
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">

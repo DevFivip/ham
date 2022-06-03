@@ -15,6 +15,8 @@
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
     <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="754192775575289">
     <meta property="og:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">
