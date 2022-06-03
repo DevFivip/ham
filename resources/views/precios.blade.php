@@ -229,7 +229,6 @@
                         <a href="javascript:void(0)" class="block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold text-primary transition hover:border-primary hover:bg-primary hover:text-white">
                             Choose Professional
                         </a>
-
                         <div>
                             <span class="absolute right-0 top-7 z-[-1]">
                                 <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
