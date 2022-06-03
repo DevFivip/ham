@@ -152,7 +152,7 @@
                                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
 
                                     <div class="py-3 sm:py-4">
-                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[0]->imagen ? '/storage/img/'. $mejores[0]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[0]->imagen ? '/storage/img/'. $mejores[0]->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                             </div>
                                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -184,7 +184,7 @@
                                     </div>
 
                                     <div class="py-3 sm:py-4">
-                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[1]->imagen ? '/storage/img/'. $mejores[1]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[1]->imagen ? '/storage/img/'. $mejores[1]->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                             </div>
                                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -219,7 +219,7 @@
 
                                 </div>
                                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                                    <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[2]->imagen ? '/storage/img/'. $mejores[2]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                    <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[2]->imagen ? '/storage/img/'. $mejores[2]->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                                         <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                         </div>
                                         <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -309,7 +309,7 @@
                     </div>
 
                     <div class="w-full px-4 lg:w-1/2 xl:w-5/12 px-6">
-                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[3]->imagen ? '/storage/img/'. $mejores[3]->images : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[3]->imagen ? '/storage/img/'. $mejores[3]->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                             </div>
                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
