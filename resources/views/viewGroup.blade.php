@@ -177,7 +177,7 @@
                                             </div>
                                             <main class="p-5 z-10">
                                                 <p class="text-white">{{ !!$mejores[0]->username ? '@'.$mejores[0]->username : '' }}</p>
-                                                <a href="" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[0]->name}}
+                                                <a href="/{{app()->getLocale()}}/{{$mejores[0]->social->name}}/{{$mejores[0]->type->name}}/categoria/{{$mejores[0]->categoria->slug}}/{{$mejores[0]->subcategoria->slug}}/{{$mejores[0]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[0]->name}}
                                                 </a>
                                             </main>
                                         </div>
@@ -211,7 +211,7 @@
                                             </div>
                                             <main class="p-5 z-10">
                                                 <p class="text-white">{{ !!$mejores[1]->username ? '@'.$mejores[1]->username : '' }}</p>
-                                                <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[1]->name}}
+                                                <a href="/{{app()->getLocale()}}/{{$mejores[1]->social->name}}/{{$mejores[1]->type->name}}/categoria/{{$mejores[1]->categoria->slug}}/{{$mejores[1]->subcategoria->slug}}/{{$mejores[1]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[1]->name}}
                                                 </a>
                                             </main>
                                         </div>
@@ -246,7 +246,7 @@
                                         </div>
                                         <main class="p-5 z-10">
                                             <p class="text-white">{{ !!$mejores[2]->username ? '@'.$mejores[2]->username : '' }}</p>
-                                            <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[2]->name}}
+                                            <a href="/{{app()->getLocale()}}/{{$mejores[2]->social->name}}/{{$mejores[2]->type->name}}/categoria/{{$mejores[2]->categoria->slug}}/{{$mejores[2]->subcategoria->slug}}/{{$mejores[2]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[2]->name}}
                                             </a>
                                         </main>
                                     </div>
@@ -337,7 +337,7 @@
                             </div>
                             <main class="p-5 z-10">
                                 <p class="text-white">{{ !!$mejores[3]->username ? '@'.$mejores[3]->username : '' }}</p>
-                                <a href="#" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[3]->name}}
+                                <a href="/{{app()->getLocale()}}/{{$mejores[3]->social->name}}/{{$mejores[3]->type->name}}/categoria/{{$mejores[3]->categoria->slug}}/{{$mejores[3]->subcategoria->slug}}/{{$mejores[3]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$mejores[3]->name}}
                                 </a>
                             </main>
                         </div>
