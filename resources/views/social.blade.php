@@ -22,8 +22,8 @@
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">
 
-    <meta property="og:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
-    <meta property="og:image:secure_url" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta property="og:image" content="{{$_SERVER['APP_CDN']}}/assets/images/1.png">
+    <meta property="og:image:secure_url" content="{{$_SERVER['APP_CDN']}}/assets/images/1.png">
 
     <meta property="og:image:width" content="499">
     <meta property="og:image:height" content="333">
@@ -35,7 +35,7 @@
     <meta name="twitter:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
     <meta name="twitter:site" content="@OnlyHamOficial">
     <meta name="twitter:creator" content="@OnlyHamOficial">
-    <meta name="twitter:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta name="twitter:image" content="{{$_SERVER['APP_CDN']}}/assets/images/1.png">
 
     @include("layouts.header")
 
@@ -241,7 +241,7 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                 @foreach($mejores as $key => $groupx)
-                <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center {{$key % rand(1,2) == 0? '': 'border-solid border-4 border-yellow-500'}} rounded-lg" style="background-image:url('{{ ( !!$groupx->imagen ? '/thumbnail/'. $groupx->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center {{$key % rand(1,2) == 0? '': 'border-solid border-4 border-yellow-500'}} rounded-lg" style="background-image:url('{{ ( !!$groupx->imagen ? $_SERVER['APP_CDN'].'/thumbnail/'. $groupx->imagen : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}');">
                     <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
                     <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
                         <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">

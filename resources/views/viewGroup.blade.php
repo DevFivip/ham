@@ -25,8 +25,8 @@
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">
 
-    <meta property="og:image" content="{{ (!!$group['imagen'] ? $_SERVER['APP_URL'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_URL'].'/assets/images/1.png') }}">
-    <meta property="og:image:secure_url" content="{{ (!!$group['imagen'] ? $_SERVER['APP_URL'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_URL'].'/assets/images/1.png') }}">
+    <meta property="og:image" content="{{ (!!$group['imagen'] ? $_SERVER['APP_CDN'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_CDN'].'/assets/images/1.png') }}">
+    <meta property="og:image:secure_url" content="{{ (!!$group['imagen'] ? $_SERVER['APP_CDN'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_CDN'].'/assets/images/1.png') }}">
 
     <meta property="og:image:width" content="499">
     <meta property="og:image:height" content="333">
@@ -38,7 +38,7 @@
     <meta name="twitter:description" content='{{$censor::replace(strip_tags($group->description))}}'>
     <meta name="twitter:site" content="@OnlyHamOficial">
     <meta name="twitter:creator" content="@OnlyHamOficial">
-    <meta name="twitter:image" content="{{ (!!$group['imagen'] ? $_SERVER['APP_URL'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_URL'].'/assets/images/1.png') }}">
+    <meta name="twitter:image" content="{{ (!!$group['imagen'] ? $_SERVER['APP_CDN'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_CDN'].'/assets/images/1.png') }}">
     @include("layouts.header")
 </head>
 
@@ -49,7 +49,7 @@
     </div>
 
     <section class="relative block -z-10 md:h-72">
-        <img style="min-height:300px;" id="preview-banner" src="{{ url('storage/') }}/placeholder/background.png" alt="background-{{$group['name']}}" />
+        <img style="min-height:300px;" id="preview-banner" src="{{$_SERVER['APP_CDN']}}/storage/placeholder/background.png" alt="background-{{$group['name']}}" />
     </section>
 
     <section class="py-16 bg-blueGray-200 z-100 mt-0 sm:mt-44">
@@ -62,7 +62,7 @@
                                 <div class="grid md:grid-cols-2 sm:grid-cols-12 p-5">
 
                                     <div class="relative mb-12  max-w-[310px] md:mr-12 md:mb-0 md:max-w-[250px] lg:mr-14 lg:max-w-[280px] 2xl:mr-16">
-                                        <img src="{{ (!!$group['imagen'] ? '/storage/img/'. $group['imagen'] : '/storage/placeholder/placeholder-avatar.jpg') }}" alt="{{ $group['name'] }}" class="w-full rounded-xl" style="max-width:350px;" />
+                                        <img src="{{ (!!$group['imagen'] ? $_SERVER['APP_CDN'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}" alt="{{ $group['name'] }}" class="w-full rounded-xl" style="max-width:350px;" />
                                         <span class="absolute -bottom-6 -right-6 z-[-1]">
                                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M3 32C3 15.9837 15.9837 3 32 3C48.0163 2.99999 61 15.9837 61 32C61 48.0163 48.0163 61 32 61C15.9837 61 3 48.0163 3 32Z" stroke="#13C296" stroke-width="6" />
@@ -152,7 +152,7 @@
                                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
 
                                     <div class="py-3 sm:py-4">
-                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[0]->imagen ? '/storage/img/'. $mejores[0]->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[0]->imagen ? $_SERVER['APP_CDN'].'/storage/img/'. $mejores[0]->imagen : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}');">
                                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                             </div>
                                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -184,7 +184,7 @@
                                     </div>
 
                                     <div class="py-3 sm:py-4">
-                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[1]->imagen ? '/storage/img/'. $mejores[1]->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[1]->imagen ? $_SERVER['APP_CDN'].'/storage/img/'. $mejores[1]->imagen : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}');">
                                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                             </div>
                                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -219,7 +219,7 @@
 
                                 </div>
                                 <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                                    <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[2]->imagen ? '/storage/img/'. $mejores[2]->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                                    <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[2]->imagen ? $_SERVER['APP_CDN'].'/storage/img/'. $mejores[2]->imagen : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}');">
                                         <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                         </div>
                                         <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -309,7 +309,7 @@
                     </div>
 
                     <div class="w-full px-4 lg:w-1/2 xl:w-5/12 px-6">
-                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[3]->imagen ? '/storage/img/'. $mejores[3]->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ (!!$mejores[3]->imagen ? $_SERVER['APP_CDN'].'/storage/img/'. $mejores[3]->imagen : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}');">
                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                             </div>
                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
@@ -436,7 +436,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                         @foreach($mejores as $key => $groupx)
                         @if($key > 4)
-                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center {{$key % rand(1,2) == 0? '': 'border-solid border-4 border-yellow-500'}} rounded-lg" style="background-image:url('{{ ( !!$groupx->imagen ? '/storage/img/'. $groupx->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
+                        <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center {{$key % rand(1,2) == 0? '': 'border-solid border-4 border-yellow-500'}} rounded-lg" style="background-image:url('{{ ( !!$groupx->imagen ? $_SERVER['APP_CDN'].'/storage/img/'. $groupx->imagen : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}');">
                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
                                 <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">

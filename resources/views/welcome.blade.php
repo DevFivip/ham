@@ -21,8 +21,8 @@
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">
 
-    <meta property="og:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
-    <meta property="og:image:secure_url" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta property="og:image" content="{{$_SERVER['APP_CDN']}}/assets/images/1.png">
+    <meta property="og:image:secure_url" content="{{$_SERVER['APP_CDN']}}/assets/images/1.png">
 
     <meta property="og:image:width" content="499">
     <meta property="og:image:height" content="333">
@@ -34,7 +34,7 @@
     <meta name="twitter:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
     <meta name="twitter:site" content="@OnlyHamOficial">
     <meta name="twitter:creator" content="@OnlyHamOficial">
-    <meta name="twitter:image" content="{{$_SERVER['APP_URL']}}/assets/images/1.png">
+    <meta name="twitter:image" content="{{$_SERVER['APP_CDN']}}/assets/images/1.png">
 
     @include("layouts.header")
 </head>

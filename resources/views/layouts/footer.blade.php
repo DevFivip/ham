@@ -72,7 +72,7 @@
         <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div class="mb-10 w-full">
                 <a href="/{{app()->getLocale() }}" class="mb-6 inline-block max-w-[160px] bg-blue-700">
-                    <img src="/assets/images/onlyham-logo.png" alt="logo" class="max-w-full" />
+                    <img src="{{$_SERVER['APP_CDN']}}/assets/images/onlyham-logo.png" alt="logo" class="max-w-full" />
                 </a>
                 <p class="mb-7 text-base text-body-color">
                     {{ __("Start now to search for OnlyFans accounts, Telegram groups and WhatsApp groups and find Content Creators and communities.")}}
