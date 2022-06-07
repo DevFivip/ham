@@ -38,3 +38,14 @@
     })(window, document, 'script', 'dataLayer', 'GTM-KH7G4N7');
 </script>
 <!-- End Google Tag Manager -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5E1F693QBP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5E1F693QBP');
+</script>
