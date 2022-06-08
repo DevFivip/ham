@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Category;
 use App\Models\Group;
 use App\Models\Social;
 use Illuminate\Console\Command;
@@ -53,9 +54,17 @@ class GenerateSitemap extends Command
             $sitemap->add(env('APP_URL') . '/en/' . $social->name);
         });
 
+
         Group::with('categoria', 'subcategoria', 'type', 'social')->get()->each(function (Group $group) use ($sitemap) {
             $sitemap->add(env('APP_URL') . '/en/' . $group->social->name . "/" . $group->type->name . "/categoria/" . $group->categoria->slug . "/" . $group->subcategoria->slug . "/" . $group->slug);
         });
+
+        Category::with('groups')->get()->each(function (Category $category) use ($sitemap) {
+            if (!!count($category->groups)) {
+                $sitemap->add(env('APP_URL') . '/en/' . 'categoria/' . $category->slug);
+            }
+        });
+
 
         // NewsItem::all()->each(function (NewsItem $newsItem) use ($sitemap) {
         //     $sitemap->add(Url::create("/news/{$newsItem->slug}"));

@@ -10,7 +10,13 @@ class Category extends Model
     use HasFactory;
 
 
-    public $fillable =[
-        "name","slug","status"
+    public $fillable = [
+        "name", "slug", "status"
     ];
+
+
+    public function groups()
+    {
+        return $this->hasMany(Group::class,'categoria_id');
+    }
 }

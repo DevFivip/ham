@@ -5,8 +5,8 @@
 
     <title> {{end($breadcrumbs)['name']}} | OnlyHam.co {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
-    <meta name="description" content="{{__($socialMedia->description)}}">
-    
+    <meta name="description" content="{{!!isset($socialMedia) ?__($socialMedia->description) : __('Search For Accounts and Communities on Telegram WhatsApp and Onlyfans').' '. __('Category').' '.end($breadcrumbs)['name']}}">
+
     <link rel="alternate" hreflang="es" href="{{$_SERVER['APP_URL']}}/es/">
     <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
     <link rel="alternate" hreflang="fr" href="{{$_SERVER['APP_URL']}}/fr/">
@@ -91,19 +91,19 @@
                         </div>
                         <div>
                             @if(isset($socialMedia))
-                            <h4 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
+                            <h1 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
                                 {{$socialMedia->name}}
-                            </h4>
-                            <p class="text-base font-medium text-white">
+                            </h1>
+                            <h2 class="text-base font-medium text-white">
                                 {{__($socialMedia->description)}}
-                            </p>
+                            </h2>
                             @elseif(isset($title))
-                            <h4 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
+                            <h1 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
                                 {{ $title["name"] }}
-                            </h4>
-                            <p class="text-base font-medium text-white">
+                            </h1>
+                            <h2 class="text-base font-medium text-white">
                                 {{ $title["description"] }}
-                            </p>
+                            </h2>
                             @else
                             <h4 class="mb-1 text-xl font-bold text-white xs:text-2xl md:text-xl lg:text-2xl">
                                 {{__("Search")}}
