@@ -5,8 +5,8 @@
 
     <title> {{end($breadcrumbs)['name']}} | OnlyHam.co {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
-    <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
-
+    <meta name="description" content="{{__($socialMedia->description)}}">
+    
     <link rel="alternate" hreflang="es" href="{{$_SERVER['APP_URL']}}/es/">
     <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
     <link rel="alternate" hreflang="fr" href="{{$_SERVER['APP_URL']}}/fr/">

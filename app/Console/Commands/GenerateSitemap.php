@@ -2,8 +2,12 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Group;
+use App\Models\Social;
 use Illuminate\Console\Command;
 use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Tags\Url;
 
 class GenerateSitemap extends Command
 {
@@ -38,8 +42,33 @@ class GenerateSitemap extends Command
      */
     public function handle()
     {
-        SitemapGenerator::create(env('APP_URL'))->writeToFile('public/sitemap.xml');
+        // SitemapGenerator::create(env('APP_URL'))->writeToFile('public/sitemap.xml');
         // SitemapGenerator::create(env('APP_URL'))->writeToFile(public_path('sitemap.xml'));
+
+        $sitemap = Sitemap::create()
+            ->add(env('APP_URL') . '/en')
+            ->add(env('APP_URL') . '/es');
+
+        Social::all()->each(function (Social $social) use ($sitemap) {
+            $sitemap->add(env('APP_URL') . '/en/' . $social->name);
+        });
+
+        Group::with('categoria', 'subcategoria', 'type', 'social')->get()->each(function (Group $group) use ($sitemap) {
+            $sitemap->add(env('APP_URL') . '/en/' . $group->social->name . "/" . $group->type->name . "/categoria/" . $group->categoria->slug . "/" . $group->subcategoria->slug . "/" . $group->slug);
+        });
+
+        // NewsItem::all()->each(function (NewsItem $newsItem) use ($sitemap) {
+        //     $sitemap->add(Url::create("/news/{$newsItem->slug}"));
+        // });
+
+        // Projects::all()->each(function (Project $project) use ($sitemap) {
+        //     $sitemap->add(Url::create("/project/{$project->slug}"));
+        // });
+
+        $sitemap->writeToFile(public_path('sitemap.xml'));
+
+
+
         return 0;
     }
 }
