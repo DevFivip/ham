@@ -439,10 +439,10 @@ Route::post('/getUrl/{slug}', function (Request $req, $slug) {
         $v = Visitor::where([["group_id", $group->id], ["ip", $ip]])->first();
         $v->clicked = true;
         $v->update();
-
         return response()->json(["url" => $group->url]);
     } catch (\Throwable $th) {
-        abort(404);
+        $group = Group::where('slug', $slug)->first();
+        return response()->json(["url" => $group->url]);
     }
 });
 
