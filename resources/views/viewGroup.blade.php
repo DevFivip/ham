@@ -72,7 +72,7 @@
                                     </div>
                                     <div class="p-5">
 
-                                        <h3 class="font-semibold text-dark text-3xl">{{ $censor::replace($group->name) }}</h3>
+                                        <h1 class="font-semibold text-dark text-3xl">{{ $censor::replace($group->name) }}</h1>
 
                                         <p class="box-content">{{$censor::replace(strip_tags($group->description))}}</p>
                                         @if(isset($group->username))
