@@ -47,8 +47,7 @@ class GenerateSitemap extends Command
         // SitemapGenerator::create(env('APP_URL'))->writeToFile(public_path('sitemap.xml'));
 
         $sitemap = Sitemap::create()
-            ->add(env('APP_URL') . '/en')
-            ->add(env('APP_URL') . '/es');
+            ->add(env('APP_URL'));
 
         Social::all()->each(function (Social $social) use ($sitemap) {
             $sitemap->add(env('APP_URL') . '/en/' . $social->name);
