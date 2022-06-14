@@ -47,11 +47,11 @@ Route::get('/', function (Request $req) {
     } catch (\Throwable $th) {
 
         $redes = Social::all();
-        $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->limit(3)->get()->toArray();
-        $mejores3 = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('precio_membresia', 0)->inRandomOrder()->limit(3)->get();
-        $mejores_onlyfans = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 3)->inRandomOrder()->limit(3)->get();
-        $mejores_whatsapp = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 1)->inRandomOrder()->limit(3)->get();
-        $mejores_telegram = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 2)->inRandomOrder()->limit(3)->get();
+        $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->limit(3)->get()->toArray();
+        $mejores3 = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where('precio_membresia', 0)->inRandomOrder()->limit(3)->get();
+        $mejores_onlyfans = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where("social_id", 3)->inRandomOrder()->limit(3)->get();
+        $mejores_whatsapp = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where("social_id", 1)->inRandomOrder()->limit(3)->get();
+        $mejores_telegram = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where("social_id", 2)->inRandomOrder()->limit(3)->get();
         $redesSociales = Social::all();
         $listas = [];
 
@@ -65,6 +65,11 @@ Route::get('/', function (Request $req) {
     }
 });
 
+Route::get('/home', function (Request $req) {
+    return redirect('/'.app()->getLocale() . '/home');
+});
+
+
 Route::group([
     'prefix' => '{locale}',
     'where' => ['locale' => '[a-zA-Z]{2}'],
@@ -73,11 +78,11 @@ Route::group([
 
     Route::get('/', function (Request $req) {
         $redes = Social::all();
-        $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->limit(3)->get()->toArray();
-        $mejores3 = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('precio_membresia', 0)->inRandomOrder()->limit(3)->get();
-        $mejores_onlyfans = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 3)->inRandomOrder()->limit(3)->get();
-        $mejores_whatsapp = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 1)->inRandomOrder()->limit(3)->get();
-        $mejores_telegram = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where("social_id", 2)->inRandomOrder()->limit(3)->get();
+        $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->limit(3)->get()->toArray();
+        $mejores3 = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where('precio_membresia', 0)->inRandomOrder()->limit(3)->get();
+        $mejores_onlyfans = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where("social_id", 3)->inRandomOrder()->limit(3)->get();
+        $mejores_whatsapp = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where("social_id", 1)->inRandomOrder()->limit(3)->get();
+        $mejores_telegram = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where("social_id", 2)->inRandomOrder()->limit(3)->get();
         $redesSociales = Social::all();
         $listas = [];
 
@@ -166,10 +171,10 @@ Route::group([
             $redesSociales = Social::all();
             $socialMedia = null;
             $categorias = Category::all();
-            $mejores = Group::where($query)->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->paginate(PAGINATION);
+            $mejores = Group::where($query)->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->paginate(PAGINATION);
 
             if (!count($mejores)) {
-                $rand = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->limit(11)->paginate(PAGINATION);
+                $rand = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->limit(50)->paginate(PAGINATION);
                 $mejores = $rand;
             };
 
@@ -210,7 +215,7 @@ Route::group([
 
 
             $group = Group::where("slug", $group_slug)->first();
-            $mejores = Group::whereNotIn('id', [$group->id])->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->where('social_id', $socialMedia->id)->inRandomOrder()->limit(11)->get();
+            $mejores = Group::whereNotIn('id', [$group->id])->with(['social', 'categoria', 'subcategoria', 'location', 'type'])->whereNotNull('fecha_corte')->where('social_id', $socialMedia->id)->inRandomOrder()->limit(11)->get();
 
             /**cookie de visita */
 
@@ -227,13 +232,13 @@ Route::group([
             }
 
             $cookie = Crypt::encryptString($cookie);
-      
+
             $censor = new LaravelWordCensorFacade();
 
             /**end cookie de visita */
             $cookies = ccookie($req);
 
-            return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group",'censor')))->cookie('__VID', $cookie, time() * 365 * 5);
+            return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group", 'censor')))->cookie('__VID', $cookie, time() * 365 * 5);
         } catch (\Throwable $th) {
             dd($th);
             abort(404);
@@ -265,7 +270,7 @@ Route::group([
             $categorias = Category::all();
             $categoryGroup = Category::where("slug", $category_slug)->first();
             $title = ["name" => "Categoria", "description" => $categoryGroup->name, "slug" => $categoryGroup->slug];
-            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where([["categoria_id", $categoryGroup->id]])->paginate(PAGINATION);
+            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->where([["categoria_id", $categoryGroup->id]])->paginate(PAGINATION);
 
             $breadcrumbs = [
                 ["name" =>  "Inicio", "link" => "/"],
@@ -285,7 +290,7 @@ Route::group([
             $categorias = Category::all();
             $subcategoryGroup = Subcategory::where("slug", $subcategory_slug)->first();
             $title = ["name" => "Categoria", "description" => $subcategoryGroup->name, "slug" => $subcategoryGroup->slug];
-            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where([["subcategoria_id", $subcategoryGroup->id]])->paginate(PAGINATION);
+            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->where([["subcategoria_id", $subcategoryGroup->id]])->paginate(PAGINATION);
             $categoriaRel = Category::find($subcategoryGroup->categoria_id);
             // dd($subcategoryGroup);
             // dd($categoriaRel);
@@ -310,7 +315,7 @@ Route::group([
             $redesSociales = Social::all();
             $socialMedia = Social::where("name", $social)->first();
             $categorias = Category::all();
-            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where('social_id', $socialMedia->id)->paginate(PAGINATION);
+            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->where('social_id', $socialMedia->id)->paginate(PAGINATION);
 
             $breadcrumbs = [
                 ["name" =>  $socialMedia->name, "link" => $socialMedia->slug],
@@ -331,7 +336,7 @@ Route::group([
             $categorias = Category::all();
             $categoryGroup = Category::where("slug", $category_slug)->first();
             $subcategoryGroup = Subcategory::where("slug", $subcategory_slug)->first();
-            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where([['social_id', $socialMedia->id], ["categoria_id", $categoryGroup->id], ["subcategoria_id", $subcategoryGroup->id]])->paginate(PAGINATION);
+            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->where([['social_id', $socialMedia->id], ["categoria_id", $categoryGroup->id], ["subcategoria_id", $subcategoryGroup->id]])->paginate(PAGINATION);
 
 
             $breadcrumbs = [
@@ -356,7 +361,7 @@ Route::group([
             $socialMedia = Social::where("name", $social)->first();
             $categorias = Category::all();
             $categoryGroup = Category::where("slug", $category_slug)->first();
-            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where([['social_id', $socialMedia->id], ["categoria_id", $categoryGroup->id]])->paginate(PAGINATION);
+            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->where([['social_id', $socialMedia->id], ["categoria_id", $categoryGroup->id]])->paginate(PAGINATION);
 
             $breadcrumbs = [
                 ["name" =>  "Inicio", "link" => "/"],
@@ -385,7 +390,7 @@ Route::group([
                 ["name" =>  $socialMedia->name, "link" => "/$socialMedia->name"]
             ];
 
-            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('id', 'desc')->where([['social_id', $socialMedia->id], ["group_type_id", $typeSocialMediaGroup->id]])->paginate(PAGINATION);
+            $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->where([['social_id', $socialMedia->id], ["group_type_id", $typeSocialMediaGroup->id]])->paginate(PAGINATION);
             $cookies = ccookie($req);
             return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'type', 'breadcrumbs'));
         } catch (\Throwable $th) {

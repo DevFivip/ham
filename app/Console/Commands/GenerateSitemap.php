@@ -53,7 +53,6 @@ class GenerateSitemap extends Command
             $sitemap->add(env('APP_URL') . '/en/' . $social->name);
         });
 
-
         Group::with('categoria', 'subcategoria', 'type', 'social')->get()->each(function (Group $group) use ($sitemap) {
             $sitemap->add(env('APP_URL') . '/en/' . $group->social->name . "/" . $group->type->name . "/categoria/" . $group->categoria->slug . "/" . $group->subcategoria->slug . "/" . $group->slug);
         });

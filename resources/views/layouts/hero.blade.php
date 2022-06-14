@@ -11,7 +11,7 @@
                     {{ __("Start now to search for OnlyFans accounts, Telegram groups and WhatsApp groups and find Content Creators and communities.")}}
                 </h2>
 
-                <form class="flex items-center" action="{{app()->getLocale()}}/search">
+                <form class="flex items-center" action="/{{app()->getLocale()}}/search">
                     <label for="voice-search" class="sr-only">{{__("Search")}}</label>
                     <div class="relative w-full">
                         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
