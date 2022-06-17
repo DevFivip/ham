@@ -7,10 +7,10 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    <title> {{$censor::replace($group->name)}} | {{env('APP_NAME')}} {{__("Seacher")}}</title>
+    <title>✔️ {{$cortarTitle($censor::replace($group->name))}} {{$group->social->name}} {{__("Account")}} | {{env('APP_NAME')}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher, {{ $group['name'] }}" name="keywords">
     @if(!!$group->description)
-    <meta name="description" content='{{$censor::replace(strip_tags($group->description))}}'>
+    <meta name="description" content='{{$cortarDescription($censor::replace(strip_tags($group->description)))}}'>
     @else
     <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
     @endif
@@ -46,6 +46,7 @@
     <meta name="twitter:image" content="{{ (!!$group['imagen'] ? $_SERVER['APP_CDN'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_CDN'].'/assets/images/1.png') }}">
     @include("layouts.header")
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7218706115121047" crossorigin="anonymous"></script>
+    @include("layouts.schemaPosts")
 </head>
 
 <body class="bg-gray-100">
@@ -81,9 +82,9 @@
 
                                         <p class="box-content">{{$censor::replace(strip_tags($group->description))}}</p>
                                         @if(isset($group->username))
-                                        <h4 class="mb-5 text-xl font-semibold text-dark">
+                                        <h3 class="mb-5 text-xl font-semibold text-dark">
                                             {{ $group->username }}
-                                        </h4>
+                                        </h3>
                                         @endif
                                         <p class="mb-5 text-base text-body-color">
                                             {{ __($group->type->name) }}, {{ $censor::replace(__($group->categoria->name))}},
@@ -379,9 +380,9 @@
                                             </svg>
                                         </div>
                                         <div class="w-full">
-                                            <h4 class="text-lg font-semibold text-black">
+                                            <h3 class="text-lg font-semibold text-black">
                                                 {{__("profile.faq_how_money",["name"=>$group->name])}}
-                                            </h4>
+                                            </h3>
                                         </div>
                                     </button>
                                     <div x-show="openFaq1" class="faq-content pl-[62px]">
@@ -400,9 +401,9 @@
                                             </svg>
                                         </div>
                                         <div class="w-full">
-                                            <h4 class="text-lg font-semibold text-black">
+                                            <h3 class="text-lg font-semibold text-black">
                                                 {{__("profile.faq_free_access",["name"=>$group->name,"social"=>$group->social->name])}}
-                                            </h4>
+                                            </h3>
                                         </div>
                                     </button>
                                     <div x-show="openFaq2" class="faq-content pl-[62px]">
@@ -421,15 +422,14 @@
                                             </svg>
                                         </div>
                                         <div class="w-full">
-                                            <h4 class="text-lg font-semibold text-black">
+                                            <h3 class="text-lg font-semibold text-black">
                                                 {{__("profile.faq_leaks",["name"=>$group->name,"social"=>$group->social->name])}}
-                                            </h4>
+                                            </h3>
                                         </div>
                                     </button>
                                     <div x-show="openFaq4" class="faq-content pl-[62px]">
                                         <p class="py-3 text-base leading-relaxed text-body-color">
                                             {{__("profile.faq_leaks_resp_true",["name"=>$group->name,"social"=>$group->social->name])}}
-
                                         </p>
                                     </div>
                                 </div>
@@ -536,6 +536,7 @@
             // document.getElementById("count_members").innerText = 0
         })()
     </script>
+
     @include('layouts.footer')
 </body>
 

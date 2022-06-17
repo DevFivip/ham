@@ -8,9 +8,9 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    <title>{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}</title>
+    <title>{{__("Search Telegram Onlyfans Accounts and More")}} | OnlyHam.co {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
-    <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
+    <meta name="description" content="__('If you are looking for onlyfans free, telegram accounts, here you will find the best creators or if you are a creator sign up to start and make yourself known')">
 
     <link rel="alternate" hreflang="es" href="{{$_SERVER['APP_URL']}}/es/">
     <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
@@ -21,10 +21,10 @@
 
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
-    <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta property="og:title" content='{{__("Search Telegram Onlyfans Accounts and More")}} | OnlyHam.co {{__("Seacher")}}'>
     <meta property="og:type" content="website">
     <meta property="fb:app_id" content="754192775575289">
-    <meta property="og:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta property="og:description" content='{{__("If you are looking for onlyfans free, telegram accounts, here you will find the best creators or if you are a creator sign up to start and make yourself known")}}'>
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">
 
@@ -33,17 +33,18 @@
 
     <meta property="og:image:width" content="499">
     <meta property="og:image:height" content="333">
-    <meta property="og:image:alt" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}}'>
+    <meta property="og:image:alt" content='{{__("Search Telegram Onlyfans Accounts and More")}}'>
     <meta property="og:image:type" content="image/jpeg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
-    <meta name="twitter:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta name="twitter:title" content='{{__("Search Telegram Onlyfans Accounts and More")}} | OnlyHam.co {{__("Seacher")}}'>
+    <meta name="twitter:description" content='{{__("If you are looking for onlyfans free, telegram accounts, here you will find the best creators or if you are a creator sign up to start and make yourself known")}}'>
     <meta name="twitter:site" content="@OnlyHamOficial">
     <meta name="twitter:creator" content="@OnlyHamOficial">
     <meta name="twitter:image" content="{{$_SERVER['APP_CDN']}}/assets/images/1.png">
     @include("layouts.header")
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7218706115121047" crossorigin="anonymous"></script>
+    @include("layouts.schemaHome")
 </head>
 
 <body>

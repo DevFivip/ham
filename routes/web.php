@@ -66,7 +66,7 @@ Route::get('/', function (Request $req) {
 });
 
 Route::get('/home', function (Request $req) {
-    return redirect('/'.app()->getLocale() . '/home');
+    return redirect('/' . app()->getLocale() . '/home');
 });
 
 
@@ -238,7 +238,25 @@ Route::group([
             /**end cookie de visita */
             $cookies = ccookie($req);
 
-            return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group", 'censor')))->cookie('__VID', $cookie, time() * 365 * 5);
+            $cortarDescription = function ($string) {
+                $short = mb_strcut($string, 0, 165);
+                return $short . '...';
+            };
+            $cortarTitle = function ($string) {
+                return mb_strcut($string, 0, 28);
+            };
+
+            $fecha = function ($date) {
+                $d = new DateTime($date);
+                $f = $d->format('Y-m-d');
+                return $f;
+            };
+
+            $clear = function ($string) {
+                return $string;
+            };
+
+            return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group", 'censor', 'cortarDescription', 'cortarTitle', 'fecha', 'clear')))->cookie('__VID', $cookie, time() * 365 * 5);
         } catch (\Throwable $th) {
             dd($th);
             abort(404);

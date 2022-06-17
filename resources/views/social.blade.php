@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    <title> {{end($breadcrumbs)['name']}} | OnlyHam.co {{__("Seacher")}}</title>
+    <title>🥇 {{__("Best")}} {{end($breadcrumbs)['name']}} {{__("Free")}} | OnlyHam.co {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
     <meta name="description" content="{{!!isset($socialMedia) ?__($socialMedia->description) : __('Search For Accounts and Communities on Telegram WhatsApp and Onlyfans').' '. __('Category').' '.end($breadcrumbs)['name']}}">
 
@@ -22,7 +22,7 @@
     <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
     <meta property="og:type" content="website">
     <meta property="fb:app_id" content="754192775575289">
-    <meta property="og:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta property="og:description" content='__('If you are looking for onlyfans free, telegram accounts, here you will find the best creators or if you are a creator sign up to start and make yourself known')'>
     <meta property="og:url" content="{{$_SERVER['APP_URL']}}/{{app()->getLocale()}}/">
     <meta property="og:site_name" content="OnlyHam.co">
 
@@ -36,7 +36,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
-    <meta name="twitter:description" content='{{__("Find Onlyfans, Telegram and WhatsApp accounts, profiles classified by categories, countries, prices, best content creators with more than 1000 registered accounts!")}}'>
+    <meta name="twitter:description" content='__('If you are looking for onlyfans free, telegram accounts, here you will find the best creators or if you are a creator sign up to start and make yourself known')'>
     <meta name="twitter:site" content="@OnlyHamOficial">
     <meta name="twitter:creator" content="@OnlyHamOficial">
     <meta name="twitter:image" content="{{$_SERVER['APP_CDN']}}/assets/images/1.png">
