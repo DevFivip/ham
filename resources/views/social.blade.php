@@ -260,7 +260,7 @@
                         @if($groupx->precio_membresia > 0)
                         <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                             <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                            <span class="">{{$groupx->precio_membresia}}</span>
+                            <span class="">{{ number_format((float)$groupx->precio_membresia, 2, '.', '')}}</span>
                         </div>
                         @else
                         <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">

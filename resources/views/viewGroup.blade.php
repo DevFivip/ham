@@ -173,7 +173,7 @@
                                                 @if($mejores[0]->precio_membresia > 0)
                                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                    <span class="">{{$mejores[0]->precio_membresia}}</span>
+                                                    <span class="">{{ number_format((float)$mejores[0]->precio_membresia, 2, '.', '')}}</span>
                                                 </div>
                                                 @else
                                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
@@ -207,7 +207,7 @@
                                                 @if($mejores[1]->precio_membresia > 0)
                                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                    <span class="">{{$mejores[1]->precio_membresia}}</span>
+                                                    <span class="">{{ number_format((float)$mejores[1]->precio_membresia, 2, '.', '')}}</span>
                                                 </div>
                                                 @else
                                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
@@ -242,7 +242,7 @@
                                             @if($mejores[2]->precio_membresia > 0)
                                             <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                                 <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                                <span class="">{{$mejores[2]->precio_membresia}}</span>
+                                                <span class="">{{ number_format((float)$mejores[2]->precio_membresia, 2, '.', '')}}</span>
                                             </div>
                                             @else
                                             <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
@@ -274,7 +274,7 @@
                         </p>
                         @else
                         <p class="mb-8 text-base text-body-color">
-                            {{__("profile.can_join_resp_false",["price"=>$group->precio_membresia,"name"=>$group->name,"social"=>$group->social->name, "type"=>$group->type->name])}}
+                            {{__("profile.can_join_resp_false",["price"=>number_format((float)$mejores[0]->precio_membresia, 2, '.', ''),"name"=>$group->name,"social"=>$group->social->name, "type"=>$group->type->name])}}
                         </p>
                         @endif
                     </div>
@@ -333,7 +333,7 @@
                                 @if($mejores[3]->precio_membresia > 0)
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                    <span class="">{{$mejores[3]->precio_membresia}}</span>
+                                    <span class="">{{ number_format((float)$mejores[3]->precio_membresia, 2, '.', '')}}</span>
                                 </div>
                                 @else
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
@@ -455,7 +455,7 @@
                                 @if(!!intval($groupx->precio_membresia))
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                    <span class="">{{$groupx->precio_membresia}}</span>
+                                    <span class="">{{ number_format((float)$groupx->precio_membresia, 2, '.', '')}}</span>
                                 </div>
                                 @else
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
