@@ -31,7 +31,7 @@
                         dropdownOpen: false
                     }
                     " @click.outside="dropdownOpen = false" class="relative inline-block">
-                <button @click="dropdownOpen = !dropdownOpen" class="flex items-center rounded py-3 px-5 text-base font-semibold text-white">
+                <button @click="dropdownOpen = !dropdownOpen" aria-label="dropdown" class="flex items-center rounded py-3 px-5 text-base font-semibold text-white">
                     <span class="fi fi-{{app()->getLocale() === 'en' ? 'us' : app()->getLocale() }} "></span>
                 </button>
                 <div :class="dropdownOpen ? 'top-full opacity-100 visible' : 'top-[110%] invisible opacity-0'" class="absolute left-0 z-40 mt-2 w-full rounded border-[.5px] border-light bg-white py-5 shadow-card transition-all">
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <button @click="dropdownOpen2 = !dropdownOpen2" type="button" data-collapse-toggle="mobile-menu-3" aria-controls="mobile-menu-3" aria-expanded="false" class="md:hidden text-white  rounded-lg text-sm p-2.5 mr-1">
+            <button @click="dropdownOpen2 = !dropdownOpen2" type="button" aria-label="search-btn" data-collapse-toggle="mobile-menu-3" aria-controls="mobile-menu-3" aria-expanded="false" class="md:hidden text-white  rounded-lg text-sm p-2.5 mr-1">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
                 </svg>
@@ -62,10 +62,10 @@
                     </svg>
                 </div>
                 <form action="/{{app()->getLocale()}}/search">
-                    <input type="text" id="search-navbar" name="name" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 " placeholder="{{__('Search')}}...">
+                    <input type="text" id="search-navbar1" name="name" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 " placeholder="{{__('Search')}}...">
                 </form>
             </div>
-            <button @click="dropdownOpen2 = !dropdownOpen2" data-collapse-toggle="mobile-menu-3" type="button" class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-3" aria-expanded="false">
+            <button @click="dropdownOpen2 = !dropdownOpen2" aria-label="menu-hamburguer" data-collapse-toggle="mobile-menu-3" type="button" class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-3" aria-expanded="false">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                 </svg>

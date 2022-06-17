@@ -12,6 +12,11 @@
     <link rel="alternate" href="{{$_SERVER['APP_URL']}}/en/" hreflang="x-default">
     <link rel="canonical" href="{{ url()->current() }}">
 
+
+    <meta http-equiv="Cache-Control" content="max-age: 31536000, no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
     <meta property="og:title" content='{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}'>
@@ -72,13 +77,13 @@
                         </div>
                         <div>
                             <div x-show="openTab === 99" class="p-6 text-base leading-relaxed text-body-color">
-                                @foreach($mejores as $i)
+                                @foreach($mejores as $k => $i)
                                 <div class="flex border border-blue-700 rounded-xl py-3 cursor-pointer shadow-lg hover:shadow-lg px-2 ">
 
                                     @if(!!$i['imagen'])
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="/thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar-a-a-{{$k}}" src="/thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
                                     @else
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="/thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar-a-{{$k}}" src="/thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
                                     @endif
 
 
@@ -114,13 +119,13 @@
 
                                 @if(count($item) >= 0)
 
-                                @foreach($item as $i)
+                                @foreach($item as $k => $i)
                                 <div class="flex border border-blue-700 rounded-xl py-3 cursor-pointer shadow-lg hover:shadow-lg px-2 ">
 
                                     @if(!!$i['imagen'])
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="/thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar-b-a-{{$k}}" src="/thumbnail/{{$i['imagen']}}" class="w-15 h-12 object-cover rounded-lg">
                                     @else
-                                    <img alt="{{$i['name']}}" id="preview-avatar" src="/thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
+                                    <img alt="{{$i['name']}}" id="preview-avatar-b-{{$k}}" src="/thumbnail/placeholder-avatar.jpg" class="w-15 h-12 object-cover rounded-lg">
                                     @endif
 
                                     <!-- <img class='w-15 h-12 object-cover rounded-lg' alt='User avatar' src='https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200'> -->
