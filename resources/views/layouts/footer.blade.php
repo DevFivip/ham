@@ -71,14 +71,11 @@
     <div class="flex flex-wrap bg-white md:w-4/5 sm:w-full mx-auto p-10 rounded-lg shadow-lg">
         <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div class="mb-10 w-full">
-                <a href="/{{app()->getLocale() }}" class="mb-6 inline-block max-w-[160px] bg-blue-700">
-                    <img src="{{$_SERVER['APP_CDN']}}/assets/images/onlyham-logo.png" alt="logo" class="max-w-full" />
+                <a title="Home OnlyHam" href="/{{app()->getLocale() }}" class="mb-6 inline-block max-w-[160px] bg-blue-700">
+                    <img title="OnlyHam Logo Oficial Footer" src="{{$_SERVER['APP_CDN']}}/assets/images/onlyham-logo.png" alt="logo" class="max-w-full" />
                 </a>
                 <p class="mb-7 text-base text-body-color">
                     {{ __("Start now to search for OnlyFans accounts, Telegram groups and WhatsApp groups and find Content Creators and communities.")}}
-                </p>
-                <p class="flex items-center text-sm font-medium text-dark">
-                    <span>+51 916 888 423</span>
                 </p>
             </div>
         </div>
@@ -88,7 +85,7 @@
                 <ul>
                     @foreach($redesSociales as $red)
                     <li>
-                        <a href="/{{app()->getLocale() }}/{{$red->name}}" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
+                        <a title="OnlyHam {{$red->name}}" href="/{{app()->getLocale() }}/{{$red->name}}" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                             {{$red->name}}
                         </a>
                     </li>
@@ -101,12 +98,12 @@
                 <h4 class="mb-9 text-lg font-semibold text-dark">{{__("User")}}</h4>
                 <ul>
                     <li>
-                        <a href="/{{app()->getLocale() }}/login" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
+                        <a title="Onlyham Login" href="/{{app()->getLocale() }}/login" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                             {{__("Login")}}
                         </a>
                     </li>
                     <li>
-                        <a href="/{{app()->getLocale() }}/register" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
+                        <a title="Onlyham Register" href="/{{app()->getLocale() }}/register" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                             {{__("Register")}}
                         </a>
                     </li>
@@ -118,17 +115,17 @@
                 <h4 class="mb-9 text-lg font-semibold text-dark">Quick Links</h4>
                 <ul>
                     <li>
-                        <a href="/{{app()->getLocale()}}/search?location_id=64" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
+                        <a title="Beast of USA" href="/{{app()->getLocale()}}/search?location_id=64" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                             {{__("Best")}} Onlyfans EEUU
                         </a>
                     </li>
                     <li>
-                        <a href="/{{app()->getLocale()}}/search?location_id=63" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
+                        <a  title="Beast of Spain" href="/{{app()->getLocale()}}/search?location_id=63" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                             {{__("Best")}} Onlyfans Spain
                         </a>
                     </li>
                     <li>
-                        <a href="/{{app()->getLocale()}}/search?location_id=43" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
+                        <a title="Beast of Colombia" href="/{{app()->getLocale()}}/search?location_id=43" class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                             {{__("Best")}} Onlyfans Colombia
                         </a>
                     </li>
@@ -139,13 +136,13 @@
             <div class="mb-10 w-full">
                 <h4 class="mb-9 text-lg font-semibold text-dark">Follow Us On</h4>
                 <div class="mb-6 flex items-center">
-                    <a href="https://t.me/onlyham" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark sm:mr-4 lg:mr-3 xl:mr-4">
+                    <a title="Onlyham Telegram Oficial Contact" href="https://t.me/onlyham" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark sm:mr-4 lg:mr-3 xl:mr-4">
                         <i class="fa-brands fa-telegram"></i>
                     </a>
-                    <a href="https://reddit.com/r/only_ham" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark sm:mr-4 lg:mr-3 xl:mr-4">
+                    <a title="Onlyham Reddit Oficial Contact" href="https://reddit.com/r/only_ham" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark sm:mr-4 lg:mr-3 xl:mr-4">
                         <i class="fa-brands fa-reddit"></i>
                     </a>
-                    <a href="https://twitter.com/OnlyHamOficial" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark sm:mr-4 lg:mr-3 xl:mr-4">
+                    <a title="Onlyham Twitter Oficial Contact" href="https://twitter.com/OnlyHamOficial" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark sm:mr-4 lg:mr-3 xl:mr-4">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>

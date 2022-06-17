@@ -3,6 +3,10 @@
 
 <head>
 
+    <meta http-equiv="Cache-Control" content="max-age: 180, no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <title> {{end($breadcrumbs)['name']}} | OnlyHam.co {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
     <meta name="description" content="{{!!isset($socialMedia) ?__($socialMedia->description) : __('Search For Accounts and Communities on Telegram WhatsApp and Onlyfans').' '. __('Category').' '.end($breadcrumbs)['name']}}">
@@ -55,7 +59,7 @@
                 <div class="rounded-lg border border-light bg-white py-4 px-4 shadow-card sm:px-6 md:px-8 md:py-5">
                     <ul class="flex items-center">
                         @for ($i = 0; $i < count($breadcrumbs); $i++) <li class="flex items-center">
-                            <a href="/{{app()->getLocale() }}{{ $breadcrumbs[$i]['link'] }}" class="text-base font-semibold text-black hover:text-primary">
+                            <a title="{{ $breadcrumbs[$i]["name"] }}" href="/{{app()->getLocale() }}{{ $breadcrumbs[$i]['link'] }}" class="text-base font-semibold text-black hover:text-primary">
                                 {{ $breadcrumbs[$i]["name"] }}
                             </a>
 
@@ -193,7 +197,7 @@
 
                     <div class="-mx-3 flex flex-wrap">
                         <div class="w-1/2 px-3">
-                            <a @click="modalOpen = false" class="block w-full rounded-lg border border-[#E9EDF9] p-3 text-center text-base font-medium text-dark transition hover:border-red-600 hover:bg-red-600 hover:text-white">
+                            <a title="cancelar" @click="modalOpen = false" class="block w-full rounded-lg border border-[#E9EDF9] p-3 text-center text-base font-medium text-dark transition hover:border-red-600 hover:bg-red-600 hover:text-white">
                                 Cancel
                             </a>
                         </div>
@@ -246,7 +250,7 @@
                 <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center {{$key % rand(1,2) == 0? '': 'border-solid border-4 border-yellow-500'}} rounded-lg" style="background-image:url('{{ ( !!$groupx->imagen ? $_SERVER['APP_CDN'].'/thumbnail/'. $groupx->imagen : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}');">
                     <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
                     <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                        <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                        <a title="social media" href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
                             @if($groupx->social->slug === "onlyfans")
                             <i class="onlyfans2 text-white fa-2xl"></i>
                             @else
@@ -267,9 +271,9 @@
                     </div>
 
                     <main class="p-5 z-10">
-                        <a href="/{{app()->getLocale() }}/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="text-white">{{ !!$groupx->username ? '@'.$groupx->username : '' }}</a>
+                        <a title="{{$mejores[$key]->slug}}" href="/{{app()->getLocale() }}/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="text-white">{{ !!$groupx->username ? '@'.$groupx->username : '' }}</a>
                         <p>
-                            <a href="/{{app()->getLocale() }}/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$groupx->name}}
+                            <a title="content {$mejores[$key]->slug}}" href="/{{app()->getLocale() }}/{{$mejores[$key]->social->name}}/{{$mejores[$key]->type->name}}/categoria/{{$mejores[$key]->categoria->slug}}/{{$mejores[$key]->subcategoria->slug}}/{{$mejores[$key]->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$groupx->name}}
                             </a>
                         </p>
                     </main>
@@ -301,7 +305,7 @@
                             caracteristicas, por favor revisa que estes
                             buscando adecuadamente. Hecha un vistaso a los
                             grupos de @foreach($redesSociales as $red)
-                            <a href="/{{app()->getLocale() }}/{{$red->name}}">{{$red->name}}</a>
+                            <a title="{{$red->name}}" href="/{{app()->getLocale() }}/{{$red->name}}">{{$red->name}}</a>
                             @endforeach
                         </li>
                     </ul>

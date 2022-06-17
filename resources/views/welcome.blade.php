@@ -2,6 +2,12 @@
 <html lang="{{app()->getLocale()}}" prefix="og: http://ogp.me/ns#">
 
 <head>
+
+
+    <meta http-equiv="Cache-Control" content="max-age: 180, no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <title>{{__("Search For Accounts and Communities on Telegram WhatsApp and Onlyfans")}} | OnlyHam.co {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
     <meta name="description" content="Busca Cuentas de Onlyfans, Telegram y WhatsApp, perfiles clasificados por categorias, paises, precios, mejores creadores de contenido con mas de 1000 cuentas Registradas!">
@@ -12,10 +18,6 @@
     <link rel="alternate" href="{{$_SERVER['APP_URL']}}/en/" hreflang="x-default">
     <link rel="canonical" href="{{ url()->current() }}">
 
-
-    <meta http-equiv="Cache-Control" content="max-age: 31536000, no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
 
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <meta property="og:locale" content="{{app()->getLocale()}}">
@@ -66,11 +68,11 @@
                           }
                         " class="mb-14 w-full">
                         <div class="flex flex-wrap rounded-lg border border-[#E4E4E4] py-3 px-4">
-                            <a href="javascript:void(0)" @click="openTab = 99" :class="openTab === 99 ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm PATH_INFO -medium md:text-base lg:px-6">
+                            <a title="best content of onlyham" href="javascript:void(0)" @click="openTab = 99" :class="openTab === 99 ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm PATH_INFO -medium md:text-base lg:px-6">
                                 {{__("Best")}} 🔥
                             </a>
                             @foreach ($redes as $red)
-                            <a href="javascript:void(0)" @click="openTab = {{$red->id}}" :class="openTab === {{$red->id}} ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
+                            <a title="best content of {{$red->name}}" href="javascript:void(0)" @click="openTab = {{$red->id}}" :class="openTab === {{$red->id}} ? activeClasses : inactiveClasses" class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6">
                                 {{$red->name}}
                             </a>
                             @endforeach
@@ -88,21 +90,21 @@
 
 
                                     <div class="px-2 w-full">
-                                        <a class="capitalize font-semibold text-fuchsia-700" href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}">
+                                        <a title="{{$i['name']}}" class="capitalize font-semibold text-fuchsia-700" href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}">
                                             {{$i["name"]}}
                                         </a>
                                         <p class="capitalize">
-                                            <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}"> {{$i["social"]["name"]}}</a>/<a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
-                                            <a href="/{{app()->getLocale() }}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
+                                            <a title='{{$i["social"]["name"]}}' href="/{{app()->getLocale() }}/{{$i['social']['name']}}"> {{$i["social"]["name"]}}</a>/<a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{$i["type"]["name"]}}</a>
+                                            <a title='{{$i["social"]["name"]}}' href="/{{app()->getLocale() }}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
                                                 {{__($i['categoria']['name'])}}
                                             </a>
-                                            <a href="/{{app()->getLocale() }}/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500 ">
+                                            <a title="{{__($i['subcategoria']['name'])}}" href="/{{app()->getLocale() }}/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500 ">
                                                 {{__($i['subcategoria']['name'])}}
                                             </a>
                                         </p>
                                     </div>
                                     <div class="">
-                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-blue-700 py-2 px-2 text-center text-bold text-white transition bg-blue-700 lg:px-8 xl:px-10"> {{__("Go")}}</a>
+                                        <a title="{{__($i['social']['name'])}}" href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-blue-700 py-2 px-2 text-center text-bold text-white transition bg-blue-700 lg:px-8 xl:px-10"> {{__("Go")}}</a>
                                     </div>
                                 </div>
                                 <br>
@@ -130,29 +132,29 @@
 
                                     <!-- <img class='w-15 h-12 object-cover rounded-lg' alt='User avatar' src='https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200'> -->
                                     <div class="px-2 w-full">
-                                        <a class="capitalize font-semibold text-fuchsia-700" href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class=" capitalize font-semibold ">
+                                        <a title="{{$i['name']}}" class="capitalize font-semibold text-fuchsia-700" href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class=" capitalize font-semibold ">
                                             {{$i['name']}}
                                         </a>
                                         <p class="capitalize">
-                                            <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{__($i["type"]["name"])}}</a>
+                                            <a title='{{__($i["type"]["name"])}}' href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}">{{__($i["type"]["name"])}}</a>
                                             @if(isset($i["categoria"]))
-                                            <a href="/{{app()->getLocale() }}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
+                                            <a title="{{__($i['categoria']['name'])}}" href="/{{app()->getLocale() }}/categoria/{{$i['categoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
                                                 {{__($i['categoria']['name'])}}
                                             </a>
 
                                             @else
-                                            <a href="/{{app()->getLocale() }}/categoria/" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
+                                            <a title='{{__("All")}}' href="/{{app()->getLocale() }}/categoria/" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
                                                 {{__("All")}}
                                             </a>
                                             @endif
 
                                             @if(isset($i["subcategoria"]))
-                                            <a href="/{{app()->getLocale() }}/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
+                                            <a title="{{__($i['subcategoria']['name'])}}" href="/{{app()->getLocale() }}/subcategoria/{{$i['subcategoria']['slug']}}" class="m-2 inline-block rounded-md border border-blue-500 py-1 px-2 text-sm font-semibold text-white bg-blue-500">
                                                 {{__($i['subcategoria']['name'])}}
                                             </a>
                                             @else
 
-                                            <a href="/{{app()->getLocale() }}/subcategoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
+                                            <a title='{{__("All")}}' href="/{{app()->getLocale() }}/subcategoria/" class="m-2 inline-block rounded border border-primary py-1 px-2 text-sm font-semibold text-primary">
                                                 {{__("All")}}
                                             </a>
 
@@ -160,7 +162,7 @@
                                         </p>
                                     </div>
                                     <div class="">
-                                        <a href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-blue-700 py-2 px-2 text-center text-bold text-white transition bg-blue-700 lg:px-8 xl:px-10"> {{__("Go")}}</a>
+                                        <a title="{{$i['type']['name']}} {{__('category')}} {{$i['categoria']['slug']}}" href="/{{app()->getLocale() }}/{{$i['social']['name']}}/{{$i['type']['name']}}/categoria/{{$i['categoria']['slug']}}/{{$i['subcategoria']['slug']}}/{{$i['slug']}}" class="inline-flex items-center justify-center rounded-md border border-blue-700 py-2 px-2 text-center text-bold text-white transition bg-blue-700 lg:px-8 xl:px-10"> {{__("Go")}}</a>
                                     </div>
                                 </div>
                                 <br>

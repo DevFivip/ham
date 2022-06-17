@@ -4,11 +4,6 @@
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<meta http-equiv="Cache-Control" content="max-age: 31536000, no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-
-
 <link rel="apple-touch-icon" sizes="180x180" href="{{$_SERVER['APP_CDN']}}/assets/icon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="{{$_SERVER['APP_CDN']}}/assets/icon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{{$_SERVER['APP_CDN']}}/assets/icon/favicon-16x16.png">

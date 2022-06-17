@@ -29,9 +29,9 @@
 
                 </p>
                 <span class="flex">
-                    <a href="/{{app()->getLocale()}}/onlyfans" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">Onlyfans {{__("Free")}}</a>
-                    <a href="/{{app()->getLocale()}}/Telegram" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">Telegram {{__("Free")}}</a>
-                    <a href="/{{app()->getLocale()}}/WhatsApp" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">WhatsApp {{__("Free")}}</a>
+                    <a title="best onlyfans" href="/{{app()->getLocale()}}/onlyfans" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">Onlyfans {{__("Free")}}</a>
+                    <a title="best telegrams" href="/{{app()->getLocale()}}/Telegram" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">Telegram {{__("Free")}}</a>
+                    <a title="best whatsapp" href="/{{app()->getLocale()}}/WhatsApp" class="flex-1 shadow-md text-fuchsia-900 bg-yellow-400 py-5 px-5 rounded-lg font-bold ml-1 text-center border-solid border-2 border-yellow-500 ">WhatsApp {{__("Free")}}</a>
                 </span>
             </div>
         </div>
@@ -58,7 +58,7 @@
                                 <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500">
                                 </div>
                                 <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                                    <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                                    <a title="Price of subcribe" href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
                                         @if($group3->social->slug === "onlyfans")
                                         <i class="onlyfans2 text-white fa-2xl"></i>
                                         @else
@@ -79,9 +79,9 @@
                                 </div>
 
                                 <main class="p-5 z-10">
-                                    <a href="/{{app()->getLocale() }}/{{$group3->social->name}}/{{$group3->type->name}}/categoria/{{$group3->categoria->slug}}/{{$group3->subcategoria->slug}}/{{$group3->slug}}" class="text-white">{{ !!$group3->username ? '@'.$group3->username : '' }}</a>
+                                    <a title="{{$group3->slug}}" href="/{{app()->getLocale() }}/{{$group3->social->name}}/{{$group3->type->name}}/categoria/{{$group3->categoria->slug}}/{{$group3->subcategoria->slug}}/{{$group3->slug}}" class="text-white">{{ !!$group3->username ? '@'.$group3->username : '' }}</a>
                                     <p>
-                                        <a href="/{{app()->getLocale() }}/{{$group3->social->name}}/{{$group3->type->name}}/categoria/{{$group3->categoria->slug}}/{{$group3->subcategoria->slug}}/{{$group3->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$group3->name}}
+                                        <a title="more {{$group3->slug}}" href="/{{app()->getLocale() }}/{{$group3->social->name}}/{{$group3->type->name}}/categoria/{{$group3->categoria->slug}}/{{$group3->subcategoria->slug}}/{{$group3->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$group3->name}}
                                         </a>
                                     </p>
                                 </main>
@@ -153,7 +153,7 @@
                         <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ ( !!$group4->imagen ? '/thumbnail/'. $group4->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                                <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                                <a title="Best free Onlyfans" href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
                                     @if($group4->social->slug === "onlyfans")
                                     <i class="onlyfans2 text-white fa-2xl"></i>
                                     @else
@@ -168,15 +168,15 @@
                                 @else
                                 <div class="text-white font-regular flex flex-col justify-start bg-yellow-500 p-1.5 rounded-lg">
                                     <!-- <span class="text-3xl mb-2 leading-0 font-semibold">Free</span> -->
-                                    <span class="">Gratis</span>
+                                    <span class="">{{__('Free')}}</span>
                                 </div>
                                 @endif
                             </div>
 
                             <main class="p-5 z-10">
-                                <a href="/{{app()->getLocale() }}/{{$group4->social->name}}/{{$group4->type->name}}/categoria/{{$group4->categoria->slug}}/{{$group4->subcategoria->slug}}/{{$group4->slug}}" class="text-white">{{ !!$group4->username ? '@'.$group4->username : '' }}</a>
+                                <a title="{{$group4->slug}}" href="/{{app()->getLocale() }}/{{$group4->social->name}}/{{$group4->type->name}}/categoria/{{$group4->categoria->slug}}/{{$group4->subcategoria->slug}}/{{$group4->slug}}" class="text-white">{{ !!$group4->username ? '@'.$group4->username : '' }}</a>
                                 <p>
-                                    <a href="/{{app()->getLocale() }}/{{$group4->social->name}}/{{$group4->type->name}}/categoria/{{$group4->categoria->slug}}/{{$group4->subcategoria->slug}}/{{$group4->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$group4->name}}
+                                    <a title="{{$group4->slug}}" href="/{{app()->getLocale() }}/{{$group4->social->name}}/{{$group4->type->name}}/categoria/{{$group4->categoria->slug}}/{{$group4->subcategoria->slug}}/{{$group4->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$group4->name}}
                                     </a>
                                 </p>
                             </main>
@@ -211,7 +211,7 @@
                         <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ ( !!$group5->imagen ? '/thumbnail/'. $group5->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                                <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                                <a title="Best Telegram Free" href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
                                     @if($group5->social->slug === "onlyfans")
                                     <i class="onlyfans2 text-white fa-2xl"></i>
                                     @else
@@ -232,9 +232,9 @@
                             </div>
 
                             <main class="p-5 z-10">
-                                <a href="/{{app()->getLocale() }}/{{$group5->social->name}}/{{$group5->type->name}}/categoria/{{$group5->categoria->slug}}/{{$group5->subcategoria->slug}}/{{$group5->slug}}" class="text-white">{{ !!$group5->username ? '@'.$group5->username : '' }}</a>
+                                <a title="{{$group5->slug}}" href="/{{app()->getLocale() }}/{{$group5->social->name}}/{{$group5->type->name}}/categoria/{{$group5->categoria->slug}}/{{$group5->subcategoria->slug}}/{{$group5->slug}}" class="text-white">{{ !!$group5->username ? '@'.$group5->username : '' }}</a>
                                 <p>
-                                    <a href="/{{app()->getLocale() }}/{{$group5->social->name}}/{{$group5->type->name}}/categoria/{{$group5->categoria->slug}}/{{$group5->subcategoria->slug}}/{{$group5->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$group5->name}}
+                                    <a title="more {{$group5->slug}}" href="/{{app()->getLocale() }}/{{$group5->social->name}}/{{$group5->type->name}}/categoria/{{$group5->categoria->slug}}/{{$group5->subcategoria->slug}}/{{$group5->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$group5->name}}
                                     </a>
                                 </p>
                             </main>
@@ -266,7 +266,7 @@
                         <div class="relative h-96 w-full flex items-end justify-start text-left bg-cover bg-center border-solid border-4 border-yellow-500 rounded-lg" style="background-image:url('{{ ( !!$group6->imagen ? '/thumbnail/'. $group6->imagen : '/storage/placeholder/placeholder-avatar.jpg') }}');">
                             <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-blue-500"></div>
                             <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-                                <a href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
+                                <a title="Best Onlyfans free 2022" href="#" class="text-xs bg-blue-200 text-white p-3 rounded-lg uppercase hover:bg-blueGray-700 hover:text-indigo-600 transition ease-in-out duration-500">
                                     @if($group6->social->slug === "onlyfans")
                                     <i class="onlyfans2 text-white fa-2xl"></i>
                                     @else
@@ -287,9 +287,9 @@
                             </div>
 
                             <main class="p-5 z-10">
-                                <a href="/{{app()->getLocale() }}/{{$group6->social->name}}/{{$group6->type->name}}/categoria/{{$group6->categoria->slug}}/{{$group6->subcategoria->slug}}/{{$group6->slug}}" class="text-white">{{ !!$group6->username ? '@'.$group6->username : '' }}</a>
+                                <a title="Free content onlyfans {{$group6->title}}" href="/{{app()->getLocale() }}/{{$group6->social->name}}/{{$group6->type->name}}/categoria/{{$group6->categoria->slug}}/{{$group6->subcategoria->slug}}/{{$group6->slug}}" class="text-white">{{ !!$group6->username ? '@'.$group6->username : '' }}</a>
                                 <p>
-                                    <a href="/{{app()->getLocale() }}/{{$group6->social->name}}/{{$group6->type->name}}/categoria/{{$group6->categoria->slug}}/{{$group6->subcategoria->slug}}/{{$group6->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$group6->name}}
+                                    <a title="more Free content onlyfans {{$group6->title}}" href="/{{app()->getLocale() }}/{{$group6->social->name}}/{{$group6->type->name}}/categoria/{{$group6->categoria->slug}}/{{$group6->subcategoria->slug}}/{{$group6->slug}}" class="font-extrabold text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">{{$group6->name}}
                                     </a>
                                 </p>
                             </main>

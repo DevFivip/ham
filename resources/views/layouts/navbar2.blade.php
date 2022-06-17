@@ -4,22 +4,22 @@
                     }
                     " @click.outside="dropdownOpen2 = false" class="container flex flex-wrap justify-between items-center mx-auto">
 
-        <a href="/{{app()->getLocale()}}" class="flex items-center hidden md:block">
-            <img src="/assets/images/onlyham-logo.png" class="mr-3 h-6 sm:h-9" alt="Logo OnlyHam">
+        <a title="OnlyHam Home Page" href="/{{app()->getLocale()}}" class="flex items-center hidden md:block">
+            <img title="Logo OnlyHam oficial" src="/assets/images/onlyham-logo.png" class="mr-3 h-6 sm:h-9" alt="Logo OnlyHam">
         </a>
 
         <div class="flex md:order-2">
 
             @guest
-            <a class="py-2 px-7 font-semibold text-white  hover:text-primary" href="{{ route('login', app()->getLocale()) }}">{{ __('Login') }}</a>
+            <a title="OnlyHam Login" class="py-2 px-7 font-semibold text-white  hover:text-primary" href="{{ route('login', app()->getLocale()) }}">{{ __('Login') }}</a>
             @if (Route::has('register'))
 
-            <a class="rounded-lg bg-blue-700 text-white py-2 px-7 font-medium hover:bg-opacity-90" href="{{ route('register', app()->getLocale()) }}">{{ __('Register') }}</a>
+            <a title="OnlyHam Register" class="rounded-lg bg-blue-700 text-white py-2 px-7 font-medium hover:bg-opacity-90" href="{{ route('register', app()->getLocale()) }}">{{ __('Register') }}</a>
             @endif
 
             @else
-            <a class="py-2 px-7 font-medium text-white hover:text-primary" href="/{{app()->getLocale()}}/home">{{__("Dashboard")}}</a>
-            <a href="{{ route('logout', app()->getLocale()) }}" class="rounded-lg bg-blue-700 py-2 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+            <a title="Home Page" class="py-2 px-7 font-medium text-white hover:text-primary" href="/{{app()->getLocale()}}/home">{{__("Dashboard")}}</a>
+            <a title="Sign Out" href="{{ route('logout', app()->getLocale()) }}" class="rounded-lg bg-blue-700 py-2 px-7 text-base font-medium text-white hover:bg-opacity-90" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
             <form id="logout-form" action="{{ route('logout', app()->getLocale()) }}" method="POST" class="hidden">
                 {{ csrf_field() }}
             </form>
@@ -35,15 +35,15 @@
                     <span class="fi fi-{{app()->getLocale() === 'en' ? 'us' : app()->getLocale() }} "></span>
                 </button>
                 <div :class="dropdownOpen ? 'top-full opacity-100 visible' : 'top-[110%] invisible opacity-0'" class="absolute left-0 z-40 mt-2 w-full rounded border-[.5px] border-light bg-white py-5 shadow-card transition-all">
-                    <a href="/en" class="block py-2 px-5 text-base font-semibold text-body-color hover:bg-blue-700 hover:bg-opacity-5 hover:text-white">
+                    <a title="OnlyHam on English" href="/en" class="block py-2 px-5 text-base font-semibold text-body-color hover:bg-blue-700 hover:bg-opacity-5 hover:text-white">
                         <span class="fi fi-us"></span>
                     </a>
 
-                    <a href="/es" class="block py-2 px-5 text-base font-semibold text-body-color hover:bg-blue-700 hover:bg-opacity-5 hover:text-white">
+                    <a title="OnlyHam en Español" href="/es" class="block py-2 px-5 text-base font-semibold text-body-color hover:bg-blue-700 hover:bg-opacity-5 hover:text-white">
                         <span class="fi fi-es"></span>
                     </a>
 
-                    <a href="/fr" class="block py-2 px-5 text-base font-semibold text-body-color hover:bg-blue-700 hover:bg-opacity-5 hover:text-white">
+                    <a title="OnlyHam en Frances" href="/fr" class="block py-2 px-5 text-base font-semibold text-body-color hover:bg-blue-700 hover:bg-opacity-5 hover:text-white">
                         <span class="fi fi-fr"></span>
                     </a>
                 </div>
@@ -91,14 +91,14 @@
 
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 <li>
-                    <a href="/{{app()->getLocale()}}/" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
+                    <a title="Home Page" href="/{{app()->getLocale()}}/" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
                         {{__('Home')}}
                     </a>
                 </li>
 
                 @foreach($redesSociales as $red)
                 <li>
-                    <a href="/{{app()->getLocale() }}/{{$red->name}}" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
+                    <a title="OnlyHam {{$red->name}}" href="/{{app()->getLocale() }}/{{$red->name}}" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
                         {{$red->name}}
                     </a>
                 </li>
