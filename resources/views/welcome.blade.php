@@ -10,7 +10,7 @@
 
     <title>{{__("Search Telegram Onlyfans Accounts and More")}} | OnlyHam.co {{__("Seacher")}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher" name="keywords">
-    <meta name="description" content="__('If you are looking for onlyfans free, telegram accounts, here you will find the best creators or if you are a creator sign up to start and make yourself known')">
+    <meta name="description" content="{{__('If you are looking for onlyfans free, telegram accounts, here you will find the best creators or if you are a creator sign up to start and make yourself known')}}">
 
     <link rel="alternate" hreflang="es" href="{{$_SERVER['APP_URL']}}/es/">
     <link rel="alternate" hreflang="en" href="{{$_SERVER['APP_URL']}}/en/">
