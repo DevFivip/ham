@@ -24,8 +24,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg>{{__("Search")}}</button>
                 </form>
-
-
             </div>
             <div class="w-full text-center">
                 <div id="container-8042e1b54794005195890b4db8ffe2f8"></div>

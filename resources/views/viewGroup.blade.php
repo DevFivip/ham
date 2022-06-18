@@ -6,7 +6,6 @@
     <meta http-equiv="Cache-Control" content="max-age: 180, no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-
     <title>🥇 {{$cortarTitle($censor::replace($group->name))}} {{$group->social->name}} {{__("Account")}} | {{env('APP_NAME')}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher, {{ $group['name'] }}" name="keywords">
     @if(!!$group->description)
