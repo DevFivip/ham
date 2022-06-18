@@ -33,6 +33,7 @@
 @endif
 @endif
 
+@if(false)
 @if($cookies['__CAC'])
 <section x-data="{ show: true }" class="fixed bottom-5 right-1" style="z-index:2000;" x-show="show">
     <div class="relative ml-auto w-full max-w-[400px] overflow-hidden rounded-lg bg-blue-600 py-10 px-6 text-center xs:px-10">
@@ -65,6 +66,7 @@
         </div>
     </div>
 </section>
+@endif
 @endif
 
 <footer class="container mx-auto">
