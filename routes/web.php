@@ -253,8 +253,13 @@ Route::group([
             };
 
             $clear = function ($string) {
-                return $string;
+
+                $str = str_replace('&nbsp;', ' ', $string);
+                $new = html_entity_decode($str);
+                return $new;
             };
+
+
 
             return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group", 'censor', 'cortarDescription', 'cortarTitle', 'fecha', 'clear')))->cookie('__VID', $cookie, time() * 365 * 5);
         } catch (\Throwable $th) {

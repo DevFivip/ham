@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    <title>✔️ {{$cortarTitle($censor::replace($group->name))}} {{$group->social->name}} {{__("Account")}} | {{env('APP_NAME')}}</title>
+    <title>🥇 {{$cortarTitle($censor::replace($group->name))}} {{$group->social->name}} {{__("Account")}} | {{env('APP_NAME')}}</title>
     <meta content="onlyham, whatsapp, telegram, whatsapp search, telegram search, onlysearch, onlyfans search, onlyfans accounts, instagram, facebook, tiktok, onlyfans finder, onlyfinder, earnings, onlysearcher, {{ $group['name'] }}" name="keywords">
     @if(!!$group->description)
     <meta name="description" content='{{$cortarDescription($censor::replace(strip_tags($group->description)))}}'>
@@ -56,31 +56,83 @@
     </div>
 
     <section class="relative block -z-10 md:h-72">
-        <img title="preview-bg" style="min-height:300px;" id="preview-banner" src="{{$_SERVER['APP_CDN']}}/storage/placeholder/background.png" alt="background-{{$group['name']}}" />
+        <!-- <img title="preview-bg" style="min-height:300px;" id="preview-banner" src="{{$_SERVER['APP_CDN']}}/storage/placeholder/background.png" alt="background-{{$group['name']}}" /> -->
     </section>
 
-    <section class="py-16 bg-blueGray-200 z-100 mt-0 sm:mt-44">
+    <section class="py-10 bg-blueGray-200 z-100 mt-0 sm:mt-44">
         <div class="container mx-auto">
-            <div class="flex flex-col min-w-0 break-words bg-white md:w-4/5 sm:w-full mx-auto mb-6 shadow-xl rounded-lg  space pt-10">
-                <section class="pt-10 lg:pt-[20px] lg:pb-[20px]">
+
+            <div class="flex flex-col min-w-0 break-words md:w-4/5 sm:w-full mx-auto mb-6 shadow-xl rounded-lg ">
+
+                <section class="mt-5 lg:pt-[20px] lg:pb-[20px]">
                     <div class="relative flex justify-center">
                         <div class="md:absolute sm:relative left-0 right-0 -bottom-32 rounded-lg shadow-md mx-auto w-11/12 sm:w-11/12 pb-16  md:w-4/6 xl:pb-10 bg-white">
                             <div class="mt-2  bg-blueGray-100  snap mx-auto  h-auto w-full max-w-[300px] overflow-hidden transition-all xs:max-w-[368px] sm:max-w-[508px] md:max-w-[630px] lg:max-w-[738px] 2xl:max-w-[850px]" x-ref="carousel">
                                 <div class="grid md:grid-cols-2 sm:grid-cols-12 p-5">
+                                    <div class="">
+                                        <script type="text/javascript">
+                                            atOptions = {
+                                                'key': 'd67c9667d8b391ed50248c2255de75a6',
+                                                'format': 'iframe',
+                                                'height': 90,
+                                                'width': 728,
+                                                'params': {}
+                                            };
+                                            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://nicestsame.com/d67c9667d8b391ed50248c2255de75a6/invoke.js"></scr' + 'ipt>');
+                                        </script>
+                                    </div>
+                                </div>
 
-                                    <div class="relative mb-12  max-w-[310px] md:mr-12 md:mb-0 md:max-w-[250px] lg:mr-14 lg:max-w-[280px] 2xl:mr-16">
-                                        <img title="{{ $group['name'] }}" src="{{ (!!$group['imagen'] ? $_SERVER['APP_CDN'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}" alt="{{ $group['name'] }}" class="w-full rounded-xl" style="max-width:350px;" />
+
+                                <div class="grid md:grid-cols-2 sm:grid-cols-12 p-5">
+
+
+                                    <div class="relative mb-8  max-w-[310px] md:mr-12 md:mb-0 md:max-w-[250px] lg:mr-14 lg:max-w-[280px] 2xl:mr-16">
+                                        <a title="Link to Page" href="{{$group->url}}" target="_blank">
+                                            <img title="{{ $group['name'] }}" src="{{ (!!$group['imagen'] ? $_SERVER['APP_CDN'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_CDN'].'/storage/placeholder/placeholder-avatar.jpg') }}" alt="{{ $group['name'] }}" class="w-full rounded-xl" style="max-width:350px;" />
+                                        </a>
                                         <span class="absolute -bottom-6 -right-6 z-[-1]">
                                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M3 32C3 15.9837 15.9837 3 32 3C48.0163 2.99999 61 15.9837 61 32C61 48.0163 48.0163 61 32 61C15.9837 61 3 48.0163 3 32Z" stroke="#13C296" stroke-width="6" />
                                             </svg>
                                         </span>
                                     </div>
-                                    <div class="p-5">
+                                    <div class="p-1">
+                                        @if($group->cant_suscriptores > 0)
+                                        <span class="bg-blue-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-xl mr-2 ">
+                                            <i class="fa-solid fa-heart mt-0.5"></i>&nbsp;{{$group->cant_suscriptores}}
+                                        </span>
+                                        @endif
 
-                                        <h1 class="font-semibold text-dark text-3xl">{{ $censor::replace($group->name) }}</h1>
+                                        @if($group->cant_videos > 0)
+                                        <span class="bg-blue-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-xl mr-2 ">
+                                            <i class="fa-solid fa-video mt-0.5"></i>&nbsp;{{$group->cant_videos}}
+                                        </span>
+                                        @endif
 
-                                        <p class="box-content">{{$censor::replace(strip_tags($group->description))}}</p>
+                                        @if($group->cant_fotos > 0)
+                                        <span class="bg-blue-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-xl mr-2 ">
+                                            <i class="fa-solid fa-camera-retro mt-0.5"></i>&nbsp;{{$group->cant_videos}}
+                                        </span>
+                                        @endif
+
+
+                                        @if($group->precio_membresia > 0)
+                                        <span class="text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-xl mr-2 bg-yellow-200">
+                                            <i class="fa-solid fa-money-bill mt-0.5"></i>&nbsp; {{ number_format((float)$group->precio_membresia, 2, '.', '')}}
+                                        </span>
+                                        @elseif($group->precio_membresia == 0)
+                                        <span class="text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-xl mr-2 bg-yellow-500">
+                                            <i class="fa-solid fa-money-bill mt-0.5"></i> &nbsp;{{__('Free')}}
+                                        </span>
+                                        @endif
+
+
+
+                                        <a title="Link to Page" href="{{$group->url}}" target="_blank">
+                                            <h1 class="font-semibold text-dark text-3xl">{{ $censor::replace($group->name) }}</h1>
+                                        </a>
+                                        <p class="box-content">{{$clear($censor::replace(strip_tags($group->description)))}}</p>
                                         @if(isset($group->username))
                                         <h3 class="mb-5 text-xl font-semibold text-dark">
                                             {{ $group->username }}
@@ -91,21 +143,22 @@
                                             {{ $censor::replace(__($group->subcategoria->name)) }}
                                         </p>
                                         <p class="mb-5 text-base text-body-color">
-                                            <span> <i class="fa-solid fa-eye"></i> <span id="count_views">0</span></span>
-                                            <span> <i class="fa-solid fa-arrow-right-to-bracket"></i> <span id="count_click">0</span></span>
+                                            <span class="" text-white bg-yellow-500 rounded-lg">🔥<span id="count_views" class="font-bold">0</span></span>
+                                            <!-- <span> <i class="fa-solid fa-arrow-right-to-bracket"></i> <span id="count_click">0</span></span> -->
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="absolute left-0 right-0 -bottom-5 flex items-center justify-center">
-                                <button id="ingresar" class="inline-flex items-center justify-center rounded-full bg-secondary py-4 px-10 text-center text-base font-normal text-white bg-blue-700 hover:bg-opacity-90 lg:px-8 xl:px-10">
-                                    <i class="fa-solid fa-unlock-keyhole"></i> &nbsp; {{__("Enter")}}
-                                </button>
+                                <a title="Link to Page" href="{{$group->url}}" target="_blank" class="inline-flex items-center justify-center rounded-full bg-secondary py-4 px-10 text-center text-base font-normal text-white bg-blue-700 hover:bg-opacity-90 lg:px-8 xl:px-10">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp; {{__("Enter")}}
+                                </a>
                             </div>
                         </div>
                     </div>
-
                 </section>
+
+
                 <section class="px-6 pt-40">
                     <div class="-mx-4 flex flex-wrap items-center justify-between">
                         <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
@@ -134,7 +187,6 @@
                                         <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">
                                             {{__("profile.how_category_describeme",["name"=>$group->name])}}
                                         </h2>
-
                                         <p class="mb-8 text-base text-body-color">
                                             {!!__("profile.how_category_describeme_resp",["name"=>$group->name,'original_category'=>$group->categoria->slug,'category'=>__($group->categoria->name),"subcategory"=>__($group->subcategoria->name),'social'=>$group->social->name])!!}
                                         </p>
@@ -262,7 +314,11 @@
                         </div>
                     </div>
                 </section>
-
+                <section>
+                    <div class="w-full text-center">
+                        <div id="container-8042e1b54794005195890b4db8ffe2f8"></div>
+                    </div>
+                </section>
                 <section class="px-6">
                     <div class="mt-10 lg:mt-0">
                         <h2 class="mb-8 text-2xl font-bold text-dark sm:text-2xl">

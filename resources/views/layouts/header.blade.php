@@ -19,6 +19,13 @@
 
 <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
 <script defer src="{{$_SERVER['APP_CDN']}}/assets/js/alpine.min.js" type="application/javascript"></script>
+
+<!--Anuncions-->
+<script async="async" data-cfasync="false" src="//pl17382275.profitablecpmgate.com/8042e1b54794005195890b4db8ffe2f8/invoke.js"></script>
+<script type='text/javascript' src='//nicestsame.com/43/ea/48/43ea48d0470323c2a11f5409e641b028.js'></script>
+<!--Anuncions-->
+
+
 <!-- Google Tag Manager -->
 <script>
     (function(w, d, s, l, i) {
@@ -40,10 +47,15 @@
 
 <!--Clarity Microsoft-->
 <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    (function(c, l, a, r, i, t, y) {
+        c[a] = c[a] || function() {
+            (c[a].q = c[a].q || []).push(arguments)
+        };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "cdw0pz2ks0");
 </script>
 
