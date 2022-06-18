@@ -21,8 +21,10 @@
 <script defer src="{{$_SERVER['APP_CDN']}}/assets/js/alpine.min.js" type="application/javascript"></script>
 
 <!--Anuncions-->
+<!--Anuncions-->
 <script async="async" data-cfasync="false" src="//pl17382275.profitablecpmgate.com/8042e1b54794005195890b4db8ffe2f8/invoke.js"></script>
 <script type='text/javascript' src='//nicestsame.com/43/ea/48/43ea48d0470323c2a11f5409e641b028.js'></script>
+<!--Anuncions-->
 <!--Anuncions-->
 
 
