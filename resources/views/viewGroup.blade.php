@@ -70,17 +70,7 @@
                                 <div class="grid md:grid-cols-2 sm:grid-cols-12 p-5">
                                     <div class="">
 
-                                    
-                                        <script type="text/javascript">
-                                            atOptions = {
-                                                'key': 'd67c9667d8b391ed50248c2255de75a6',
-                                                'format': 'iframe',
-                                                'height': 90,
-                                                'width': 728,
-                                                'params': {}
-                                            };
-                                            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://nicestsame.com/d67c9667d8b391ed50248c2255de75a6/invoke.js"></scr' + 'ipt>');
-                                        </script>
+
 
 
                                         <script type="text/javascript">
@@ -172,6 +162,7 @@
                             </div>
                         </div>
                     </div>
+
                 </section>
 
 
