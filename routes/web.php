@@ -29,7 +29,7 @@ use Almazary\LaravelWordCensor\LaravelWordCensorFacade;
 
 define('PAGINATION', 12);
 define("ANUNCIO", "<script async='async' data-cfasync='false' src='https://pl17382275.profitablecpmgate.com/8042e1b54794005195890b4db8ffe2f8/invoke.js'></script>");
-define("ANUNCIO2", "<script type='text/javascript' src='https://nicestsame.com/43/ea/48/43ea48d0470323c2a11f5409e641b028.js'></script>");
+define("ANUNCIO2", "");
 define("ANUNCIO3", "<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7218706115121047' crossorigin='anonymous'></script>");
 define("ANUNCIO4", "<script type='text/javascript'>
 atOptions = {
