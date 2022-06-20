@@ -28,6 +28,20 @@ use Almazary\LaravelWordCensor\LaravelWordCensorFacade;
 */
 
 define('PAGINATION', 12);
+define("ANUNCIO", "<script async='async' data-cfasync='false' src='https://pl17382275.profitablecpmgate.com/8042e1b54794005195890b4db8ffe2f8/invoke.js'></script>");
+define("ANUNCIO2", "<script type='text/javascript' src='https://nicestsame.com/43/ea/48/43ea48d0470323c2a11f5409e641b028.js'></script>");
+define("ANUNCIO3", "<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7218706115121047' crossorigin='anonymous'></script>");
+define("ANUNCIO4", "<script type='text/javascript'>
+atOptions = {
+    'key': 'd67c9667d8b391ed50248c2255de75a6',
+    'format': 'iframe',
+    'height': 90,
+    'width': 728,
+    'params': {}
+};
+document.write('<scr' + 'ipt type='text/javascript' src='http' + (location.protocol === 'https:' ? 's' : '') + ': '//nicestsame.com/d67c9667d8b391ed50248c2255de75a6/invoke.js'></scr' + 'ipt>');
+</script>");
+
 
 function ccookie($req)
 {
@@ -61,7 +75,9 @@ Route::get('/', function (Request $req) {
             array_push($listas[$i], $social->toArray());
         }
         $cookies = ccookie($req);
-        return view('welcome', compact("cookies", "mejores", "mejores3", "mejores_onlyfans", "mejores_telegram", "mejores_whatsapp", "redes", "social", "listas", "redesSociales"));
+        $anuncio = ANUNCIO;
+        $anuncio2 = ANUNCIO2;
+        return view('welcome', compact("cookies", "mejores", "mejores3", "mejores_onlyfans", "mejores_telegram", "mejores_whatsapp", "redes", "social", "listas", "redesSociales", 'anuncio', 'anuncio2'));
     }
 });
 
@@ -92,7 +108,9 @@ Route::group([
             array_push($listas[$i], $social->toArray());
         }
         $cookies = ccookie($req);
-        return view('welcome', compact("cookies", "mejores", "mejores3", "mejores_onlyfans", "mejores_telegram", "mejores_whatsapp", "redes", "social", "listas", "redesSociales"));
+        $anuncio = ANUNCIO;
+        $anuncio2 = ANUNCIO2;
+        return view('welcome', compact("cookies", "mejores", "mejores3", "mejores_onlyfans", "mejores_telegram", "mejores_whatsapp", "redes", "social", "listas", "redesSociales", 'anuncio', 'anuncio2'));
     });
 
     Route::get("precios", function (Request $req) {
@@ -184,7 +202,9 @@ Route::group([
             ];
 
             $cookies = ccookie($req);
-            return view('social', compact("cookies", "mejores", 'categorias', 'redesSociales', 'search', 'socialMedia', 'breadcrumbs'));
+            $anuncio = ANUNCIO;
+            $anuncio2 = ANUNCIO2;
+            return view('social', compact("cookies", "mejores", 'categorias', 'redesSociales', 'search', 'socialMedia', 'breadcrumbs', 'anuncio', 'anuncio2'));
         } catch (\Throwable $th) {
             abort(404);
         }
@@ -259,9 +279,11 @@ Route::group([
                 return $new;
             };
 
-
-
-            return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group", 'censor', 'cortarDescription', 'cortarTitle', 'fecha', 'clear')))->cookie('__VID', $cookie, time() * 365 * 5);
+            $anuncio = ANUNCIO;
+            $anuncio2 = ANUNCIO2;
+            $anuncio3 = ANUNCIO3;
+            $anuncio4 = ANUNCIO4;
+            return response(view('viewGroup', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', "group", 'censor', 'cortarDescription', 'cortarTitle', 'fecha', 'clear', 'anuncio', 'anuncio2', 'anuncio3','anuncio4')))->cookie('__VID', $cookie, time() * 365 * 5);
         } catch (\Throwable $th) {
             dd($th);
             abort(404);
@@ -286,8 +308,6 @@ Route::group([
 
 
     Route::get('/categoria/{category_slug}', function (Request $req, $lang, $category_slug) {
-
-
         try {
             $redesSociales = Social::all();
             $categorias = Category::all();
@@ -324,7 +344,9 @@ Route::group([
             ];
 
             $cookies = ccookie($req);
-            return view('social', compact("cookies", "mejores", 'categorias', 'redesSociales', 'title', 'breadcrumbs'));
+            $anuncio = ANUNCIO;
+            $anuncio2 = ANUNCIO2;
+            return view('social', compact("cookies", "mejores", 'categorias', 'redesSociales', 'title', 'breadcrumbs', 'anuncio', 'anuncio2'));
         } catch (\Throwable $th) {
             abort(404);
         }
@@ -345,7 +367,9 @@ Route::group([
             ];
 
             $cookies = ccookie($req);
-            return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'breadcrumbs'));
+            $anuncio = ANUNCIO;
+            $anuncio2 = ANUNCIO2;
+            return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'breadcrumbs', 'anuncio', 'anuncio2'));
         } catch (\Throwable $th) {
             abort(404);
         }
@@ -371,7 +395,9 @@ Route::group([
 
 
             $cookies = ccookie($req);
-            return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'categoryGroup', 'subcategoryGroup', 'redesSociales', 'breadcrumbs'));
+            $anuncio = ANUNCIO;
+            $anuncio2 = ANUNCIO2;
+            return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'categoryGroup', 'subcategoryGroup', 'redesSociales', 'breadcrumbs', 'anuncio', 'anuncio2'));
         } catch (\Throwable $th) {
             abort(404);
         }
@@ -394,7 +420,9 @@ Route::group([
 
 
             $cookies = ccookie($req);
-            return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'breadcrumbs'));
+            $anuncio = ANUNCIO;
+            $anuncio2 = ANUNCIO2;
+            return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'breadcrumbs', 'anuncio', 'anuncio2'));
         } catch (\Throwable $th) {
             abort(404);
         }
@@ -415,7 +443,9 @@ Route::group([
 
             $mejores = Group::with(['social', 'categoria', 'subcategoria', 'location', 'type'])->orderBy('fecha_corte', 'desc')->where([['social_id', $socialMedia->id], ["group_type_id", $typeSocialMediaGroup->id]])->paginate(PAGINATION);
             $cookies = ccookie($req);
-            return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'type', 'breadcrumbs'));
+            $anuncio = ANUNCIO;
+            $anuncio2 = ANUNCIO2;
+            return view('social', compact("cookies", "mejores", 'social', 'socialMedia', 'categorias', 'redesSociales', 'type', 'breadcrumbs', 'anuncio', 'anuncio2'));
         } catch (\Throwable $th) {
             abort(404);
         }

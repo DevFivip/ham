@@ -50,7 +50,9 @@ class GroupController extends Controller
         $types = GroupType::all();
         $cookies = $this->home->ccookie($req);
         $redesSociales = $socialMedia;
-        return view('group.create', compact('cookies', 'locations', 'categories', 'socialMedia', 'types','redesSociales'));
+        $anuncio = "";
+        $anuncio2 = "";
+        return view('group.create', compact('cookies', 'locations', 'categories', 'socialMedia', 'types','redesSociales','anuncio','anuncio2'));
     }
 
     /**
@@ -179,7 +181,10 @@ class GroupController extends Controller
         $types = GroupType::all();
         $cookies = $this->home->ccookie($req);
         $redesSociales = $socialMedia;
-        return view("group.edit", compact('cookies', 'locations', 'categories', 'socialMedia', 'types', 'group', 'subcategoria','redesSociales'));
+        $anuncio = "";
+        $anuncio2 = "";
+
+        return view("group.edit", compact('cookies', 'locations', 'categories', 'socialMedia', 'types', 'group', 'subcategoria','redesSociales','anuncio','anuncio2'));
     }
 
     /**

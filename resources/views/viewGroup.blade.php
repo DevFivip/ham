@@ -44,7 +44,7 @@
     <meta name="twitter:creator" content="@OnlyHamOficial">
     <meta name="twitter:image" content="{{ (!!$group['imagen'] ? $_SERVER['APP_CDN'].'/storage/img/'. $group['imagen'] : $_SERVER['APP_CDN'].'/assets/images/1.png') }}">
     @include("layouts.header")
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7218706115121047" crossorigin="anonymous"></script>
+    {!!$anuncio3!!}
     @include("layouts.schemaPosts")
 </head>
 
@@ -69,6 +69,8 @@
                             <div class="mt-2  bg-blueGray-100  snap mx-auto  h-auto w-full max-w-[300px] overflow-hidden transition-all xs:max-w-[368px] sm:max-w-[508px] md:max-w-[630px] lg:max-w-[738px] 2xl:max-w-[850px]" x-ref="carousel">
                                 <div class="grid md:grid-cols-2 sm:grid-cols-12 p-5">
                                     <div class="">
+
+                                    
                                         <script type="text/javascript">
                                             atOptions = {
                                                 'key': 'd67c9667d8b391ed50248c2255de75a6',
@@ -79,6 +81,21 @@
                                             };
                                             document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://nicestsame.com/d67c9667d8b391ed50248c2255de75a6/invoke.js"></scr' + 'ipt>');
                                         </script>
+
+
+                                        <script type="text/javascript">
+                                            atOptions = {
+                                                'key': 'd67c9667d8b391ed50248c2255de75a6',
+                                                'format': 'iframe',
+                                                'height': 90,
+                                                'width': 728,
+                                                'params': {}
+                                            };
+                                            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://nicestsame.com/d67c9667d8b391ed50248c2255de75a6/invoke.js"></scr' + 'ipt>');
+                                        </script>
+
+
+
                                     </div>
                                 </div>
 
