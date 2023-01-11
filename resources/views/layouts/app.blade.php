@@ -53,6 +53,8 @@
 
         gtag('config', 'G-5E1F693QBP');
     </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7218706115121047" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-gray-700 h-screen antialiased leading-none font-sans">
