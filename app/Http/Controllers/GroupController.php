@@ -52,7 +52,7 @@ class GroupController extends Controller
         $redesSociales = $socialMedia;
         $anuncio = "";
         $anuncio2 = "";
-        return view('group.create', compact('cookies', 'locations', 'categories', 'socialMedia', 'types','redesSociales','anuncio','anuncio2'));
+        return view('group.create', compact('cookies', 'locations', 'categories', 'socialMedia', 'types', 'redesSociales', 'anuncio', 'anuncio2'));
     }
 
     /**
@@ -169,7 +169,7 @@ class GroupController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $req, $lang,$id)
+    public function edit(Request $req, $lang, $id)
     {
         // dd($req,$lang,$id);
 
@@ -184,7 +184,7 @@ class GroupController extends Controller
         $anuncio = "";
         $anuncio2 = "";
 
-        return view("group.edit", compact('cookies', 'locations', 'categories', 'socialMedia', 'types', 'group', 'subcategoria','redesSociales','anuncio','anuncio2'));
+        return view("group.edit", compact('cookies', 'locations', 'categories', 'socialMedia', 'types', 'group', 'subcategoria', 'redesSociales', 'anuncio', 'anuncio2'));
     }
 
     /**
@@ -194,7 +194,7 @@ class GroupController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $lang,$id)
+    public function update(Request $request, $lang, $id)
     {
 
         $data = $request->all();

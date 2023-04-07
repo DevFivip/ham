@@ -26,7 +26,8 @@
                 </form>
             </div>
             <div class="w-full text-center">
-                <div id="container-8042e1b54794005195890b4db8ffe2f8"></div>
+                <iframe data-aa='2196947' src='//ad.a-ads.com/2196947?size=120x60' style='width:120px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+                <!-- <div id="container-8042e1b54794005195890b4db8ffe2f8"></div> -->
             </div>
         </div>
     </div>
